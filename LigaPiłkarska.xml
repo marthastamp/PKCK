@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/css" href="StyleSheet.css"?>
 
 <zadanie>
@@ -443,23 +443,20 @@
 
 
       <mecze>
-        <mecz>
-          <gospodarz klubId="1" stadionId="JohnSmithsStadium"/>
-          <gość klubId="2"/>
-          <dataMeczu Dzień="19" Miesiąc="10" Rok="2015" />
-        </mecz>
 
-        <mecz>
-          <gospodarz klubId="3" stadionId="FalmerStadium"/>
-          <gość klubId="5"/>
-          <dataMeczu Dzień="20" Miesiąc="10" Rok="2015" />
-        </mecz>
+      <opis>Terminarz spotkań</opis>
 
-        <mecz>
-          <gospodarz klubId="6" stadionId="JohnSmithsStadium"/>
-          <gość klubId="4"/>
-          <dataMeczu Dzień="18" Miesiąc="10" Rok="2015" />
-        </mecz>
+          <rząd>
+            <nagł>Gość</nagł>
+            <nagł>Stadion</nagł>
+            <nagł>Data</nagł>
+          </rząd>
+
+          <rząd>
+            <kom>dupa</kom>
+            <kom>dupa</kom>
+            <kom>dupa</kom>
+          </rząd>
 
       </mecze>
 
