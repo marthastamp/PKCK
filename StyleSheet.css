@@ -160,6 +160,7 @@ mecze {
  border: 5px solid #33345C;
  margin: 0 auto;
  table-layout: fixed;
+ margin-bottom: 5%;
 }
 
 opis {
@@ -172,12 +173,9 @@ opis {
 
 rząd {
  display: table-row;
+ color: black;
 }
 
-rząd:nth-child(odd) {
-  background: white;
-  color:black;
-}
 
 nagł, kom {
  display: table-cell;
