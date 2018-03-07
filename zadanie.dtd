@@ -16,4 +16,22 @@
 >
 <!ELEMENT liga_piłkarska (kluby,mecze)>
 <!ELEMENT kluby (klub)>
+<!ELEMENT klub (nazwa,miasto,stadion,trener,tytuły)>
+<!ATTLIST klub 
+	klubId ID #REQUIRED
+>
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT miasto (#PCDATA)>
+<!ELEMENT stadion (nazwa,pojemność)>
+<!ELEMENT stadion
+	stadionId ID #REQUIRED
+>
+<!ELEMENT pojemność (#PCDATA)>
+<!ELEMENT trener (imię,nazwisko,data_urodzenia,narodowość)>
+<!ELEMENT imię (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT data_urodzenia (#PCDATA)>
+<!ELEMENT narodowość (#PCDATA)>
+
 <!ELEMENT mecze (opis, rząd)>
+
