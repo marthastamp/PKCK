@@ -19,42 +19,42 @@ informacje {
     margin-bottom: 3%;
 }
 
-informacje > tytuł {
-    display: block;
-    width: 30%;
-    margin: 0 auto;
-    margin-bottom: 0.8%;
-    margin-top: 0.5%;
-    border-bottom: solid 2px green;
-    font-size: 35px;
-    text-align: center;
-}
+    informacje > tytuł {
+        display: block;
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 0.8%;
+        margin-top: 0.5%;
+        border-bottom: solid 2px green;
+        font-size: 35px;
+        text-align: center;
+    }
 
-informacje > data:before {
-    content: "Data utworzenia: ";
-}
+    informacje > data:before {
+        content: "Data utworzenia: ";
+    }
 
-informacje > data {
-margin-right: 0.5%;
-font-size: 0.9em;
-display: block;
-text-align: right;
-font-style: italic;
-}
+    informacje > data {
+        margin-right: 0.5%;
+        font-size: 0.9em;
+        display: block;
+        text-align: right;
+        font-style: italic;
+    }
 
-informacje > autorzy {
-font-size: 0.9em;
-display: table;
-}
+    informacje > autorzy {
+        font-size: 0.9em;
+        display: table;
+    }
 
-informacje > autorzy > autor {
-display: table-row;
-}
+        informacje > autorzy > autor {
+            display: table-row;
+        }
 
-informacje > autorzy > autor > * {
-    display: table-cell;
-    padding-right: 5px;
-}
+            informacje > autorzy > autor > * {
+                display: table-cell;
+                padding-right: 5px;
+            }
 
 liga_piłkarska {
     background-color: lightgrey;
@@ -75,10 +75,17 @@ klub {
     transition: transform .2s ease-in-out;
 }
 
-klub:hover {
-    transform: scale(1.5);
-    background-color: green;
-}
+    klub:hover {
+        transform: scale(1.5);
+        background-color: green;
+    }
+
+        klub:hover > stadion {
+            display: block;
+        }
+        klub:hover > trener {
+            display: block;
+        }
 
 liga_piłkarska:before {
     display: block;
@@ -106,21 +113,11 @@ klub > miasto {
 
 klub > stadion {
     position: relative;
-    width: 50%;
+    /*width: 50%;*/
     height: 30%;
     text-align: center;
     display: none;
 }
-
-klub > stadion > nazwa {
-    position: absolute;
-    display: block;
-    width: 50%;
-    height: 30%;
-    left: 0px;
-    top: 0px;
-}
-
 
 klub > trener {
     text-align: center;
@@ -136,7 +133,7 @@ klub > miasto:before {
     content: "Miasto: ";
 }
 
-klub > stadion:before {
+klub > stadion > nazwa:before {
     content: "Stadion: ";
 }
 
@@ -153,41 +150,41 @@ klub > tytuły[typ="mistrzostwo"]:before {
 }
 
 mecze {
- display: table;
- width: 100%;
- border-collapse: collapse;
- border-spacing: 0;
- border: 5px solid #33345C;
- margin: 0 auto;
- table-layout: fixed;
- margin-bottom: 5%;
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 5px solid #33345C;
+    margin: 0 auto;
+    table-layout: fixed;
+    margin-bottom: 5%;
 }
 
 opis {
- display: table-caption;
- text-align: center;
- font-size: 30px;
- color: gray;
- padding-bottom: 4px;
+    display: table-caption;
+    text-align: center;
+    font-size: 30px;
+    color: gray;
+    padding-bottom: 4px;
 }
 
 rząd {
- display: table-row;
- color: black;
+    display: table-row;
+    color: black;
 }
 
 
 nagł, kom {
- display: table-cell;
- padding: 0.3em;
- border: 1px solid gray;
- vertical-align: top;
- text-align: center;
+    display: table-cell;
+    padding: 0.3em;
+    border: 1px solid gray;
+    vertical-align: top;
+    text-align: center;
 }
 
 nagł {
- font-weight: bold;
- background: gray;
- color: #fff;
- font-size: 25px;
+    font-weight: bold;
+    background: gray;
+    color: #fff;
+    font-size: 25px;
 }
