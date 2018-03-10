@@ -87,20 +87,28 @@ klub {
     transition: transform .2s ease-in-out;
 }
 
-    klub:hover {
-        transform: scale(1.2);
-        background-color: green;
-    }
+klub:hover {
+    transform: scale(1.2);
+    background-color: green;
+}
 
-        klub:hover > stadion {
-            display: block;
-            margin-top: 15px;
-            padding-bottom: 3px;
-        }
-        klub:hover > trener {
-            display: block;
-            padding-bottom: 3px;
-        }
+klub:hover > stadion {
+    display: block;
+    margin-top: 15px;
+    padding-bottom: 3px;
+}
+
+klub:hover > stadion > pojemność {
+    padding-top: 8px;
+    display: block;
+    color: black;
+
+}
+
+klub:hover > trener {
+    display: block;
+    padding-bottom: 3px;
+}
 
 liga_piłkarska:before {
     display: block;
@@ -118,6 +126,7 @@ liga_piłkarska:before {
 klub > miasto {
     text-align: center;
     display: block;
+    text-decoration-line: underline; 
    
 }
 
