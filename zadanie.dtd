@@ -32,6 +32,7 @@
 <!ELEMENT nazwisko (#PCDATA)>
 <!ELEMENT data_urodzenia (#PCDATA)>
 <!ELEMENT narodowość (#PCDATA)>
+<!ELEMENT tytuły typ (mistrzostwo|puchar)>
 
 <!ELEMENT mecze (opis, rząd)>
 
