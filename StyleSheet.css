@@ -8,6 +8,7 @@ zadanie {
     margin-top: 1%;
     float: center;
     font-family: "Josefin Sans";
+    background-color: #d8dde6;
 }
 
 
@@ -57,7 +58,6 @@ informacje {
             }
 
 liga_piłkarska {
-    background-color: lightgrey;
     color: white;
 }
 
@@ -89,7 +89,7 @@ klub {
 
 klub:hover {
     transform: scale(1.2);
-    background-color: green;
+    background-color: darkslategrey;
 }
 
 klub:hover > stadion {
@@ -165,7 +165,11 @@ klub > trener:before {
 }
 
 klub > tytuły[typ="mistrzostwo"]:before {
-    content: "Mistrzostwa: ";
+    content: "Mistrzostwa Angli: ";
+}
+
+klub > tytuły[typ="puchar"]:before {
+    content: "Puchar Angli: ";
 }
 
 mecze {
@@ -190,6 +194,10 @@ opis {
 rząd {
     display: table-row;
     color: black;
+}
+
+rząd:hover {
+    background-color: #f5f5f5;
 }
 
 

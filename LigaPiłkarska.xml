@@ -455,27 +455,74 @@
           </rząd>
 
           <rząd>
-            <kom>dssaa</kom>
-            <kom>dupa</kom>
-            <kom>dupa</kom>
-            <kom>dupa</kom>
+            <kom>Huddersfield Town</kom>
+            <kom>Brighton and Hove Albion</kom>
+            <kom>JohnSmithsStadium</kom>
+            <kom>11.03.2018 18:00</kom>
           </rząd>
 
           <rząd>
-            <kom>dupa</kom>
-            <kom>dupa</kom>
-            <kom>dupa</kom>
-            <kom>dupa</kom>
+            <kom>Arsenal</kom>
+            <kom>Watford</kom>
+            <kom>EmiratesStadium</kom>
+            <kom>11.03.2018 14:30</kom>
           </rząd>
-
 
           <rząd>
-            <kom>dupa</kom>
-            <kom>dupa</kom>
-            <kom>dupa</kom>
-            <kom>dupa</kom>
+            <kom>Bournemouth</kom>
+            <kom>Tottenham</kom>
+            <kom>DeanCourt</kom>
+            <kom>11.03.2018 17:00</kom>
           </rząd>
 
+        <rząd>
+          <kom>Manchester United</kom>
+          <kom>Liverpool</kom>
+          <kom>OldTrafford</kom>
+          <kom>10.03.2018 13:30</kom>
+        </rząd>
+
+        <rząd>
+          <kom>Everton</kom>
+          <kom>Brighton and Hove Albion</kom>
+          <kom>GoodisonPark</kom>
+          <kom>10.03.2018 16:00</kom>
+        </rząd>
+
+        <rząd>
+          <kom>Huddersfield Town</kom>
+          <kom>Swansea</kom>
+          <kom>JohnSmithsStadium</kom>
+          <kom>10.03.2018 16:00</kom>
+        </rząd>
+
+        <rząd>
+          <kom>Newcastle</kom>
+          <kom>Southampton</kom>
+          <kom>StJamesPark</kom>
+          <kom>10.03.2018 16:00</kom>
+        </rząd>
+
+        <rząd>
+          <kom>West Bromwich Albion</kom>
+          <kom>Leicester</kom>
+          <kom>Hawthorns</kom>
+          <kom>10.03.2018 16:00</kom>
+        </rząd>
+
+        <rząd>
+          <kom>West Ham United</kom>
+          <kom>Burnley</kom>
+          <kom>OlympicStadium</kom>
+          <kom>10.03.2018 16:00</kom>
+        </rząd>
+
+        <rząd>
+          <kom>Chelsea</kom>
+          <kom>Crystal Palace</kom>
+          <kom>StamfordBridge</kom>
+          <kom>10.03.2018 18:30</kom>
+        </rząd>
       </mecze>
 
     </liga_piłkarska>
