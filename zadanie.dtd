@@ -34,5 +34,9 @@
 <!ELEMENT narodowość (#PCDATA)>
 <!ELEMENT tytuły typ (mistrzostwo|puchar)>
 
-<!ELEMENT mecze (opis, rząd)>
+<!ELEMENT mecze (opis,rząd)>
+<!ELEMENT opis (#PCDATA)>
+<!ELEMENT rząd (nagł,kom)>
+<!ELEMENT nagł (#PCDATA)>
+<!ELEMENT kom (#PCDATA)>
 
