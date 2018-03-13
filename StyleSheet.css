@@ -76,12 +76,12 @@ klub {
     margin: 0 auto;
     text-align: center;
     display: inline-block;
-    height: 120px;
+    height: 140px;
     width: 220px;
     margin: 10px;
     padding: 0.5%;
     float: right;
-    font-size: 12px;
+    font-size: 10px;
     background-color: #33345C;
     cursor: pointer;
     transition: transform .2s ease-in-out;
@@ -99,7 +99,7 @@ klub:hover > stadion {
 }
 
 klub:hover > stadion > pojemność {
-    padding-top: 8px;
+    padding-top: 5px;
     display: block;
     color: black;
 
@@ -145,7 +145,10 @@ klub > trener {
 
 klub > tytuły {
     text-align: center;
-    display: none;
+    display: inline-block;
+    margin-top: 5px;
+
+    /*display: none;*/
 }
 
 klub > miasto:before {
@@ -165,11 +168,11 @@ klub > trener:before {
 }
 
 klub > tytuły[typ="mistrzostwo"]:before {
-    content: "Mistrzostwa Angli: ";
+    content: "Mistrzostwa Anglii: ";
 }
 
 klub > tytuły[typ="puchar"]:before {
-    content: "Puchar Angli: ";
+    content: "Puchar Anglii: ";
 }
 
 mecze {
