@@ -4,7 +4,7 @@
 zadanie {
     display: block;
     margin: 0 auto;
-    width: 1000px;
+    width: 1045px;
     margin-top: 1%;
     float: center;
     font-family: "Josefin Sans";
@@ -77,7 +77,7 @@ klub {
     text-align: center;
     display: inline-block;
     height: 140px;
-    width: 220px;
+    width: 230px;
     margin: 10px;
     padding: 0.5%;
     float: right;
