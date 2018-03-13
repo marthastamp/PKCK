@@ -18,7 +18,6 @@
     </autorzy>
   </informacje>
 
-  <ligi_piłkarskie>
     <liga_piłkarska rok="2017/2018" nazwa="Premier League" kraj="Anglia">
       <kluby>
         <klub klubId="1">
@@ -35,10 +34,10 @@
             <narodowość>Hiszpania</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>4</ilość>
+            <liczba>4</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>5</ilość>
+            <liczba>5</liczba>
           </tytuły>
         </klub>
 
@@ -56,10 +55,10 @@
             <narodowość>Portugalia</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>20</ilość>
+            <liczba>20</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>12</ilość>
+            <liczba>12</liczba>
           </tytuły>
         </klub>
 
@@ -77,10 +76,10 @@
             <narodowość>Francja</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>13</ilość>
+            <liczba>13</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>13</ilość>
+            <liczba>13</liczba>
           </tytuły>
         </klub>
 
@@ -98,10 +97,10 @@
             <narodowość>Włochy</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>6</ilość>
+            <liczba>6</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>7</ilość>
+            <liczba>7</liczba>
           </tytuły>
         </klub>
 
@@ -119,10 +118,10 @@
             <narodowość>Argentyna</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>2</ilość>
+            <liczba>2</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>8</ilość>
+            <liczba>8</liczba>
           </tytuły>
         </klub>
 
@@ -140,10 +139,10 @@
             <narodowość>Niemcy</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>18</ilość>
+            <liczba>18</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>7</ilość>
+            <liczba>7</liczba>
           </tytuły>
         </klub>
 
@@ -161,10 +160,10 @@
             <narodowość>Anglia</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>9</ilość>
+            <liczba>9</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>5</ilość>
+            <liczba>5</liczba>
           </tytuły>
         </klub>
 
@@ -182,10 +181,10 @@
             <narodowość>Argentyna</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>1</ilość>
+            <liczba>1</liczba>
           </tytuły>
         </klub>
 
@@ -203,10 +202,10 @@
             <narodowość>Anglia</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
         </klub>
 
@@ -224,10 +223,10 @@
             <narodowość>Anglia</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>1</ilość>
+            <liczba>1</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>5</ilość>
+            <liczba>5</liczba>
           </tytuły>
         </klub>
 
@@ -245,10 +244,10 @@
             <narodowość>Szkocja</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>3</ilość>
+            <liczba>3</liczba>
           </tytuły>
         </klub>
 
@@ -266,10 +265,10 @@
             <narodowość>Francja</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>1</ilość>
+            <liczba>1</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
         </klub>
 
@@ -287,10 +286,10 @@
             <narodowość>Szkocja</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
         </klub>
 
@@ -308,10 +307,10 @@
             <narodowość>Anglia</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
         </klub>
 
@@ -329,10 +328,10 @@
             <narodowość>Portugalia</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
         </klub>
 
@@ -348,12 +347,13 @@
             <nazwisko>Dyche</nazwisko>
             <data_urodzenia>28-06-1981</data_urodzenia>
             <narodowość>Anglia</narodowość>
+			<pensja>12032,52</pensja>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>2</ilość>
+            <liczba>2</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>1</ilość>
+            <liczba>1</liczba>
           </tytuły>
         </klub>
 
@@ -371,10 +371,10 @@
             <narodowość>Hiszpania</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
         </klub>
 
@@ -392,10 +392,10 @@
             <narodowość>Hiszpania</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>4</ilość>
+            <liczba>4</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>6</ilość>
+            <liczba>6</liczba>
           </tytuły>
         </klub>
 
@@ -413,10 +413,10 @@
             <narodowość>Irlandia</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>0</ilość>
+            <liczba>0</liczba>
           </tytuły>
         </klub>
 
@@ -434,10 +434,10 @@
             <narodowość>Niemcy</narodowość>
           </trener>
           <tytuły typ="mistrzostwo">
-            <ilość>3</ilość>
+            <liczba>3</liczba>
           </tytuły>
           <tytuły typ="puchar">
-            <ilość>1</ilość>
+            <liczba>1</liczba>
           </tytuły>
         </klub>
       </kluby>
@@ -453,6 +453,8 @@
             <nagł>Stadion</nagł>
             <nagł>Data</nagł>
           </rząd>
+
+JAKO CONTENT
 
           <rząd>
             <kom>Huddersfield Town</kom>
@@ -526,5 +528,4 @@
       </mecze>
 
     </liga_piłkarska>
-  </ligi_piłkarskie>
 </zadanie>

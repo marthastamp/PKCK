@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Comfortaa|Istok+Web|Muli');
 
 zadanie {
     display: block;
@@ -8,7 +9,7 @@ zadanie {
     margin-top: 1%;
     float: center;
     font-family: "Josefin Sans";
-    background-color: #d8dde6;
+    background-color: white;
 }
 
 
@@ -52,7 +53,7 @@ informacje {
             display: table-row;
         }
 
-            informacje > autorzy > autor > * {
+            informacje + autor > * {
                 display: table-cell;
                 padding-right: 5px;
             }
@@ -63,13 +64,14 @@ liga_piłkarska {
 
 
 klub > nazwa {
-    font-family: monospace;
-    font-size: 15px;
+    font-family: "Archivo Black";
+    font-size: 18px;
     height: 25px;
     font-weight: bold;
     text-align: center;
     display: block;
-    padding-bottom: 3px;
+	padding-top: 5px;
+    padding-bottom: 30px;
 }
 
 klub {
@@ -81,10 +83,20 @@ klub {
     margin: 10px;
     padding: 0.5%;
     float: right;
-    font-size: 10px;
+    font-size: 12px;
     background-color: #33345C;
-    cursor: pointer;
     transition: transform .2s ease-in-out;
+}
+
+klub:hover > nazwa {
+    font-family: monospace;
+    font-size: 15px;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding-bottom: 3px;
+	display: none;
 }
 
 klub:hover {
@@ -96,19 +108,32 @@ klub:hover > stadion {
     display: block;
     margin-top: 15px;
     padding-bottom: 3px;
+	color:#bfd9d9;
 }
+
+
 
 klub:hover > stadion > pojemność {
     padding-top: 5px;
     display: block;
-    color: black;
+    color: #bfd9d9;
 
 }
 
 klub:hover > trener {
     display: block;
     padding-bottom: 3px;
+	color:#eff5f5;
 }
+
+klub:hover > miasto {
+	padding-top: 15px;
+    text-align: center;
+    display: block;
+    text-decoration-line: underline; 
+   
+}
+
 
 liga_piłkarska:before {
     display: block;
