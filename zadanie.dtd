@@ -10,9 +10,9 @@
 <!--główne-->
 <!ELEMENT ligi_piłkarskie (liga_piłkarska)>
 <!ATTLIST liga_piłkarska
-	rok PCDATA #REQUIRED //to zle 
+	rok CDATA #REQUIRED 
 	nazwa ID #REQUIRED
-	kraj PCDATA #REQUIRED
+	kraj CDATA #REQUIRED
 >
 <!ELEMENT liga_piłkarska (kluby,mecze)>
 <!ELEMENT kluby (klub)>

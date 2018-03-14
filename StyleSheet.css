@@ -109,6 +109,7 @@ klub:hover > stadion {
     margin-top: 15px;
     padding-bottom: 3px;
 	color:#bfd9d9;
+    content:attr();
 }
 
 

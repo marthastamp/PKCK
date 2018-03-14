@@ -18,514 +18,661 @@
     </autorzy>
   </informacje>
 
-    <liga_piłkarska rok="2017/2018" nazwa="Premier League" kraj="Anglia">
-      <kluby>
-        <klub klubId="1">
-          <nazwa>Manchester City</nazwa>
-          <miasto>Manchester</miasto>
-          <stadion stadionId="EtihadStadium">
-            <nazwa>Etihad Stadium</nazwa>
-            <pojemność>55017</pojemność>
-          </stadion>
-          <trener>
-            <imię>Pep</imię>
-            <nazwisko>Guardiola</nazwisko>
-            <data_urodzenia>18-01-1971</data_urodzenia>
-            <narodowość>Hiszpania</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>4</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>5</liczba>
-          </tytuły>
-        </klub>
+  <liga_piłkarska rok="2017/2018" nazwa="Premier League" kraj="Anglia">
+    <kluby>
+      <klub klubId="1">
+        <nazwa>Manchester City</nazwa>
+        <miasto>Manchester</miasto>
+        <stadion refid="EtihadStadium"/>
+        <trener>
+          <imię>Pep</imię>
+          <nazwisko>Guardiola</nazwisko>
+          <data_urodzenia>18-01-1971</data_urodzenia>
+          <narodowość>Hiszpania</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>4</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>5</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="2">
-          <nazwa>Manchester United</nazwa>
-          <miasto>Manchester</miasto>
-          <stadion stadionId="OldTrafford">
-            <nazwa>Old Trafford</nazwa>
-            <pojemność>75957</pojemność>
-          </stadion>
-          <trener>
-            <imię>José</imię>
-            <nazwisko>Mourinho</nazwisko>
-            <data_urodzenia>26-01-1963</data_urodzenia>
-            <narodowość>Portugalia</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>20</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>12</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="2">
+        <nazwa>Manchester United</nazwa>
+        <miasto>Manchester</miasto>
+        <stadion refid="OldTrafford"/>
+        <trener>
+          <imię>José</imię>
+          <nazwisko>Mourinho</nazwisko>
+          <data_urodzenia>26-01-1963</data_urodzenia>
+          <narodowość>Portugalia</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>20</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>12</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="3">
-          <nazwa>Arsenal</nazwa>
-          <miasto>Londyn</miasto>
-          <stadion stadionId="EmiratesStadium">
-            <nazwa>Emirates Stadium</nazwa>
-            <pojemność>60361</pojemność>
-          </stadion>
-          <trener>
-            <imię>Arsène</imię>
-            <nazwisko>Wenger</nazwisko>
-            <data_urodzenia>22-10-1949</data_urodzenia>
-            <narodowość>Francja</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>13</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>13</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="3">
+        <nazwa>Arsenal</nazwa>
+        <miasto>Londyn</miasto>
+        <stadion refid="EmiratesStadion"/>
+        <trener>
+          <imię>Arsène</imię>
+          <nazwisko>Wenger</nazwisko>
+          <data_urodzenia>22-10-1949</data_urodzenia>
+          <narodowość>Francja</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>13</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>13</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="4">
-          <nazwa>Chelsea</nazwa>
-          <miasto>Londyn</miasto>
-          <stadion stadionId="StamfordBridge">
-            <nazwa>Stamford Bridge</nazwa>
-            <pojemność>41841</pojemność>
-          </stadion>
-          <trener>
-            <imię>Antonio</imię>
-            <nazwisko>Conte</nazwisko>
-            <data_urodzenia>31-07-1969</data_urodzenia>
-            <narodowość>Włochy</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>6</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>7</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="4">
+        <nazwa>Chelsea</nazwa>
+        <miasto>Londyn</miasto>
+        <stadion refid="StamfordBridge"/>
+        <trener>
+          <imię>Antonio</imię>
+          <nazwisko>Conte</nazwisko>
+          <data_urodzenia>31-07-1969</data_urodzenia>
+          <narodowość>Włochy</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>6</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>7</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="5">
-          <nazwa>Tottenham Hotspur</nazwa>
-          <miasto>Londyn</miasto>
-          <stadion stadionId="WhiteHartLane">
-            <nazwa>White Hart Lane</nazwa>
-            <pojemność>36240</pojemność>
-          </stadion>
-          <trener>
-            <imię>Mauricio</imię>
-            <nazwisko>Pochettino</nazwisko>
-            <data_urodzenia>02-03-1972</data_urodzenia>
-            <narodowość>Argentyna</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>2</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>8</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="5">
+        <nazwa>Tottenham Hotspur</nazwa>
+        <miasto>Londyn</miasto>
+        <stadion refid="StamfordBridge"/>
+        <trener>
+          <imię>Mauricio</imię>
+          <nazwisko>Pochettino</nazwisko>
+          <data_urodzenia>02-03-1972</data_urodzenia>
+          <narodowość>Argentyna</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>2</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>8</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="6">
-          <nazwa>Liverpool FC</nazwa>
-          <miasto>Liverpool</miasto>
-          <stadion stadionId="Anfield">
-            <nazwa>Anfield</nazwa>
-            <pojemność>54074</pojemność>
-          </stadion>
-          <trener>
-            <imię>Jürgen</imię>
-            <nazwisko>Klopp</nazwisko>
-            <data_urodzenia>16-06-1967</data_urodzenia>
-            <narodowość>Niemcy</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>18</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>7</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="6">
+        <nazwa>Liverpool FC</nazwa>
+        <miasto>Liverpool</miasto>
+        <stadion refid="StamfordBridge"/>
+        <trener>
+          <imię>Jürgen</imię>
+          <nazwisko>Klopp</nazwisko>
+          <data_urodzenia>16-06-1967</data_urodzenia>
+          <narodowość>Niemcy</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>18</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>7</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="7">
-          <nazwa>Everton</nazwa>
-          <miasto>Liverpool</miasto>
-          <stadion stadionId="GoodisonPark">
-            <nazwa>Goodison Park</nazwa>
-            <pojemność>40569</pojemność>
-          </stadion>
-          <trener>
-            <imię>Sam</imię>
-            <nazwisko>Allardyce</nazwisko>
-            <data_urodzenia>19-10-1954</data_urodzenia>
-            <narodowość>Anglia</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>9</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>5</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="7">
+        <nazwa>Everton</nazwa>
+        <miasto>Liverpool</miasto>
+        <stadion refid="StamfordBridge"/>
+        <trener>
+          <imię>Sam</imię>
+          <nazwisko>Allardyce</nazwisko>
+          <data_urodzenia>19-10-1954</data_urodzenia>
+          <narodowość>Anglia</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>9</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>5</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="8">
-          <nazwa>Southampton</nazwa>
-          <miasto>Southampton</miasto>
-          <stadion stadionId="MarysStadium">
-            <nazwa>St Mary’s Stadium</nazwa>
-            <pojemność>32689</pojemność>
-          </stadion>
-          <trener>
-            <imię>Mauricio</imię>
-            <nazwisko>Pellegrino</nazwisko>
-            <data_urodzenia>05-10-1971</data_urodzenia>
-            <narodowość>Argentyna</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>0</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>1</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="8">
+        <nazwa>Southampton</nazwa>
+        <miasto>Southampton</miasto>
+        <trener>
+          <imię>Mauricio</imię>
+          <nazwisko>Pellegrino</nazwisko>
+          <data_urodzenia>05-10-1971</data_urodzenia>
+          <narodowość>Argentyna</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>0</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>1</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="9">
-          <nazwa>Bournemouth</nazwa>
-          <miasto>Bournemouth</miasto>
-          <stadion stadionId="DeanCourt">
-            <nazwa>Dean Court</nazwa>
-            <pojemność>11700</pojemność>
-          </stadion>
-          <trener>
-            <imię>Eddie</imię>
-            <nazwisko>Howe</nazwisko>
-            <data_urodzenia>29-11-1977</data_urodzenia>
-            <narodowość>Anglia</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>0</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>0</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="9">
+        <nazwa>Bournemouth</nazwa>
+        <miasto>Bournemouth</miasto>
+        <trener>
+          <imię>Eddie</imię>
+          <nazwisko>Howe</nazwisko>
+          <data_urodzenia>29-11-1977</data_urodzenia>
+          <narodowość>Anglia</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>0</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>0</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="10">
-          <nazwa>West Bromwich Albion</nazwa>
-          <miasto>West Bromwich</miasto>
-          <stadion stadionId="Hawthorns">
-            <nazwa>The Hawthorns</nazwa>
-            <pojemność>26500</pojemność>
-          </stadion>
-          <trener>
-            <imię>Alan</imię>
-            <nazwisko>Pardew</nazwisko>
-            <data_urodzenia>18-07-1961</data_urodzenia>
-            <narodowość>Anglia</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>1</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>5</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="10">
+        <nazwa>West Bromwich Albion</nazwa>
+        <miasto>West Bromwich</miasto>
+        <trener>
+          <imię>Alan</imię>
+          <nazwisko>Pardew</nazwisko>
+          <data_urodzenia>18-07-1961</data_urodzenia>
+          <narodowość>Anglia</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>1</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>5</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="11">
-          <nazwa>West Ham United</nazwa>
-          <miasto>Londyn</miasto>
-          <stadion stadionId="OlympicStadium">
-            <nazwa>Olympic Stadium</nazwa>
-            <pojemność>26500</pojemność>
-          </stadion>
-          <trener>
-            <imię>David</imię>
-            <nazwisko>Moyes</nazwisko>
-            <data_urodzenia>25-04-1963</data_urodzenia>
-            <narodowość>Szkocja</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>0</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>3</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="11">
+        <nazwa>West Ham United</nazwa>
+        <miasto>Londyn</miasto>
+        <trener>
+          <imię>David</imię>
+          <nazwisko>Moyes</nazwisko>
+          <data_urodzenia>25-04-1963</data_urodzenia>
+          <narodowość>Szkocja</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>0</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>3</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="12">
-          <nazwa>Leicester City</nazwa>
-          <miasto>Leicester</miasto>
-          <stadion stadionId="KingPowerStadium">
-            <nazwa>King Power Stadium</nazwa>
-            <pojemność>26500</pojemność>
-          </stadion>
-          <trener>
-            <imię>Claude</imię>
-            <nazwisko>Puel</nazwisko>
-            <data_urodzenia>02-09-1961</data_urodzenia>
-            <narodowość>Francja</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>1</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>0</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="12">
+        <nazwa>Leicester City</nazwa>
+        <miasto>Leicester</miasto>
+        <trener>
+          <imię>Claude</imię>
+          <nazwisko>Puel</nazwisko>
+          <data_urodzenia>02-09-1961</data_urodzenia>
+          <narodowość>Francja</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>1</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>0</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="13">
-          <nazwa>Stoke City</nazwa>
-          <miasto>Stoke-on-Trent</miasto>
-          <stadion stadionId="BritanniaStadium">
-            <nazwa>Britannia Stadium</nazwa>
-            <pojemność>30000</pojemność>
-          </stadion>
-          <trener>
-            <imię>Paul</imię>
-            <nazwisko>Lambert</nazwisko>
-            <data_urodzenia>07-08-1969</data_urodzenia>
-            <narodowość>Szkocja</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>0</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>0</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="13">
+        <nazwa>Stoke City</nazwa>
+        <miasto>Stoke-on-Trent</miasto>
+        <trener>
+          <imię>Paul</imię>
+          <nazwisko>Lambert</nazwisko>
+          <data_urodzenia>07-08-1969</data_urodzenia>
+          <narodowość>Szkocja</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>0</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>0</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="14">
-          <nazwa>Crystal Palace</nazwa>
-          <miasto>Londyn</miasto>
-          <stadion stadionId="SelhurstPark">
-            <nazwa>Selhurst Park</nazwa>
-            <pojemność>26309</pojemność>
-          </stadion>
-          <trener>
-            <imię>Roy</imię>
-            <nazwisko>Hodgson</nazwisko>
-            <data_urodzenia>09-08-1947</data_urodzenia>
-            <narodowość>Anglia</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>0</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>0</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="14">
+        <nazwa>Crystal Palace</nazwa>
+        <miasto>Londyn</miasto>
+        <trener>
+          <imię>Roy</imię>
+          <nazwisko>Hodgson</nazwisko>
+          <data_urodzenia>09-08-1947</data_urodzenia>
+          <narodowość>Anglia</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>0</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>0</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="15">
-          <nazwa>Swansea City</nazwa>
-          <miasto>Swansea</miasto>
-          <stadion stadionId="LibertyStadium">
-            <nazwa>Liberty Stadium</nazwa>
-            <pojemność>20972</pojemność>
-          </stadion>
-          <trener>
-            <imię>Carlos</imię>
-            <nazwisko>Carvalhal</nazwisko>
-            <data_urodzenia>04-12-1965</data_urodzenia>
-            <narodowość>Portugalia</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>0</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>0</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="15">
+        <nazwa>Swansea City</nazwa>
+        <miasto>Swansea</miasto>
+        <trener>
+          <imię>Carlos</imię>
+          <nazwisko>Carvalhal</nazwisko>
+          <data_urodzenia>04-12-1965</data_urodzenia>
+          <narodowość>Portugalia</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>0</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>0</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="16">
-          <nazwa>Burnley FC</nazwa>
-          <miasto>Burnley</miasto>
-          <stadion stadionId="TurfMoor">
-            <nazwa>Turf Moor</nazwa>
-            <pojemność>21401</pojemność>
-          </stadion>
-          <trener>
-            <imię>Sean</imię>
-            <nazwisko>Dyche</nazwisko>
-            <data_urodzenia>28-06-1981</data_urodzenia>
-            <narodowość>Anglia</narodowość>
-			<pensja>12032,52</pensja>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>2</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>1</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="16">
+        <nazwa>Burnley FC</nazwa>
+        <miasto>Burnley</miasto>
+        <trener>
+          <imię>Sean</imię>
+          <nazwisko>Dyche</nazwisko>
+          <data_urodzenia>28-06-1981</data_urodzenia>
+          <narodowość>Anglia</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>2</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>1</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="17">
-          <nazwa>Watford FC</nazwa>
-          <miasto>Watford</miasto>
-          <stadion stadionId="VicarageRoad">
-            <nazwa>Vicarage Road</nazwa>
-            <pojemność>21977</pojemność>
-          </stadion>
-          <trener>
-            <imię>Javi</imię>
-            <nazwisko>Gracia</nazwisko>
-            <data_urodzenia>01-05-1971</data_urodzenia>
-            <narodowość>Hiszpania</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>0</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>0</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="17">
+        <nazwa>Watford FC</nazwa>
+        <miasto>Watford</miasto>
+        <trener>
+          <imię>Javi</imię>
+          <nazwisko>Gracia</nazwisko>
+          <data_urodzenia>01-05-1971</data_urodzenia>
+          <narodowość>Hiszpania</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>0</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>0</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="18">
-          <nazwa>Newcastle United</nazwa>
-          <miasto>Newcastle</miasto>
-          <stadion stadionId="StJamesPark">
-            <nazwa>St James’ Park</nazwa>
-            <pojemność>52354</pojemność>
-          </stadion>
-          <trener>
-            <imię>Rafael</imię>
-            <nazwisko>Benítez</nazwisko>
-            <data_urodzenia>16-04-1960</data_urodzenia>
-            <narodowość>Hiszpania</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>4</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>6</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="18">
+        <nazwa>Newcastle United</nazwa>
+        <miasto>Newcastle</miasto>
+        <trener>
+          <imię>Rafael</imię>
+          <nazwisko>Benítez</nazwisko>
+          <data_urodzenia>16-04-1960</data_urodzenia>
+          <narodowość>Hiszpania</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>4</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>6</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="19">
-          <nazwa>Brighton and Hove Albion</nazwa>
-          <miasto>Brighton</miasto>
-          <stadion stadionId="FalmerStadium">
-            <nazwa>Falmer Stadium</nazwa>
-            <pojemność>30750</pojemność>
-          </stadion>
-          <trener>
-            <imię>Chris</imię>
-            <nazwisko>Hughton</nazwisko>
-            <data_urodzenia>11-12-1958</data_urodzenia>
-            <narodowość>Irlandia</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>0</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>0</liczba>
-          </tytuły>
-        </klub>
+      <klub klubId="19">
+        <nazwa>Brighton and Hove Albion</nazwa>
+        <miasto>Brighton</miasto>
+        <trener>
+          <imię>Chris</imię>
+          <nazwisko>Hughton</nazwisko>
+          <data_urodzenia>11-12-1958</data_urodzenia>
+          <narodowość>Irlandia</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>0</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>0</liczba>
+        </tytuły>
+      </klub>
 
-        <klub klubId="20">
-          <nazwa>Huddersfield Town</nazwa>
-          <miasto>Huddersfield</miasto>
-          <stadion stadionId="JohnSmithsStadium">
-            <nazwa>John Smith’s Stadium</nazwa>
-            <pojemność>24500</pojemność>
-          </stadion>
-          <trener>
-            <imię>David</imię>
-            <nazwisko>Wagner</nazwisko>
-            <data_urodzenia>19-10-1971</data_urodzenia>
-            <narodowość>Niemcy</narodowość>
-          </trener>
-          <tytuły typ="mistrzostwo">
-            <liczba>3</liczba>
-          </tytuły>
-          <tytuły typ="puchar">
-            <liczba>1</liczba>
-          </tytuły>
-        </klub>
-      </kluby>
+      <klub klubId="20">
+        <nazwa>Huddersfield Town</nazwa>
+        <miasto>Huddersfield</miasto>
+        <trener>
+          <imię>David</imię>
+          <nazwisko>Wagner</nazwisko>
+          <data_urodzenia>19-10-1971</data_urodzenia>
+          <narodowość>Niemcy</narodowość>
+        </trener>
+        <tytuły typ="mistrzostwo">
+          <liczba>3</liczba>
+        </tytuły>
+        <tytuły typ="puchar">
+          <liczba>1</liczba>
+        </tytuły>
+      </klub>
+    </kluby>
 
+    <stadiony>
+      <stadion stadionId="EtihadStadium">
+        <nazwa>Etihad Stadium</nazwa>
+        <pojemność>55017</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
 
-      <mecze>
+      <stadion stadionId="OldTrafford">
+        <nazwa>Old Trafford</nazwa>
+        <pojemność>75957</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="EmiratesStadium">
+        <nazwa>Emirates Stadium</nazwa>
+        <pojemność>60361</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="StamfordBridge">
+        <nazwa>Stamford Bridge</nazwa>
+        <pojemność>41841</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="WhiteHartLane">
+        <nazwa>White Hart Lane</nazwa>
+        <pojemność>36240</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="Anfield">
+        <nazwa>Anfield</nazwa>
+        <pojemność>54074</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="GoodisonPark">
+        <nazwa>Goodison Park</nazwa>
+        <pojemność>40569</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="DeanCourt">
+        <nazwa>Dean Court</nazwa>
+        <pojemność>11700</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="MarysStadium">
+        <nazwa>St Mary’s Stadium</nazwa>
+        <pojemność>32689</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="Hawthorns">
+        <nazwa>The Hawthorns</nazwa>
+        <pojemność>26500</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="OlympicStadium">
+        <nazwa>Olympic Stadium</nazwa>
+        <pojemność>26500</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="KingPowerStadium">
+        <nazwa>King Power Stadium</nazwa>
+        <pojemność>26500</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="BritanniaStadium">
+        <nazwa>Britannia Stadium</nazwa>
+        <pojemność>30000</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="SelhurstPark">
+        <nazwa>Selhurst Park</nazwa>
+        <pojemność>26309</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="LibertyStadium">
+        <nazwa>Liberty Stadium</nazwa>
+        <pojemność>20972</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="TurfMoor">
+        <nazwa>Turf Moor</nazwa>
+        <pojemność>21401</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="VicarageRoad">
+        <nazwa>Vicarage Road</nazwa>
+        <pojemność>21977</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="StJamesPark">
+        <nazwa>St James’ Park</nazwa>
+        <pojemność>52354</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="FalmerStadium">
+        <nazwa>Falmer Stadium</nazwa>
+        <pojemność>30750</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+
+      <stadion stadionId="JohnSmithsStadium">
+        <nazwa>John Smith’s Stadium</nazwa>
+        <pojemność>24500</pojemność>
+        <bilet typ="ulgowy">
+          <cena>13.5</cena>
+        </bilet>
+        <bilet typ="normalny">
+          <cena>21.99</cena>
+        </bilet>
+      </stadion>
+    </stadiony>
+
+    <mecze>
 
       <opis>Terminarz spotkań</opis>
 
-          <rząd>
-            <nagł>Gospodarz</nagł>
-            <nagł>Gość</nagł>
-            <nagł>Stadion</nagł>
-            <nagł>Data</nagł>
-          </rząd>
+      <rząd>
+        <nagł>Gospodarz</nagł>
+        <nagł>Gość</nagł>
+        <nagł>Stadion</nagł>
+        <nagł>Data</nagł>
+      </rząd>
 
-JAKO CONTENT
+      JAKO CONTENT
 
-          <rząd>
-            <kom>Huddersfield Town</kom>
-            <kom>Brighton and Hove Albion</kom>
-            <kom>JohnSmithsStadium</kom>
-            <kom>11.03.2018 18:00</kom>
-          </rząd>
+      <rząd>
+        <kom>Huddersfield Town</kom>
+        <kom>Brighton and Hove Albion</kom>
+        <kom>JohnSmithsStadium</kom>
+        <kom>11.03.2018 18:00</kom>
+      </rząd>
 
-          <rząd>
-            <kom>Arsenal</kom>
-            <kom>Watford</kom>
-            <kom>EmiratesStadium</kom>
-            <kom>11.03.2018 14:30</kom>
-          </rząd>
+      <rząd>
+        <kom>Arsenal</kom>
+        <kom>Watford</kom>
+        <kom>EmiratesStadium</kom>
+        <kom>11.03.2018 14:30</kom>
+      </rząd>
 
-          <rząd>
-            <kom>Bournemouth</kom>
-            <kom>Tottenham</kom>
-            <kom>DeanCourt</kom>
-            <kom>11.03.2018 17:00</kom>
-          </rząd>
+      <rząd>
+        <kom>Bournemouth</kom>
+        <kom>Tottenham</kom>
+        <kom>DeanCourt</kom>
+        <kom>11.03.2018 17:00</kom>
+      </rząd>
 
-        <rząd>
-          <kom>Manchester United</kom>
-          <kom>Liverpool</kom>
-          <kom>OldTrafford</kom>
-          <kom>10.03.2018 13:30</kom>
-        </rząd>
+      <rząd>
+        <kom>Manchester United</kom>
+        <kom>Liverpool</kom>
+        <kom>OldTrafford</kom>
+        <kom>10.03.2018 13:30</kom>
+      </rząd>
 
-        <rząd>
-          <kom>Everton</kom>
-          <kom>Brighton and Hove Albion</kom>
-          <kom>GoodisonPark</kom>
-          <kom>10.03.2018 16:00</kom>
-        </rząd>
+      <rząd>
+        <kom>Everton</kom>
+        <kom>Brighton and Hove Albion</kom>
+        <kom>GoodisonPark</kom>
+        <kom>10.03.2018 16:00</kom>
+      </rząd>
 
-        <rząd>
-          <kom>Huddersfield Town</kom>
-          <kom>Swansea</kom>
-          <kom>JohnSmithsStadium</kom>
-          <kom>10.03.2018 16:00</kom>
-        </rząd>
+      <rząd>
+        <kom>Huddersfield Town</kom>
+        <kom>Swansea</kom>
+        <kom>JohnSmithsStadium</kom>
+        <kom>10.03.2018 16:00</kom>
+      </rząd>
 
-        <rząd>
-          <kom>Newcastle</kom>
-          <kom>Southampton</kom>
-          <kom>StJamesPark</kom>
-          <kom>10.03.2018 16:00</kom>
-        </rząd>
+      <rząd>
+        <kom>Newcastle</kom>
+        <kom>Southampton</kom>
+        <kom>StJamesPark</kom>
+        <kom>10.03.2018 16:00</kom>
+      </rząd>
 
-        <rząd>
-          <kom>West Bromwich Albion</kom>
-          <kom>Leicester</kom>
-          <kom>Hawthorns</kom>
-          <kom>10.03.2018 16:00</kom>
-        </rząd>
+      <rząd>
+        <kom>West Bromwich Albion</kom>
+        <kom>Leicester</kom>
+        <kom>Hawthorns</kom>
+        <kom>10.03.2018 16:00</kom>
+      </rząd>
 
-        <rząd>
-          <kom>West Ham United</kom>
-          <kom>Burnley</kom>
-          <kom>OlympicStadium</kom>
-          <kom>10.03.2018 16:00</kom>
-        </rząd>
+      <rząd>
+        <kom>West Ham United</kom>
+        <kom>Burnley</kom>
+        <kom>OlympicStadium</kom>
+        <kom>10.03.2018 16:00</kom>
+      </rząd>
 
-        <rząd>
-          <kom>Chelsea</kom>
-          <kom>Crystal Palace</kom>
-          <kom>StamfordBridge</kom>
-          <kom>10.03.2018 18:30</kom>
-        </rząd>
-      </mecze>
+      <rząd>
+        <kom>Chelsea</kom>
+        <kom>Crystal Palace</kom>
+        <kom>StamfordBridge</kom>
+        <kom>10.03.2018 18:30</kom>
+      </rząd>
+    </mecze>
 
-    </liga_piłkarska>
+  </liga_piłkarska>
 </zadanie>
