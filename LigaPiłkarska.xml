@@ -592,17 +592,26 @@
 
     <mecze>
 
+      <opis>Terminarz spotkań</opis>
+ 
       <rząd>
         <nagł>Gospodarz</nagł>
         <nagł>Gość</nagł>
         <nagł>Stadion</nagł>
         <nagł>Data</nagł>
-      </rząd>
+      </rząd> 
 
+     <!--  JAKO CONTENT -->
 
       <mecz klubId="20 19" stadionId="JohnSmithsStadium">
         <data>11.03.2018 18:00</data>
       </mecz>
+      <rząd>
+        <gospodarz>Huddersfield Town</gospodarz>
+        <gość>Brighton and Hove Albion</gość>
+        <miejsce>JohnSmithsStadium</miejsce>
+        <czas>11.03.2018 18:00</czas>
+      </rząd>
 
       <mecz>
         <kom>Arsenal</kom>

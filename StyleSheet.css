@@ -241,15 +241,24 @@ rząd:hover {
 }
 
 
-nagł, kom {
+
+
+gospodarz, gość, miejsce, czas {
     display: table-cell;
     padding: 0.3em;
     border: 1px solid gray;
     vertical-align: top;
     text-align: center;
+    color: black;
 }
 
+
 nagł {
+    display: table-cell;
+    padding: 0.3em;
+    border: 1px solid gray;
+    vertical-align: top;
+    text-align: center;
     font-weight: bold;
     background: gray;
     color: #fff;
