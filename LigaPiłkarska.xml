@@ -593,84 +593,84 @@
     <mecze>
 
       <opis>Terminarz spotkań</opis>
-
+ 
       <rząd>
         <nagł>Gospodarz</nagł>
         <nagł>Gość</nagł>
         <nagł>Stadion</nagł>
         <nagł>Data</nagł>
-      </rząd>
+      </rząd> 
 
      <!--  JAKO CONTENT -->
 
       <rząd>
-        <kom>Huddersfield Town</kom>
-        <kom>Brighton and Hove Albion</kom>
-        <kom>JohnSmithsStadium</kom>
-        <kom>11.03.2018 18:00</kom>
+        <gospodarz>Huddersfield Town</gospodarz>
+        <gość>Brighton and Hove Albion</gość>
+        <miejsce>JohnSmithsStadium</miejsce>
+        <czas>11.03.2018 18:00</czas>
       </rząd>
 
       <rząd>
-        <kom>Arsenal</kom>
-        <kom>Watford</kom>
-        <kom>EmiratesStadium</kom>
-        <kom>11.03.2018 14:30</kom>
+        <gospodarz>Arsenal</gospodarz>
+        <gość>Watford</gość>
+        <miejsce>EmiratesStadium</miejsce>
+        <czas>11.03.2018 14:30</czas>
       </rząd>
 
       <rząd>
-        <kom>Bournemouth</kom>
-        <kom>Tottenham</kom>
-        <kom>DeanCourt</kom>
-        <kom>11.03.2018 17:00</kom>
+        <gospodarz>Bournemouth</gospodarz>
+        <gość>Tottenham</gość>
+        <miejsce>DeanCourt</miejsce>
+        <czas>11.03.2018 17:00</czas>
       </rząd>
 
       <rząd>
-        <kom>Manchester United</kom>
-        <kom>Liverpool</kom>
-        <kom>OldTrafford</kom>
-        <kom>10.03.2018 13:30</kom>
+        <gospodarz>Manchester United</gospodarz>
+        <gość>Liverpool</gość>
+        <miejsce>OldTrafford</miejsce>
+        <czas>10.03.2018 13:30</czas>
       </rząd>
 
       <rząd>
-        <kom>Everton</kom>
-        <kom>Brighton and Hove Albion</kom>
-        <kom>GoodisonPark</kom>
-        <kom>10.03.2018 16:00</kom>
+        <gospodarz>Everton</gospodarz>
+        <gość>Brighton and Hove Albion</gość>
+        <miejsce>GoodisonPark</miejsce>
+        <czas>10.03.2018 16:00</czas>
       </rząd>
 
       <rząd>
-        <kom>Huddersfield Town</kom>
-        <kom>Swansea</kom>
-        <kom>JohnSmithsStadium</kom>
-        <kom>10.03.2018 16:00</kom>
+        <gospodarz>Huddersfield Town</gospodarz>
+        <gość>Swansea</gość>
+        <miejsce>JohnSmithsStadium</miejsce>
+        <czas>10.03.2018 16:00</czas>
       </rząd>
 
       <rząd>
-        <kom>Newcastle</kom>
-        <kom>Southampton</kom>
-        <kom>StJamesPark</kom>
-        <kom>10.03.2018 16:00</kom>
+        <gospodarz>Newcastle</gospodarz>
+        <gość>Southampton</gość>
+        <miejsce>StJamesPark</miejsce>
+        <czas>10.03.2018 16:00</czas>
       </rząd>
 
       <rząd>
-        <kom>West Bromwich Albion</kom>
-        <kom>Leicester</kom>
-        <kom>Hawthorns</kom>
-        <kom>10.03.2018 16:00</kom>
+        <gospodarz>West Bromwich Albion</gospodarz>
+        <gość>Leicester</gość>
+        <miejsce>Hawthorns</miejsce>
+        <czas>10.03.2018 16:00</czas>
       </rząd>
 
       <rząd>
-        <kom>West Ham United</kom>
-        <kom>Burnley</kom>
-        <kom>OlympicStadium</kom>
-        <kom>10.03.2018 16:00</kom>
+        <gospodarz>West Ham United</gospodarz>
+        <gość>Burnley</gość>
+        <miejsce>OlympicStadium</miejsce>
+        <czas>10.03.2018 16:00</czas>
       </rząd>
 
       <rząd>
-        <kom>Chelsea</kom>
-        <kom>Crystal Palace</kom>
-        <kom>StamfordBridge</kom>
-        <kom>10.03.2018 18:30</kom>
+        <gospodarz>Chelsea</gospodarz>
+        <gość>Crystal Palace</gość>
+        <miejsce>StamfordBridge</miejsce>
+        <czas>10.03.2018 18:30</czas>
       </rząd>
     </mecze>
 
