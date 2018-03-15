@@ -1,4 +1,4 @@
-<!ELEMENT zadanie (informacje,ligi_piłkarskie)>
+<!ELEMENT zadanie (informacje,liga_piłkarska)>
 
 <!--informacje-->
 <!ELEMENT informacje(tytuł+,data*,autorzy+)>
@@ -8,17 +8,17 @@
 <!ELEMENT autorzy (#PCDATA)>
 
 <!--główne-->
-<!ELEMENT ligi_piłkarskie (liga_piłkarska)>
+<!ELEMENT liga_piłkarska (kluby,mecze)>
 <!ATTLIST liga_piłkarska
-	rok CDATA #REQUIRED 
+	rok CDATA #FIXED "Anglia"
 	nazwa ID #REQUIRED
 	kraj CDATA #REQUIRED
 >
-<!ELEMENT liga_piłkarska (kluby,mecze)>
 <!ELEMENT kluby (klub)>
 <!ELEMENT klub (nazwa,miasto,stadion,trener,tytuły)>
 <!ATTLIST klub 
 	klubId ID #REQUIRED
+	refid IDREF #IMPLIED
 >
 <!ELEMENT nazwa (#PCDATA)>
 <!ELEMENT miasto (#PCDATA)>
