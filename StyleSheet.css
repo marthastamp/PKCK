@@ -221,8 +221,6 @@ mecze {
     }
 
 
-
-
 opis {
     display: table-caption;
     text-align: center;
@@ -230,17 +228,6 @@ opis {
     color: gray;
     padding-bottom: 4px;
 }
-
-rząd {
-    display: table-row;
-    color: black;
-}
-
-rząd:hover {
-    background-color: #f5f5f5;
-}
-
-
 
 
 gospodarz, gość, miejsce, czas {
@@ -251,7 +238,6 @@ gospodarz, gość, miejsce, czas {
     text-align: center;
     color: black;
 }
-
 
 nagł {
     display: table-cell;

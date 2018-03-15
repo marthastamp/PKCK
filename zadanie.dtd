@@ -38,7 +38,7 @@
 <!ELEMENT pojemność (#PCDATA)>
 <!ELEMENT bilet typ (ulgowy|normalny)>
 
-<!ELEMENT mecze (mecz)>
+<!ELEMENT mecze (opis, mecz)>
 <!ELEMENT mecz (data)>
 <!ATTLIST mecz
 	klubId IDREFS #IMPLIED
@@ -48,7 +48,7 @@
 
 
 <!--<!ELEMENT opis (#PCDATA)>
-<!ELEMENT rząd (nagł,kom)>
+<!ELEMENT rząd (nagł,czas)>
 <!ELEMENT nagł (#PCDATA)>
-<!ELEMENT kom (#PCDATA)>-->
+<!ELEMENT czas (#PCDATA)>-->
 
