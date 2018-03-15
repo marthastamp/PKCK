@@ -8,7 +8,6 @@
 <!ELEMENT autorzy (#PCDATA)>
 
 <!--główne-->
-<!ELEMENT ligi_piłkarskie (liga_piłkarska)>
 <!ATTLIST liga_piłkarska
 	rok CDATA #REQUIRED 
 	nazwa ID #REQUIRED
@@ -16,17 +15,12 @@
 >
 <!ELEMENT liga_piłkarska (kluby,mecze)>
 <!ELEMENT kluby (klub)>
-<!ELEMENT klub (nazwa,miasto,stadion,trener,tytuły)>
+<!ELEMENT klub (nazwa,miasto,trener,tytuły)>
 <!ATTLIST klub 
 	klubId ID #REQUIRED
 >
 <!ELEMENT nazwa (#PCDATA)>
 <!ELEMENT miasto (#PCDATA)>
-<!ELEMENT stadion (nazwa,pojemność)>
-<!ELEMENT stadion
-	stadionId ID #REQUIRED
->
-<!ELEMENT pojemność (#PCDATA)>
 <!ELEMENT trener (imię,nazwisko,data_urodzenia,narodowość)>
 <!ELEMENT imię (#PCDATA)>
 <!ELEMENT nazwisko (#PCDATA)>
@@ -34,9 +28,24 @@
 <!ELEMENT narodowość (#PCDATA)>
 <!ELEMENT tytuły typ (mistrzostwo|puchar)>
 
-<!ELEMENT mecze (opis,rząd)>
-<!ELEMENT opis (#PCDATA)>
+<!ELEMENT stadion (nazwa,pojemność,bilet)>
+<!ATTLIST stadion
+	stadionId ID #REQUIRED
+>
+<!ELEMENT pojemność (#PCDATA)>
+<!ELEMENT bilet typ (ulgowy|normalny)>
+
+<!ELEMENT mecze (mecz)>
+<!ELEMENT mecz (data)>
+<!ATTLIST mecz
+	klubId IDREFS #IMPLIED
+  stadionId IDREF #IMPLIED
+>
+
+
+
+<!--<!ELEMENT opis (#PCDATA)>
 <!ELEMENT rząd (nagł,kom)>
 <!ELEMENT nagł (#PCDATA)>
-<!ELEMENT kom (#PCDATA)>
+<!ELEMENT kom (#PCDATA)>-->
 

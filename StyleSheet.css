@@ -212,6 +212,17 @@ mecze {
     margin-bottom: 5%;
 }
 
+    mecze mecz {
+        display: table-row;
+        width: 30%;
+        content: attr(klubId) " - " attr(stadionId);
+        padding: 5px;
+        color: gray;
+    }
+
+
+
+
 opis {
     display: table-caption;
     text-align: center;
