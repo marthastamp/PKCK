@@ -141,6 +141,7 @@ klub:hover > stadion > pojemność {
 }
 
 klub:hover > trener {
+    padding-top: 30px;
     display: block;
     padding-bottom: 3px;
 	color:#eff5f5;
