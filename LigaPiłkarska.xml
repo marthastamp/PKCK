@@ -23,7 +23,7 @@
       <klub klubId="1">
         <nazwa>Manchester City</nazwa>
         <miasto>Manchester</miasto>
-        <stadion refid="EtihadStadium"/>
+        <stadion stadionId="EtihadStadium"/>
         <trener>
           <imię>Pep</imię>
           <nazwisko>Guardiola</nazwisko>
@@ -41,7 +41,7 @@
       <klub klubId="2">
         <nazwa>Manchester United</nazwa>
         <miasto>Manchester</miasto>
-        <stadion refid="OldTrafford"/>
+        <stadion stadionId="OldTrafford"/>
         <trener>
           <imię>José</imię>
           <nazwisko>Mourinho</nazwisko>
@@ -59,7 +59,7 @@
       <klub klubId="3">
         <nazwa>Arsenal</nazwa>
         <miasto>Londyn</miasto>
-        <stadion refid="EmiratesStadion"/>
+        <stadion stadionId="EmiratesStadion"/>
         <trener>
           <imię>Arsène</imię>
           <nazwisko>Wenger</nazwisko>
@@ -77,7 +77,7 @@
       <klub klubId="4">
         <nazwa>Chelsea</nazwa>
         <miasto>Londyn</miasto>
-        <stadion refid="StamfordBridge"/>
+        <stadion stadionId="StamfordBridge"/>
         <trener>
           <imię>Antonio</imię>
           <nazwisko>Conte</nazwisko>
@@ -95,7 +95,7 @@
       <klub klubId="5">
         <nazwa>Tottenham Hotspur</nazwa>
         <miasto>Londyn</miasto>
-        <stadion refid="StamfordBridge"/>
+        <stadion stadionId="StamfordBridge"/>
         <trener>
           <imię>Mauricio</imię>
           <nazwisko>Pochettino</nazwisko>
@@ -113,7 +113,7 @@
       <klub klubId="6">
         <nazwa>Liverpool FC</nazwa>
         <miasto>Liverpool</miasto>
-        <stadion refid="StamfordBridge"/>
+        <stadion stadionId="Anfield"/>
         <trener>
           <imię>Jürgen</imię>
           <nazwisko>Klopp</nazwisko>
@@ -131,7 +131,7 @@
       <klub klubId="7">
         <nazwa>Everton</nazwa>
         <miasto>Liverpool</miasto>
-        <stadion refid="StamfordBridge"/>
+        <stadion stadionId="GoodisonPark"/>
         <trener>
           <imię>Sam</imię>
           <nazwisko>Allardyce</nazwisko>
@@ -149,6 +149,7 @@
       <klub klubId="8">
         <nazwa>Southampton</nazwa>
         <miasto>Southampton</miasto>
+        <stadion stadionId="MarysStadium"/>
         <trener>
           <imię>Mauricio</imię>
           <nazwisko>Pellegrino</nazwisko>
@@ -166,6 +167,7 @@
       <klub klubId="9">
         <nazwa>Bournemouth</nazwa>
         <miasto>Bournemouth</miasto>
+        <stadion stadionId="DeanCourt"/>
         <trener>
           <imię>Eddie</imię>
           <nazwisko>Howe</nazwisko>
@@ -183,6 +185,7 @@
       <klub klubId="10">
         <nazwa>West Bromwich Albion</nazwa>
         <miasto>West Bromwich</miasto>
+        <stadion stadionId="Hawthorns"/>
         <trener>
           <imię>Alan</imię>
           <nazwisko>Pardew</nazwisko>
@@ -200,6 +203,7 @@
       <klub klubId="11">
         <nazwa>West Ham United</nazwa>
         <miasto>Londyn</miasto>
+        <stadion stadionId="OlympicStadium"/>
         <trener>
           <imię>David</imię>
           <nazwisko>Moyes</nazwisko>
@@ -217,6 +221,7 @@
       <klub klubId="12">
         <nazwa>Leicester City</nazwa>
         <miasto>Leicester</miasto>
+        <stadion stadionId="KingPowerStadium"/>
         <trener>
           <imię>Claude</imię>
           <nazwisko>Puel</nazwisko>
@@ -234,6 +239,7 @@
       <klub klubId="13">
         <nazwa>Stoke City</nazwa>
         <miasto>Stoke-on-Trent</miasto>
+        <stadion stadionId="BritanniaStadium"/>
         <trener>
           <imię>Paul</imię>
           <nazwisko>Lambert</nazwisko>
@@ -251,6 +257,7 @@
       <klub klubId="14">
         <nazwa>Crystal Palace</nazwa>
         <miasto>Londyn</miasto>
+        <stadion stadionId="SelhurstPark"/>
         <trener>
           <imię>Roy</imię>
           <nazwisko>Hodgson</nazwisko>
@@ -268,6 +275,7 @@
       <klub klubId="15">
         <nazwa>Swansea City</nazwa>
         <miasto>Swansea</miasto>
+        <stadion stadionId="LibertyStadium"/>
         <trener>
           <imię>Carlos</imię>
           <nazwisko>Carvalhal</nazwisko>
@@ -285,6 +293,7 @@
       <klub klubId="16">
         <nazwa>Burnley FC</nazwa>
         <miasto>Burnley</miasto>
+        <stadion stadionId="TurfMoor"/>
         <trener>
           <imię>Sean</imię>
           <nazwisko>Dyche</nazwisko>
@@ -302,6 +311,7 @@
       <klub klubId="17">
         <nazwa>Watford FC</nazwa>
         <miasto>Watford</miasto>
+        <stadion stadionId="VicarageRoad"/>
         <trener>
           <imię>Javi</imię>
           <nazwisko>Gracia</nazwisko>
@@ -319,6 +329,7 @@
       <klub klubId="18">
         <nazwa>Newcastle United</nazwa>
         <miasto>Newcastle</miasto>
+        <stadion stadionId="StJamesPark"/>
         <trener>
           <imię>Rafael</imię>
           <nazwisko>Benítez</nazwisko>
@@ -336,6 +347,7 @@
       <klub klubId="19">
         <nazwa>Brighton and Hove Albion</nazwa>
         <miasto>Brighton</miasto>
+        <stadion stadionId="FalmerStadium"/>
         <trener>
           <imię>Chris</imię>
           <nazwisko>Hughton</nazwisko>
@@ -353,6 +365,7 @@
       <klub klubId="20">
         <nazwa>Huddersfield Town</nazwa>
         <miasto>Huddersfield</miasto>
+        <stadion stadionId="JohnSmithsStadium"/>
         <trener>
           <imię>David</imię>
           <nazwisko>Wagner</nazwisko>
@@ -591,100 +604,46 @@
     </stadiony>
 
     <mecze>
-
-      <!-- <opis>Terminarz spotkań</opis>
-
-      <mecz>
-        <nagł>Gospodarz</nagł>
-        <nagł>Gość</nagł>
-        <nagł>Stadion</nagł>
-        <nagł>Data</nagł>
-      </mecz>  -->
-
-     <!--  JAKO CONTENT trzeba sei zdecydowac -->
-
       <mecz klubId="20 19" stadionId="JohnSmithsStadium">
         <data>11.03.2018 18:00</data>
       </mecz>
 
-      <mecz klubId="4 3" stadionId="Jdududu">
-        <data>11.03.2018 18:00</data>
+      <mecz klubId="3 17" stadionId="EmiratesStadium">
+        <data>11.03.2018 14:30</data>
       </mecz>
 
-
-      <!-- no wszystko super, tylko jak damy dwa id z nazwa klubu obok siebie to nie mzoemy wrzucic miedzy nie czegos w stylu klub1 GRAŁ Z klub 2... :/ -->
-
-      <!-- <mecz>
-        <gospodarz>Huddersfield Town</gospodarz>
-        <gość>Brighton and Hove Albion</gość>
-        <miejsce>JohnSmithsStadium</miejsce>
-        <czas>11.03.2018 18:00</czas>
+      <mecz klubId="9 5" stadionId="DeanCourt">
+        <data>11.03.2018 17:00</data>
       </mecz>
 
-      <mecz>
-        <gospodarz>Arsenal</gospodarz>
-        <gość>Watford</gość>
-        <miejsce>EmiratesStadium</miejsce>
-        <czas>11.03.2018 14:30</czas>
+      <mecz klubId="2 6" stadionId="OldTrafford">
+        <data>10.03.2018 13:30</data>
       </mecz>
 
-      <mecz>
-        <gospodarz>Bournemouth</gospodarz>
-        <gość>Tottenham</gość>
-        <miejsce>DeanCourt</miejsce>
-        <czas>11.03.2018 17:00</czas>
+      <mecz klubId="7 9" stadionId="GoodisonPark">
+        <data>10.03.2018 16:00</data>
       </mecz>
 
-      <mecz>
-        <gospodarz>Manchester United</gospodarz>
-        <gość>Liverpool</gość>
-        <miejsce>OldTrafford</miejsce>
-        <czas>10.03.2018 13:30</czas>
+      <mecz klubId="20 15" stadionId="JohnSmithsStadium">
+        <data>10.03.2018 16:00</data>
       </mecz>
 
-      <mecz>
-        <gospodarz>Everton</gospodarz>
-        <gość>Brighton and Hove Albion</gość>
-        <miejsce>GoodisonPark</miejsce>
-        <czas>10.03.2018 16:00</czas>
+      <mecz klubId="18 8" stadionId="StJamesPark">
+        <data>10.03.2018 16:00</data>
       </mecz>
 
-      <mecz>
-        <gospodarz>Huddersfield Town</gospodarz>
-        <gość>Swansea</gość>
-        <miejsce>JohnSmithsStadium</miejsce>
-        <czas>10.03.2018 16:00</czas>
+      <mecz klubId="10 12" stadionId="Hawthorns">
+        <data>10.03.2018 16:00</data>
       </mecz>
 
-      <mecz>
-        <gospodarz>Newcastle</gospodarz>
-        <gość>Southampton</gość>
-        <miejsce>StJamesPark</miejsce>
-        <czas>10.03.2018 16:00</czas>
+      <mecz klubId="11 16" stadionId="OlympicStadium">
+        <data>10.03.2018 16:00</data>
       </mecz>
 
-      <mecz>
-        <gospodarz>West Bromwich Albion</gospodarz>
-        <gość>Leicester</gość>
-        <miejsce>Hawthorns</miejsce>
-        <czas>10.03.2018 16:00</czas>
+      <mecz klubId="4 14" stadionId="StamfordBridge">
+        <data>10.03.2018 18:30</data>
       </mecz>
-
-      <mecz>
-        <gospodarz>West Ham United</gospodarz>
-        <gość>Burnley</gość>
-        <miejsce>OlympicStadium</miejsce>
-        <czas>10.03.2018 16:00</czas>
-      </mecz>
-
-      <mecz>
-        <gospodarz>Chelsea</gospodarz>
-        <gość>Crystal Palace</gość>
-        <miejsce>StamfordBridge</miejsce>
-        <czas>10.03.2018 18:30</czas>
-      </mecz> -->
-    
-  </mecze>
+    </mecze>
 
   </liga_piłkarska>
 </zadanie>

@@ -53,10 +53,10 @@ informacje {
             display: table-row;
         }
 
-            informacje + autor > * {
-                display: table-cell;
-                padding-right: 5px;
-            }
+    informacje + autor > * {
+        display: table-cell;
+        padding-right: 5px;
+    }
 
 liga_piłkarska {
     color: white;
@@ -70,14 +70,13 @@ klub > nazwa {
     font-weight: bold;
     text-align: center;
     display: block;
-	padding-top: 5px;
+    padding-top: 5px;
     padding-bottom: 30px;
 }
 
 /*zroiblam te legende tak jak mowilam, bo to chyba najlepsze*/
 
 klub:before {
-
     content: 'ID: ' attr(klubId);
     color: pink;
 }
@@ -98,28 +97,28 @@ klub {
     transition: transform .2s ease-in-out;
 }
 
-klub:hover > nazwa {
-    font-family: monospace;
-    font-size: 15px;
-    height: 25px;
-    font-weight: bold;
-    text-align: center;
-    display: block;
-    padding-bottom: 3px;
-	display: none;
-}
+    klub:hover > nazwa {
+        font-family: monospace;
+        font-size: 15px;
+        height: 25px;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        padding-bottom: 3px;
+        display: none;
+    }
 
-klub:hover {
-    transform: scale(1.2);
-    background-color: darkslategrey;
-}
+    klub:hover {
+        transform: scale(1.2);
+        background-color: darkslategrey;
+    }
 
 
-/*Udało sie wyswietlic stadion po id*/
+        /*Udało sie wyswietlic stadion po id*/
 
-/*aaale usunelam stadiony stad po to zeby wyswietlic je nizej w tabeli*/
+        /*aaale usunelam stadiony stad po to zeby wyswietlic je nizej w tabeli*/
 
-/*klub:hover > stadion:before {
+        /*klub:hover > stadion:before {
      content: "Stadion: " attr(refid);
 }
 
@@ -133,27 +132,25 @@ klub:hover > stadion {
 */
 
 
-klub:hover > stadion > pojemność {
-    padding-top: 5px;
-    display: block;
-    color: #bfd9d9;
+        klub:hover > stadion > pojemność {
+            padding-top: 5px;
+            display: block;
+            color: #bfd9d9;
+        }
 
-}
+        klub:hover > trener {
+            padding-top: 30px;
+            display: block;
+            padding-bottom: 3px;
+            color: #eff5f5;
+        }
 
-klub:hover > trener {
-    padding-top: 30px;
-    display: block;
-    padding-bottom: 3px;
-	color:#eff5f5;
-}
-
-klub:hover > miasto {
-	padding-top: 15px;
-    text-align: center;
-    display: block;
-    text-decoration-line: underline; 
-   
-}
+        klub:hover > miasto {
+            padding-top: 15px;
+            text-align: center;
+            display: block;
+            text-decoration-line: underline;
+        }
 
 
 liga_piłkarska:before {
@@ -171,8 +168,7 @@ liga_piłkarska:before {
 klub > miasto {
     text-align: center;
     display: block;
-    text-decoration-line: underline; 
-   
+    text-decoration-line: underline;
 }
 
 klub > stadion {
@@ -192,7 +188,6 @@ klub > tytuły {
     text-align: center;
     display: inline-block;
     margin-top: 5px;
-
     /*display: none;*/
 }
 
@@ -225,11 +220,10 @@ stadiony:before {
     display: block;
     content: "CENY BILETÓW";
     font-family: "Josefin Sans";
-    color: green;
+    color: #33345C;
     text-align: center;
-    font-size: 24px;
-    margin: 5px;
-    padding: 10px;
+    font-size: 27px;
+    /*border-bottom: solid 2px green;*/
     background-color: white;
 }
 
@@ -238,7 +232,7 @@ stadion {
     font-size: 16px;
     font-family: "Josefin Sans";
     color: black;
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     width: 320px;
     height: 120px;
     margin: 10px;
@@ -248,34 +242,46 @@ stadion {
     float: right;
 }
 
-stadion:before {
-    display: inline-block;
-    content: " nazwa stadionu: ";
-    color: red;
-    padding-bottom: 5px;
-}
+    stadion:before {
+        display: inline-block;
+        content: "Nazwa stadionu: ";
+        color: green;
+        padding-bottom: 5px;
+    }
 
-stadion pojemność:before {
+    stadion pojemność:before {
+        display: block;
+        content: "Pojemność: ";
+        color: green;
+    }
+
+    stadion bilet:after {
+        content: " zł ";
+    }
+
+    stadion bilet[typ="ulgowy"]:before {
+        display: block;
+        content: "Cena biletu ulgowego: ";
+        color: green;
+    }
+
+    stadion bilet[typ="normalny"]:before {
+        display: block;
+        content: "Cena biletu normalnego: ";
+        color: green;
+    }
+
+
+mecze:before {
     display: block;
-    content: " pojemność: ";
-    color: red;
-}
-
-stadion bilet:after {
-    content: " zł ";
-    color: black;
-}
-
-stadion bilet[typ="ulgowy"]:before {
-    display: block;
-    content: " cena biletu ulgowego: ";
-    color: red;
-}
-
-stadion bilet[typ="normalny"]:before {
-    display: block;
-    content: " cena biletu normalnego: ";
-    color: red;
+    content: "TERMINARZ";
+    font-family: "Josefin Sans";
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin: 2px;
+    padding: 10px;
+    background-color: #33345C;
 }
 
 mecze {
@@ -287,8 +293,10 @@ mecze {
     margin: 0 auto;
     table-layout: fixed;
     margin-bottom: 5%;
+    color: black;
+    text-align: center;
 }
-/*
+    /*
     mecze mecz {
         display: table-row;
         width: 30%;
@@ -330,21 +338,22 @@ nagł {
 */
 
 
-/*to jest proba zrobienia z tego tabeli, ale mozesz sobie odkomentowac to co wyzej plus
+    /*to jest proba zrobienia z tego tabeli, ale mozesz sobie odkomentowac to co wyzej plus
 to z xml'a no i bedzie to stare*/
 
 
-mecze mecz:before {
+    mecze mecz:before {
         display: table-cell;
         /*width: 80%;*/
         width: 400px;
-        content: "ID klubów [" attr(klubId) "] stadion: " attr(stadionId);
+        content: "ID klubów [" attr(klubId) "] Stadion: " attr(stadionId);
         padding: 5px;
-        color: gray;
-        text-align: center;
         border-bottom: solid 2px green;
-}
+    }
 
+mecz mecz:after {
+    content: "Stadion: " attr(stadionId);
+}
 
 mecze mecz > data:before {
     content: " data meczu: ";
@@ -352,14 +361,11 @@ mecze mecz > data:before {
 
 
 mecze mecz > data {
-        /*width: 70%;*/
-        width: 300px;
-        border-bottom: solid 2px green;
-        display: table-cell;
-        padding-left: 0px;
-        padding-right: 5px;
-        padding-bottom: 5px;
-        color: gray;
-        text-align: center;
-
+    /*width: 70%;*/
+    width: 300px;
+    border-bottom: solid 2px green;
+    display: table-cell;
+    padding-left: 0px;
+    padding-right: 5px;
+    padding-bottom: 5px;
 }

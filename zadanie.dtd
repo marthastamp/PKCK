@@ -18,7 +18,7 @@
 <!ELEMENT klub (nazwa,miasto,trener,tytuły)>
 <!ATTLIST klub 
 	klubId ID #REQUIRED
-	refid IDREF #IMPLIED
+	stadionId IDREF #IMPLIED
 >
 <!ELEMENT nazwa (#PCDATA)>
 <!ELEMENT miasto (#PCDATA)>
