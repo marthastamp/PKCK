@@ -117,7 +117,7 @@ klub:hover {
 /*Udało sie wyswietlic stadion po id*/
 
 klub:hover > stadion:before {
-     content: attr(refid);
+     content: "Stadion: " attr(refid);
 }
 
 klub:hover > stadion {
