@@ -74,6 +74,14 @@ klub > nazwa {
     padding-bottom: 30px;
 }
 
+/*zroiblam te legende tak jak mowilam, bo to chyba najlepsze*/
+
+klub:before {
+
+    content: 'ID: ' attr(klubId);
+    color: pink;
+}
+
 klub {
     margin: 0 auto;
     text-align: center;
@@ -82,6 +90,7 @@ klub {
     width: 230px;
     margin: 10px;
     padding: 0.5%;
+    padding-top: 10px;
     float: right;
     font-size: 12px;
     background-color: #33345C;
@@ -104,13 +113,20 @@ klub:hover {
     background-color: darkslategrey;
 }
 
+
+/*Udało sie wyswietlic stadion po id*/
+
+klub:hover > stadion:before {
+     content: attr(refid);
+}
+
 klub:hover > stadion {
     display: block;
-    margin-top: 15px;
+    margin-top: 10px;
     padding-bottom: 3px;
 	color:#bfd9d9;
-    content:attr();
 }
+
 
 
 
@@ -203,7 +219,7 @@ klub > tytuły[typ="puchar"]:before {
 
 mecze {
     display: table;
-    width: 100%;
+    width: 60%;
     border-collapse: collapse;
     border-spacing: 0;
     border: 5px solid #33345C;
@@ -211,7 +227,7 @@ mecze {
     table-layout: fixed;
     margin-bottom: 5%;
 }
-
+/*
     mecze mecz {
         display: table-row;
         width: 30%;
@@ -249,4 +265,40 @@ nagł {
     background: gray;
     color: #fff;
     font-size: 25px;
+}
+*/
+
+
+/*to jest proba zrobienia z tego tabeli, ale mozesz sobie odkomentowac to co wyzej plus
+to z xml'a no i bedzie to stare*/
+
+
+mecze mecz:before {
+        display: table-cell;
+        /*width: 80%;*/
+        width: 400px;
+        content: "ID klubów [" attr(klubId) "] stadion: " attr(stadionId);
+        padding: 5px;
+        color: gray;
+        text-align: center;
+        border-bottom: solid 2px green;
+}
+
+
+mecze mecz > data:before {
+    content: " data meczu: ";
+}
+
+
+mecze mecz > data {
+        /*width: 70%;*/
+        width: 300px;
+        border-bottom: solid 2px green;
+        display: table-cell;
+        padding-left: 0px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        color: gray;
+        text-align: center;
+
 }

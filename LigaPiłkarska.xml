@@ -592,14 +592,14 @@
 
     <mecze>
 
-      <opis>Terminarz spotkań</opis>
+      <!-- <opis>Terminarz spotkań</opis>
 
       <mecz>
         <nagł>Gospodarz</nagł>
         <nagł>Gość</nagł>
         <nagł>Stadion</nagł>
         <nagł>Data</nagł>
-      </mecz> 
+      </mecz>  -->
 
      <!--  JAKO CONTENT trzeba sei zdecydowac -->
 
@@ -607,7 +607,14 @@
         <data>11.03.2018 18:00</data>
       </mecz>
 
-      <mecz>
+      <mecz klubId="4 3" stadionId="Jdududu">
+        <data>11.03.2018 18:00</data>
+      </mecz>
+
+
+      <!-- no wszystko super, tylko jak damy dwa id z nazwa klubu obok siebie to nie mzoemy wrzucic miedzy nie czegos w stylu klub1 GRAŁ Z klub 2... :/ -->
+
+      <!-- <mecz>
         <gospodarz>Huddersfield Town</gospodarz>
         <gość>Brighton and Hove Albion</gość>
         <miejsce>JohnSmithsStadium</miejsce>
@@ -675,7 +682,7 @@
         <gość>Crystal Palace</gość>
         <miejsce>StamfordBridge</miejsce>
         <czas>10.03.2018 18:30</czas>
-      </mecz>
+      </mecz> -->
     
   </mecze>
 
