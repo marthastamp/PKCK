@@ -89,6 +89,7 @@ klub {
     height: 140px;
     width: 230px;
     margin: 10px;
+    margin-bottom: 15px;
     padding: 0.5%;
     padding-top: 10px;
     float: right;
@@ -116,7 +117,9 @@ klub:hover {
 
 /*Udało sie wyswietlic stadion po id*/
 
-klub:hover > stadion:before {
+/*aaale usunelam stadiony stad po to zeby wyswietlic je nizej w tabeli*/
+
+/*klub:hover > stadion:before {
      content: "Stadion: " attr(refid);
 }
 
@@ -127,7 +130,7 @@ klub:hover > stadion {
 	color:#bfd9d9;
 }
 
-
+*/
 
 
 klub:hover > stadion > pojemność {
@@ -162,7 +165,6 @@ liga_piłkarska:before {
     padding: 2%;
     background-color: #33345C;
 }
-
 
 
 klub > miasto {
@@ -215,6 +217,64 @@ klub > tytuły[typ="mistrzostwo"]:before {
 
 klub > tytuły[typ="puchar"]:before {
     content: "Puchar Anglii: ";
+}
+
+
+stadiony:before {
+    display: block;
+    content: "CENY BILETÓW";
+    font-family: "Josefin Sans";
+    color: green;
+    text-align: center;
+    font-size: 24px;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+stadion {
+    display: block;
+    font-size: 16px;
+    font-family: "Josefin Sans";
+    color: black;
+    border: 1px dotted black;
+    width: 320px;
+    height: 120px;
+    margin: 10px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    float: right;
+}
+
+stadion:before {
+    display: inline-block;
+    content: " nazwa stadionu: ";
+    color: red;
+    padding-bottom: 5px;
+}
+
+stadion pojemność:before {
+    display: block;
+    content: " pojemność: ";
+    color: red;
+}
+
+stadion bilet:after {
+    content: " zł ";
+    color: black;
+}
+
+stadion bilet[typ="ulgowy"]:before {
+    display: block;
+    content: " cena biletu ulgowego: ";
+    color: red;
+}
+
+stadion bilet[typ="normalny"]:before {
+    display: block;
+    content: " cena biletu normalnego: ";
+    color: red;
 }
 
 mecze {
