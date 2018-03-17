@@ -1,19 +1,25 @@
 <!ELEMENT zadanie (informacje,liga_piłkarska)>
 
 <!--informacje-->
+
 <!ELEMENT informacje(tytuł+,data*,autorzy+)>
 <!--może nie mieć daty, ale musi mieć tytuł i autora -->
 <!ELEMENT tytuł (#PCDATA)>
 <!ELEMENT data (#PCDATA)>
+<!ELEMENT autorzy (autor+)>
 <!ELEMENT autorzy (#PCDATA)>
 
 <!--główne-->
-<!ELEMENT liga_piłkarska (kluby,mecze)>
+
+<!ELEMENT liga_piłkarska (kluby,stadiony,mecze)>
 <!ATTLIST liga_piłkarska
 	rok CDATA #FIXED "Anglia"
-	nazwa ID #REQUIRED
+	nazwa ID #FIXED "Premier League"
 	kraj CDATA #REQUIRED
 >
+
+<!--kluby-->
+
 <!ELEMENT kluby (klub)>
 <!ELEMENT klub (nazwa,miasto,trener,tytuły)>
 <!ATTLIST klub 
@@ -31,6 +37,9 @@
 <!ELEMENT liczba (#PCDATA)>
 <!ELEMENT tytuły typ (mistrzostwo|puchar)>
 
+<!--stadiony-->
+
+<!ELEMENT stadiony (stadion+)>
 <!ELEMENT stadion (nazwa,pojemność,bilet)>
 <!ATTLIST stadion
 	stadionId ID #REQUIRED
@@ -38,17 +47,15 @@
 <!ELEMENT pojemność (#PCDATA)>
 <!ELEMENT bilet typ (ulgowy|normalny)>
 
-<!ELEMENT mecze (opis, mecz)>
+<!--mecze-->
+
+<!ELEMENT mecze (mecz+)>
 <!ELEMENT mecz (data)>
 <!ATTLIST mecz
 	klubId IDREFS #IMPLIED
   stadionId IDREF #IMPLIED
 >
+<!ELEMENT data (#PCDATA)>
 
 
-
-<!--<!ELEMENT opis (#PCDATA)>
-<!ELEMENT rząd (nagł,czas)>
-<!ELEMENT nagł (#PCDATA)>
-<!ELEMENT czas (#PCDATA)>-->
 
