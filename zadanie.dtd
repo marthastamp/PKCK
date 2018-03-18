@@ -7,15 +7,16 @@
 <!ELEMENT tytuł (#PCDATA)>
 <!ELEMENT data (#PCDATA)>
 <!ELEMENT autorzy (autor+)>
-<!ELEMENT autorzy (#PCDATA)>
-
+<!ELEMENT autor (dane,email)>
+<!ELEMENT dane (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
 <!--główne-->
 
 <!ELEMENT liga_piłkarska (kluby,stadiony,mecze)>
 <!ATTLIST liga_piłkarska
-	rok CDATA #FIXED "Anglia"
-	nazwa ID #FIXED "Premier League"
-	kraj CDATA #REQUIRED
+	rok CDATA #REQUIRED
+	nazwa ID #REQUIRED 
+	kraj CDATA #FIXED "Anglia"
 >
 
 <!--kluby-->
@@ -35,17 +36,18 @@
 <!ELEMENT narodowość (#PCDATA)>
 <!ELEMENT tytuły (liczba)>
 <!ELEMENT liczba (#PCDATA)>
-<!ELEMENT tytuły typ (mistrzostwo|puchar)>
+<!ELEMENT typ (mistrzostwo|puchar)>
 
 <!--stadiony-->
 
 <!ELEMENT stadiony (stadion+)>
-<!ELEMENT stadion (nazwa,pojemność,bilet)>
 <!ATTLIST stadion
 	stadionId ID #REQUIRED
 >
+<!ELEMENT stadion (nazwa,pojemność,bilet)>
 <!ELEMENT pojemność (#PCDATA)>
-<!ELEMENT bilet typ (ulgowy|normalny)>
+<!ELEMENT bilet (#PCDATA)>
+<!ELEMENT typb (ulgowy|normalny)>
 
 <!--mecze-->
 

@@ -74,8 +74,6 @@ klub > nazwa {
     padding-bottom: 30px;
 }
 
-/*zroiblam te legende tak jak mowilam, bo to chyba najlepsze*/
-
 klub:before {
     content: 'ID: ' attr(klubId);
     color: pink;
@@ -113,23 +111,6 @@ klub {
         background-color: darkslategrey;
     }
 
-
-        /*Udało sie wyswietlic stadion po id*/
-
-        /*aaale usunelam stadiony stad po to zeby wyswietlic je nizej w tabeli*/
-
-        /*klub:hover > stadion:before {
-     content: "Stadion: " attr(refid);
-}
-
-klub:hover > stadion {
-    display: block;
-    margin-top: 10px;
-    padding-bottom: 3px;
-	color:#bfd9d9;
-}
-
-*/
 
 
         klub:hover > stadion > pojemność {
@@ -259,13 +240,13 @@ stadion {
         content: " zł ";
     }
 
-    stadion bilet[typ="ulgowy"]:before {
+    stadion bilet[typb="ulgowy"]:before {
         display: block;
         content: "Cena biletu ulgowego: ";
         color: green;
     }
 
-    stadion bilet[typ="normalny"]:before {
+    stadion bilet[typb="normalny"]:before {
         display: block;
         content: "Cena biletu normalnego: ";
         color: green;
@@ -296,56 +277,12 @@ mecze {
     color: black;
     text-align: center;
 }
-    /*
-    mecze mecz {
-        display: table-row;
-        width: 30%;
-        content: attr(klubId) " - " attr(stadionId);
-        padding: 5px;
-        color: gray;
-    }
+    
 
-
-opis {
-    display: table-caption;
-    text-align: center;
-    font-size: 30px;
-    color: gray;
-    padding-bottom: 4px;
-}
-
-
-gospodarz, gość, miejsce, czas {
-    display: table-cell;
-    padding: 0.3em;
-    border: 1px solid gray;
-    vertical-align: top;
-    text-align: center;
-    color: black;
-}
-
-nagł {
-    display: table-cell;
-    padding: 0.3em;
-    border: 1px solid gray;
-    vertical-align: top;
-    text-align: center;
-    font-weight: bold;
-    background: gray;
-    color: #fff;
-    font-size: 25px;
-}
-*/
-
-
-    /*to jest proba zrobienia z tego tabeli, ale mozesz sobie odkomentowac to co wyzej plus
-to z xml'a no i bedzie to stare*/
-
-
-    mecze mecz:before {
+mecze mecz:before {
         display: table-cell;
         /*width: 80%;*/
-        width: 400px;
+        width: 410px;
         content: "ID klubów [" attr(klubId) "] Stadion: " attr(stadionId);
         padding: 5px;
         border-bottom: solid 2px green;

@@ -18,9 +18,9 @@
     </autorzy>
   </informacje>
 
-  <liga_piłkarska rok="2017/2018" nazwa="Premier League" kraj="Anglia">
+  <liga_piłkarska rok="2017/2018" nazwa="PremierLeague" kraj="Anglia">
     <kluby>
-      <klub klubId="1">
+      <klub klubId="k1">
         <nazwa>Manchester City</nazwa>
         <miasto>Manchester</miasto>
         <stadion stadionId="EtihadStadium"/>
@@ -38,7 +38,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="2">
+      <klub klubId="k2">
         <nazwa>Manchester United</nazwa>
         <miasto>Manchester</miasto>
         <stadion stadionId="OldTrafford"/>
@@ -56,7 +56,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="3">
+      <klub klubId="k3">
         <nazwa>Arsenal</nazwa>
         <miasto>Londyn</miasto>
         <stadion stadionId="EmiratesStadion"/>
@@ -74,7 +74,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="4">
+      <klub klubId="k4">
         <nazwa>Chelsea</nazwa>
         <miasto>Londyn</miasto>
         <stadion stadionId="StamfordBridge"/>
@@ -92,7 +92,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="5">
+      <klub klubId="k5">
         <nazwa>Tottenham Hotspur</nazwa>
         <miasto>Londyn</miasto>
         <stadion stadionId="StamfordBridge"/>
@@ -110,7 +110,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="6">
+      <klub klubId="k6">
         <nazwa>Liverpool FC</nazwa>
         <miasto>Liverpool</miasto>
         <stadion stadionId="Anfield"/>
@@ -128,7 +128,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="7">
+      <klub klubId="k7">
         <nazwa>Everton</nazwa>
         <miasto>Liverpool</miasto>
         <stadion stadionId="GoodisonPark"/>
@@ -146,7 +146,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="8">
+      <klub klubId="k8">
         <nazwa>Southampton</nazwa>
         <miasto>Southampton</miasto>
         <stadion stadionId="MarysStadium"/>
@@ -164,7 +164,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="9">
+      <klub klubId="k9">
         <nazwa>Bournemouth</nazwa>
         <miasto>Bournemouth</miasto>
         <stadion stadionId="DeanCourt"/>
@@ -182,7 +182,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="10">
+      <klub klubId="k10">
         <nazwa>West Bromwich Albion</nazwa>
         <miasto>West Bromwich</miasto>
         <stadion stadionId="Hawthorns"/>
@@ -200,7 +200,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="11">
+      <klub klubId="k11">
         <nazwa>West Ham United</nazwa>
         <miasto>Londyn</miasto>
         <stadion stadionId="OlympicStadium"/>
@@ -218,7 +218,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="12">
+      <klub klubId="k12">
         <nazwa>Leicester City</nazwa>
         <miasto>Leicester</miasto>
         <stadion stadionId="KingPowerStadium"/>
@@ -236,7 +236,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="13">
+      <klub klubId="k13">
         <nazwa>Stoke City</nazwa>
         <miasto>Stoke-on-Trent</miasto>
         <stadion stadionId="BritanniaStadium"/>
@@ -254,7 +254,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="14">
+      <klub klubId="k14">
         <nazwa>Crystal Palace</nazwa>
         <miasto>Londyn</miasto>
         <stadion stadionId="SelhurstPark"/>
@@ -272,7 +272,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="15">
+      <klub klubId="k15">
         <nazwa>Swansea City</nazwa>
         <miasto>Swansea</miasto>
         <stadion stadionId="LibertyStadium"/>
@@ -290,7 +290,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="16">
+      <klub klubId="k16">
         <nazwa>Burnley FC</nazwa>
         <miasto>Burnley</miasto>
         <stadion stadionId="TurfMoor"/>
@@ -308,7 +308,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="17">
+      <klub klubId="k17">
         <nazwa>Watford FC</nazwa>
         <miasto>Watford</miasto>
         <stadion stadionId="VicarageRoad"/>
@@ -326,7 +326,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="18">
+      <klub klubId="k18">
         <nazwa>Newcastle United</nazwa>
         <miasto>Newcastle</miasto>
         <stadion stadionId="StJamesPark"/>
@@ -344,7 +344,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="19">
+      <klub klubId="k19">
         <nazwa>Brighton and Hove Albion</nazwa>
         <miasto>Brighton</miasto>
         <stadion stadionId="FalmerStadium"/>
@@ -362,7 +362,7 @@
         </tytuły>
       </klub>
 
-      <klub klubId="20">
+      <klub klubId="k20">
         <nazwa>Huddersfield Town</nazwa>
         <miasto>Huddersfield</miasto>
         <stadion stadionId="JohnSmithsStadium"/>
@@ -385,10 +385,10 @@
       <stadion stadionId="EtihadStadium">
         <nazwa>Etihad Stadium</nazwa>
         <pojemność>55017</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>13.5</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>21.99</cena>
         </bilet>
       </stadion>
@@ -396,10 +396,10 @@
       <stadion stadionId="OldTrafford">
         <nazwa>Old Trafford</nazwa>
         <pojemność>75957</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>13.9</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>35.67</cena>
         </bilet>
       </stadion>
@@ -407,10 +407,10 @@
       <stadion stadionId="EmiratesStadium">
         <nazwa>Emirates Stadium</nazwa>
         <pojemność>60361</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>13.54</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>24.66</cena>
         </bilet>
       </stadion>
@@ -418,10 +418,10 @@
       <stadion stadionId="StamfordBridge">
         <nazwa>Stamford Bridge</nazwa>
         <pojemność>41841</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>12.40</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>25.00</cena>
         </bilet>
       </stadion>
@@ -429,10 +429,10 @@
       <stadion stadionId="WhiteHartLane">
         <nazwa>White Hart Lane</nazwa>
         <pojemność>36240</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>13.90</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>23.99</cena>
         </bilet>
       </stadion>
@@ -440,10 +440,10 @@
       <stadion stadionId="Anfield">
         <nazwa>Anfield</nazwa>
         <pojemność>54074</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>16.90</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>32.95</cena>
         </bilet>
       </stadion>
@@ -451,10 +451,10 @@
       <stadion stadionId="GoodisonPark">
         <nazwa>Goodison Park</nazwa>
         <pojemność>40569</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>11.50</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>24.50</cena>
         </bilet>
       </stadion>
@@ -462,10 +462,10 @@
       <stadion stadionId="DeanCourt">
         <nazwa>Dean Court</nazwa>
         <pojemność>11700</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>16.20</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>30.95</cena>
         </bilet>
       </stadion>
@@ -473,10 +473,10 @@
       <stadion stadionId="MarysStadium">
         <nazwa>St Mary’s Stadium</nazwa>
         <pojemność>32689</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>11.69</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>25.89</cena>
         </bilet>
       </stadion>
@@ -484,10 +484,10 @@
       <stadion stadionId="Hawthorns">
         <nazwa>The Hawthorns</nazwa>
         <pojemność>26500</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>15.55</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>24.65</cena>
         </bilet>
       </stadion>
@@ -495,10 +495,10 @@
       <stadion stadionId="OlympicStadium">
         <nazwa>Olympic Stadium</nazwa>
         <pojemność>26500</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>13.10</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>21.70</cena>
         </bilet>
       </stadion>
@@ -506,10 +506,10 @@
       <stadion stadionId="KingPowerStadium">
         <nazwa>King Power Stadium</nazwa>
         <pojemność>26500</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>15.70</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>29.90</cena>
         </bilet>
       </stadion>
@@ -517,10 +517,10 @@
       <stadion stadionId="BritanniaStadium">
         <nazwa>Britannia Stadium</nazwa>
         <pojemność>30000</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>18.00</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>37.80</cena>
         </bilet>
       </stadion>
@@ -528,10 +528,10 @@
       <stadion stadionId="SelhurstPark">
         <nazwa>Selhurst Park</nazwa>
         <pojemność>26309</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>13.55</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>24.00</cena>
         </bilet>
       </stadion>
@@ -539,10 +539,10 @@
       <stadion stadionId="LibertyStadium">
         <nazwa>Liberty Stadium</nazwa>
         <pojemność>20972</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>13.66</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>21.30</cena>
         </bilet>
       </stadion>
@@ -550,10 +550,10 @@
       <stadion stadionId="TurfMoor">
         <nazwa>Turf Moor</nazwa>
         <pojemność>21401</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>17.00</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>30.50</cena>
         </bilet>
       </stadion>
@@ -561,10 +561,10 @@
       <stadion stadionId="VicarageRoad">
         <nazwa>Vicarage Road</nazwa>
         <pojemność>21977</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>13.55</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>27.80</cena>
         </bilet>
       </stadion>
@@ -572,10 +572,10 @@
       <stadion stadionId="StJamesPark">
         <nazwa>St James’ Park</nazwa>
         <pojemność>52354</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>12.20</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>28.00</cena>
         </bilet>
       </stadion>
@@ -583,10 +583,10 @@
       <stadion stadionId="FalmerStadium">
         <nazwa>Falmer Stadium</nazwa>
         <pojemność>30750</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>13.59</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>29.50</cena>
         </bilet>
       </stadion>
@@ -594,53 +594,53 @@
       <stadion stadionId="JohnSmithsStadium">
         <nazwa>John Smith’s Stadium</nazwa>
         <pojemność>24500</pojemność>
-        <bilet typ="ulgowy">
+        <bilet typb="ulgowy">
           <cena>11.89</cena>
         </bilet>
-        <bilet typ="normalny">
+        <bilet typb="normalny">
           <cena>24.50</cena>
         </bilet>
       </stadion>
     </stadiony>
 
     <mecze>
-      <mecz klubId="20 19" stadionId="JohnSmithsStadium">
+      <mecz klubId="k20 k19" stadionId="JohnSmithsStadium">
         <data>11.03.2018 18:00</data>
       </mecz>
 
-      <mecz klubId="3 17" stadionId="EmiratesStadium">
+      <mecz klubId="k3 k17" stadionId="EmiratesStadium">
         <data>11.03.2018 14:30</data>
       </mecz>
 
-      <mecz klubId="9 5" stadionId="DeanCourt">
+      <mecz klubId="k9 k5" stadionId="DeanCourt">
         <data>11.03.2018 17:00</data>
       </mecz>
 
-      <mecz klubId="2 6" stadionId="OldTrafford">
+      <mecz klubId="k2 k6" stadionId="OldTrafford">
         <data>10.03.2018 13:30</data>
       </mecz>
 
-      <mecz klubId="7 9" stadionId="GoodisonPark">
+      <mecz klubId="k7 k9" stadionId="GoodisonPark">
         <data>10.03.2018 16:00</data>
       </mecz>
 
-      <mecz klubId="20 15" stadionId="JohnSmithsStadium">
+      <mecz klubId="k20 k15" stadionId="JohnSmithsStadium">
         <data>10.03.2018 16:00</data>
       </mecz>
 
-      <mecz klubId="18 8" stadionId="StJamesPark">
+      <mecz klubId="k18 k8" stadionId="StJamesPark">
         <data>10.03.2018 16:00</data>
       </mecz>
 
-      <mecz klubId="10 12" stadionId="Hawthorns">
+      <mecz klubId="k10 k12" stadionId="Hawthorns">
         <data>10.03.2018 16:00</data>
       </mecz>
 
-      <mecz klubId="11 16" stadionId="OlympicStadium">
+      <mecz klubId="k11 k16" stadionId="OlympicStadium">
         <data>10.03.2018 16:00</data>
       </mecz>
 
-      <mecz klubId="4 14" stadionId="StamfordBridge">
+      <mecz klubId="k4 k14" stadionId="StamfordBridge">
         <data>10.03.2018 18:30</data>
       </mecz>
     </mecze>
