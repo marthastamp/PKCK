@@ -5,7 +5,7 @@
 <!ELEMENT informacje (tytuł+,data*,autorzy+)>
 <!--może nie mieć daty, ale musi mieć tytuł i autora -->
 <!ELEMENT tytuł (#PCDATA)>
-<!ELEMENT data (#PCDATA)>
+<!ELEMENT dataDokumentu (#PCDATA)>
 <!ELEMENT autorzy (autor+)>
 <!ELEMENT autor (dane,email)>
 <!ELEMENT dane (#PCDATA)>
