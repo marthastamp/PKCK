@@ -2,7 +2,7 @@
 
 <!--informacje-->
 
-<!ELEMENT informacje(tytuł+,data*,autorzy+)>
+<!ELEMENT informacje (tytuł+,data*,autorzy+)>
 <!--może nie mieć daty, ale musi mieć tytuł i autora -->
 <!ELEMENT tytuł (#PCDATA)>
 <!ELEMENT data (#PCDATA)>
@@ -58,6 +58,3 @@
   stadionId IDREF #IMPLIED
 >
 <!ELEMENT data (#PCDATA)>
-
-
-

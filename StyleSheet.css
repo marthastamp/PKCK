@@ -7,7 +7,6 @@ zadanie {
     margin: 0 auto;
     width: 1045px;
     margin-top: 1%;
-    float: center;
     font-family: "Josefin Sans";
     background-color: white;
 }
@@ -17,7 +16,6 @@ informacje {
     display: block;
     margin: 0 auto;
     width: 100%;
-    float: center;
     margin-bottom: 3%;
 }
 
@@ -76,7 +74,7 @@ klub > nazwa {
 
 klub:before {
     content: 'ID: ' attr(klubId);
-    color: pink;
+    color: whitesmoke;
 }
 
 klub {
@@ -111,8 +109,6 @@ klub {
         background-color: darkslategrey;
     }
 
-
-
         klub:hover > stadion > pojemność {
             padding-top: 5px;
             display: block;
@@ -128,11 +124,9 @@ klub {
 
         klub:hover > miasto {
             padding-top: 15px;
-            text-align: center;
             display: block;
             text-decoration-line: underline;
         }
-
 
 liga_piłkarska:before {
     display: block;
@@ -145,31 +139,24 @@ liga_piłkarska:before {
     background-color: #33345C;
 }
 
-
 klub > miasto {
-    text-align: center;
     display: block;
     text-decoration-line: underline;
 }
 
 klub > stadion {
     position: relative;
-    /*width: 50%;*/
     height: 30%;
-    text-align: center;
     display: none;
 }
 
 klub > trener {
-    text-align: center;
     display: none;
 }
 
 klub > tytuły {
-    text-align: center;
     display: inline-block;
     margin-top: 5px;
-    /*display: none;*/
 }
 
 klub > miasto:before {
@@ -196,7 +183,6 @@ klub > tytuły[typ="puchar"]:before {
     content: "Puchar Anglii: ";
 }
 
-
 stadiony:before {
     display: block;
     content: "CENY BILETÓW";
@@ -204,7 +190,6 @@ stadiony:before {
     color: #33345C;
     text-align: center;
     font-size: 27px;
-    /*border-bottom: solid 2px green;*/
     background-color: white;
 }
 
@@ -213,7 +198,6 @@ stadion {
     font-size: 16px;
     font-family: "Josefin Sans";
     color: black;
-    /*border: 1px dotted black;*/
     width: 320px;
     height: 120px;
     margin: 10px;
@@ -252,7 +236,6 @@ stadion {
         color: green;
     }
 
-
 mecze:before {
     display: block;
     content: "TERMINARZ";
@@ -277,11 +260,9 @@ mecze {
     color: black;
     text-align: center;
 }
-    
 
-mecze mecz:before {
+    mecze mecz:before {
         display: table-cell;
-        /*width: 80%;*/
         width: 410px;
         content: "ID klubów [" attr(klubId) "] Stadion: " attr(stadionId);
         padding: 5px;
@@ -296,9 +277,7 @@ mecze mecz > data:before {
     content: " data meczu: ";
 }
 
-
 mecze mecz > data {
-    /*width: 70%;*/
     width: 300px;
     border-bottom: solid 2px green;
     display: table-cell;
