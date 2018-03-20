@@ -386,10 +386,10 @@
         <nazwa>Etihad Stadium</nazwa>
         <pojemność>55017</pojemność>
         <bilet typb="ulgowy">
-          <cena>13.5</cena>
+          <cena waluta="GBP">13.5</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>21.99</cena>
+          <cena waluta="GBP">21.99</cena>
         </bilet>
       </stadion>
 
@@ -397,10 +397,10 @@
         <nazwa>Old Trafford</nazwa>
         <pojemność>75957</pojemność>
         <bilet typb="ulgowy">
-          <cena>13.9</cena>
+          <cena waluta="GBP">13.9</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>35.67</cena>
+          <cena waluta="GBP">35.67</cena>
         </bilet>
       </stadion>
 
@@ -408,10 +408,10 @@
         <nazwa>Emirates Stadium</nazwa>
         <pojemność>60361</pojemność>
         <bilet typb="ulgowy">
-          <cena>13.54</cena>
+          <cena waluta="GBP">13.54</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>24.66</cena>
+          <cena waluta="GBP">24.66</cena>
         </bilet>
       </stadion>
 
@@ -419,10 +419,10 @@
         <nazwa>Stamford Bridge</nazwa>
         <pojemność>41841</pojemność>
         <bilet typb="ulgowy">
-          <cena>12.40</cena>
+          <cena waluta="GBP">12.40</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>25.00</cena>
+          <cena waluta="GBP">25.00</cena>
         </bilet>
       </stadion>
 
@@ -430,10 +430,10 @@
         <nazwa>White Hart Lane</nazwa>
         <pojemność>36240</pojemność>
         <bilet typb="ulgowy">
-          <cena>13.90</cena>
+          <cena waluta="GBP">13.90</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>23.99</cena>
+          <cena waluta="GBP">23.99</cena>
         </bilet>
       </stadion>
 
@@ -441,10 +441,10 @@
         <nazwa>Anfield</nazwa>
         <pojemność>54074</pojemność>
         <bilet typb="ulgowy">
-          <cena>16.90</cena>
+          <cena waluta="GBP">16.90</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>32.95</cena>
+          <cena waluta="GBP">32.95</cena>
         </bilet>
       </stadion>
 
@@ -452,10 +452,10 @@
         <nazwa>Goodison Park</nazwa>
         <pojemność>40569</pojemność>
         <bilet typb="ulgowy">
-          <cena>11.50</cena>
+          <cena waluta="GBP">11.50</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>24.50</cena>
+          <cena waluta="GBP">24.50</cena>
         </bilet>
       </stadion>
 
@@ -463,10 +463,10 @@
         <nazwa>Dean Court</nazwa>
         <pojemność>11700</pojemność>
         <bilet typb="ulgowy">
-          <cena>16.20</cena>
+          <cena waluta="GBP">16.20</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>30.95</cena>
+          <cena waluta="GBP">30.95</cena>
         </bilet>
       </stadion>
 
@@ -474,10 +474,10 @@
         <nazwa>St Mary’s Stadium</nazwa>
         <pojemność>32689</pojemność>
         <bilet typb="ulgowy">
-          <cena>11.69</cena>
+          <cena waluta="GBP">11.69</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>25.89</cena>
+          <cena waluta="GBP">25.89</cena>
         </bilet>
       </stadion>
 
@@ -485,10 +485,10 @@
         <nazwa>The Hawthorns</nazwa>
         <pojemność>26500</pojemność>
         <bilet typb="ulgowy">
-          <cena>15.55</cena>
+          <cena waluta="GBP">15.55</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>24.65</cena>
+          <cena waluta="GBP">24.65</cena>
         </bilet>
       </stadion>
 
@@ -496,10 +496,10 @@
         <nazwa>Olympic Stadium</nazwa>
         <pojemność>26500</pojemność>
         <bilet typb="ulgowy">
-          <cena>13.10</cena>
+          <cena waluta="GBP">13.10</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>21.70</cena>
+          <cena waluta="GBP">21.70</cena>
         </bilet>
       </stadion>
 
@@ -507,10 +507,10 @@
         <nazwa>King Power Stadium</nazwa>
         <pojemność>26500</pojemność>
         <bilet typb="ulgowy">
-          <cena>15.70</cena>
+          <cena waluta="GBP">15.70</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>29.90</cena>
+          <cena waluta="GBP">29.90</cena>
         </bilet>
       </stadion>
 
@@ -518,10 +518,10 @@
         <nazwa>Britannia Stadium</nazwa>
         <pojemność>30000</pojemność>
         <bilet typb="ulgowy">
-          <cena>18.00</cena>
+          <cena waluta="GBP">18.00</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>37.80</cena>
+          <cena waluta="GBP">37.80</cena>
         </bilet>
       </stadion>
 
@@ -529,10 +529,10 @@
         <nazwa>Selhurst Park</nazwa>
         <pojemność>26309</pojemność>
         <bilet typb="ulgowy">
-          <cena>13.55</cena>
+          <cena waluta="GBP">13.55</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>24.00</cena>
+          <cena waluta="GBP">24.00</cena>
         </bilet>
       </stadion>
 
@@ -540,10 +540,10 @@
         <nazwa>Liberty Stadium</nazwa>
         <pojemność>20972</pojemność>
         <bilet typb="ulgowy">
-          <cena>13.66</cena>
+          <cena waluta="GBP">13.66</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>21.30</cena>
+          <cena waluta="GBP">21.30</cena>
         </bilet>
       </stadion>
 
@@ -551,10 +551,10 @@
         <nazwa>Turf Moor</nazwa>
         <pojemność>21401</pojemność>
         <bilet typb="ulgowy">
-          <cena>17.00</cena>
+          <cena waluta="GBP">17.00</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>30.50</cena>
+          <cena waluta="GBP">30.50</cena>
         </bilet>
       </stadion>
 
@@ -562,10 +562,10 @@
         <nazwa>Vicarage Road</nazwa>
         <pojemność>21977</pojemność>
         <bilet typb="ulgowy">
-          <cena>13.55</cena>
+          <cena waluta="GBP">13.55</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>27.80</cena>
+          <cena waluta="GBP">27.80</cena>
         </bilet>
       </stadion>
 
@@ -573,10 +573,10 @@
         <nazwa>St James’ Park</nazwa>
         <pojemność>52354</pojemność>
         <bilet typb="ulgowy">
-          <cena>12.20</cena>
+          <cena waluta="GBP">12.20</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>28.00</cena>
+          <cena waluta="GBP">28.00</cena>
         </bilet>
       </stadion>
 
@@ -584,10 +584,10 @@
         <nazwa>Falmer Stadium</nazwa>
         <pojemność>30750</pojemność>
         <bilet typb="ulgowy">
-          <cena>13.59</cena>
+          <cena waluta="GBP">13.59</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>29.50</cena>
+          <cena waluta="GBP">29.50</cena>
         </bilet>
       </stadion>
 
@@ -595,10 +595,10 @@
         <nazwa>John Smith’s Stadium</nazwa>
         <pojemność>24500</pojemność>
         <bilet typb="ulgowy">
-          <cena>11.89</cena>
+          <cena waluta="GBP">11.89</cena>
         </bilet>
         <bilet typb="normalny">
-          <cena>24.50</cena>
+          <cena waluta="GBP">24.50</cena>
         </bilet>
       </stadion>
     </stadiony>
