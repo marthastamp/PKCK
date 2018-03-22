@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/css" href="StyleSheet.css"?>
-<!DOCTYPE zadanie SYSTEM "zadanie.dtd">
+<!-- <?xml-stylesheet type="text/css" href="StyleSheet.css"?>
+<!DOCTYPE zadanie SYSTEM "zadanie.dtd"> -->
 
-<zadanie>
+
+
+<zadanie xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.example.org/zadanie"
+        xsd:schemalocation="http://www.example.org/typy zadanie.xsd">
   <informacje>
     <tytuł>Zadanie pierwsze</tytuł>
     <dataDokumentu>03-03-2018</dataDokumentu>
