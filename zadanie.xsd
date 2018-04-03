@@ -1,0 +1,129 @@
+<xs:schema attributeFormDefault="unqualified" 
+            elementFormDefault="qualified" 
+            xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="zadanie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="informacje">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="tytuł"/>
+              <xs:element type="xs:string" name="dataDokumentu"/>
+              <xs:element name="autorzy">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="autor" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="dane"/>
+                          <xs:element type="xs:string" name="email"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="liga_piłkarska">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kluby">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="klub" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="nazwa"/>
+                          <xs:element type="xs:string" name="miasto"/>
+                          <xs:element name="stadion">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="stadionId" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="trener">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="imię"/>
+                                <xs:element type="xs:string" name="nazwisko"/>
+                                <xs:element type="xs:string" name="data_urodzenia"/>
+                                <xs:element type="xs:string" name="narodowość"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="tytuły" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:byte" name="liczba"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="typ" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="klubId" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="stadiony">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="stadion" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="nazwa"/>
+                          <xs:element type="xs:int" name="pojemność"/>
+                          <xs:element name="bilet" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="cena">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:float">
+                                        <xs:attribute type="xs:string" name="waluta" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="typb" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="stadionId" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="mecze">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="mecz" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="data"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="klubId" use="optional"/>
+                        <xs:attribute type="xs:string" name="stadionId" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="rok"/>
+            <xs:attribute type="xs:string" name="nazwa"/>
+            <xs:attribute type="xs:string" name="kraj"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
