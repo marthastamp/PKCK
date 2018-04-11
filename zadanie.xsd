@@ -61,11 +61,17 @@
                               <xs:sequence>
                                 <xs:element type="xs:byte" name="liczba"/>
                               </xs:sequence>
-                              <xs:attribute type="xs:string" name="typ" use="optional"/>
+                              <xs:attribute type="xs:string" name="typ" use="required"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
                         <xs:attribute type="xs:string" name="klubId" use="optional"/>
+                          <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:enumeration value="mistrzostwo"/>
+                                <xs:enumeration value="puchar"/>
+                              </xs:restriction>
+                          </xs:simpleType>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
