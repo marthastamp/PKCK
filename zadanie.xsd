@@ -1,22 +1,58 @@
-<xs:schema attributeFormDefault="unqualified" 
-            elementFormDefault="qualified" 
-            xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:własny="http://www.example.com/typy">
+
+  <!--- ------coscos------->
+  <xs:simpleType name="LigaPiłkarskaTyp">
+    <xs:attribute name="rok" type="xs:string" />
+    <xs:attribute name="nazwa" type="xs:string" />
+    <xs:attribute name="kraj" type="xs:string" />
+  </xs:simpleType>
+
+
+  <xs:complexType name="KlubTyp">
+    <xs:sequence>
+      <xs:element name="nazwa" type="własny:NazwaTyp" />
+      <xs:element name="miasto" type="własny:MiastoTyp" />
+      <xs:element name="stadion" type="własny:StadionTyp" />
+      <xs:element name="trener" type="własny:TrenerTyp" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="TrenerTyp">
+    <xs:sequence>
+      <xs:element name="imię" type="xs:string" />
+      <xs:element name="nazwisko" type="xs:string" />
+      <xs:element name="data_urodzenia" type="xs:date" />
+      <xs:element name="narodowość" type="xs:string" />
+    </xs:sequence>
+  </xs:simpleType>
+
+  <xs:simpleType name="TytułyTyp">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="mistrzostwo" />
+      <xs:enumeration value="puchar" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--- ------------->
+
   <xs:element name="zadanie">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="informacje">
           <xs:complexType>
             <xs:sequence>
-              <xs:element type="xs:string" name="tytuł"/>
-              <xs:element type="xs:string" name="dataDokumentu"/>
+              <xs:element type="xs:string" name="tytuł" />
+              <xs:element type="xs:string" name="dataDokumentu" />
               <xs:element name="autorzy">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="autor" maxOccurs="unbounded" minOccurs="0">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element type="xs:string" name="dane"/>
-                          <xs:element type="xs:string" name="email"/>
+                          <xs:element type="xs:string" name="dane" />
+                          <xs:element type="xs:string" name="email" />
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
@@ -26,6 +62,8 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+
+
         <xs:element name="liga_piłkarska">
           <xs:complexType>
             <xs:sequence>
@@ -35,13 +73,13 @@
                     <xs:element name="klub" maxOccurs="unbounded" minOccurs="0">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element type="xs:string" name="nazwa"/>
-                          <xs:element type="xs:string" name="miasto"/>
+                          <xs:element type="xs:string" name="nazwa" />
+                          <xs:element type="xs:string" name="miasto" />
                           <xs:element name="stadion">
                             <xs:complexType>
                               <xs:simpleContent>
                                 <xs:extension base="xs:string">
-                                  <xs:attribute type="xs:string" name="stadionId" use="optional"/>
+                                  <xs:attribute type="xs:string" name="stadionId" use="optional" />
                                 </xs:extension>
                               </xs:simpleContent>
                             </xs:complexType>
@@ -49,29 +87,29 @@
                           <xs:element name="trener">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element type="xs:string" name="imię"/>
-                                <xs:element type="xs:string" name="nazwisko"/>
-                                <xs:element type="xs:string" name="data_urodzenia"/>
-                                <xs:element type="xs:string" name="narodowość"/>
+                                <xs:element type="xs:string" name="imię" />
+                                <xs:element type="xs:string" name="nazwisko" />
+                                <xs:element type="xs:string" name="data_urodzenia" />
+                                <xs:element type="xs:string" name="narodowość" />
                               </xs:sequence>
                             </xs:complexType>
                           </xs:element>
                           <xs:element name="tytuły" maxOccurs="unbounded" minOccurs="0">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element type="xs:byte" name="liczba"/>
+                                <xs:element type="xs:byte" name="liczba" />
                               </xs:sequence>
-                              <xs:attribute type="xs:string" name="typ" use="required"/>
+                              <xs:attribute type="xs:string" name="typ" use="required" />
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
-                        <xs:attribute type="xs:string" name="klubId" use="optional"/>
-                          <xs:simpleType>
-                              <xs:restriction base="xs:string">
-                                <xs:enumeration value="mistrzostwo"/>
-                                <xs:enumeration value="puchar"/>
-                              </xs:restriction>
-                          </xs:simpleType>
+                        <xs:attribute type="xs:string" name="klubId" use="optional" />
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:enumeration value="mistrzostwo" />
+                            <xs:enumeration value="puchar" />
+                          </xs:restriction>
+                        </xs:simpleType>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
@@ -83,8 +121,8 @@
                     <xs:element name="stadion" maxOccurs="unbounded" minOccurs="0">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element type="xs:string" name="nazwa"/>
-                          <xs:element type="xs:int" name="pojemność"/>
+                          <xs:element type="xs:string" name="nazwa" />
+                          <xs:element type="xs:int" name="pojemność" />
                           <xs:element name="bilet" maxOccurs="unbounded" minOccurs="0">
                             <xs:complexType>
                               <xs:sequence>
@@ -92,17 +130,17 @@
                                   <xs:complexType>
                                     <xs:simpleContent>
                                       <xs:extension base="xs:float">
-                                        <xs:attribute type="xs:string" name="waluta" use="optional"/>
+                                        <xs:attribute type="xs:string" name="waluta" use="optional" />
                                       </xs:extension>
                                     </xs:simpleContent>
                                   </xs:complexType>
                                 </xs:element>
                               </xs:sequence>
-                              <xs:attribute type="xs:string" name="typb" use="optional"/>
+                              <xs:attribute type="xs:string" name="typb" use="optional" />
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
-                        <xs:attribute type="xs:string" name="stadionId" use="optional"/>
+                        <xs:attribute type="xs:string" name="stadionId" use="optional" />
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
@@ -114,19 +152,19 @@
                     <xs:element name="mecz" maxOccurs="unbounded" minOccurs="0">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element type="xs:string" name="data"/>
+                          <xs:element type="xs:string" name="data" />
                         </xs:sequence>
-                        <xs:attribute type="xs:string" name="klubId" use="optional"/>
-                        <xs:attribute type="xs:string" name="stadionId" use="optional"/>
+                        <xs:attribute type="xs:string" name="klubId" use="optional" />
+                        <xs:attribute type="xs:string" name="stadionId" use="optional" />
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-            <xs:attribute type="xs:string" name="rok"/>
-            <xs:attribute type="xs:string" name="nazwa"/>
-            <xs:attribute type="xs:string" name="kraj"/>
+            <xs:attribute type="xs:string" name="rok" />
+            <xs:attribute type="xs:string" name="nazwa" />
+            <xs:attribute type="xs:string" name="kraj" />
           </xs:complexType>
         </xs:element>
       </xs:sequence>
