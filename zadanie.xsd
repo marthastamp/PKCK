@@ -196,7 +196,7 @@
   <xs:complexType name="MeczTyp">
    <xs:attribute name="klubId" type="własny:KlubIdTyp" use="required"/>
    <xs:attribute name="stadionId" type="xs:string" use="required"/>
-   <xs:element name="data" type="własny:DataTyp" use="required"/>
+   <xs:element name="data" type="xs:dateTime" use="required"/>
   </xs:complexType> 
 
 <!-- stadiony -->
