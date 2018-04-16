@@ -3,6 +3,9 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:własny="http://www.example.com/typy">
 
+<!-- JAK COS TO PISZE OD ZERA BO POLAPANIE SIE W TYM GOTOWCU JEST TRAGICZNE PO PROSTU -->
+
+<!-- ZEBY COS NIE WYBUCHLO TO NA RAZIE GO NIE KOMENTUJE -->
 
 <!-- autorzy -->
 
@@ -34,11 +37,49 @@
 
 <!-- LIGA -->
 
-  <xs:simpleType name="LigaPiłkarskaTyp">
-    <xs:attribute name="rok" type="xs:string"  use="required"/>
-    <xs:attribute name="nazwa" type="xs:string"  use="required"/>
-    <xs:attribute name="kraj" type="xs:string"  use="required"/>
-  </xs:simpleType>
+
+<xs:simpleType name="KrajTyp">
+  <xs:restriction base="string">
+    <xs:maxLength value= "6"/>
+   </xs:restriction> 
+ </xs:simpleType> 
+
+<xs:simpleType name="NazwaTyp">
+  <xs:restriction base="string">
+    <xs:maxLength value ="60"/>
+  </xs:restriction>
+</xs:simpleType>
+
+
+<xs:simpleType name="MiastoTyp">
+  <xs:restriction base="string">
+    <xs:pattern value="\p{Lu}\p{Ll}{1,}"/>
+    <xs:maxLength value ="60"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="StadionTyp">
+  <xs:attribute name="stadionId" type="xs:string" use="required"/>
+</xs:simpleType>
+
+<!-- WSZYSTKIE TYPY STAD DO ZDEFINIOWANIA -->
+
+<xs:complexType name="TrenerTyp">
+  <xs:sequence>
+    <xs:element name="imię" type="własny:imięTyp" use="required" maxOccurs="1"/>
+    <xs:element name="nazwisko" type="własny:nazwiskoTyp" use="required" maxOccurs="1"/>
+    <xs:element name="data_urodzenia" type="własny:data_urodzeniaTyp" use="optional"/>
+    <xs:element name="narodowość" type="własny:narodowośćTyp" use="required"/>
+  </xs:sequence>
+</xs:complexType>  
+
+
+
+<xs:complexType name="LigaPiłkarskaTyp">
+  <xs:attribute name="rok" type="xs:string" use="required" default="2017/2018"/>
+  <xs:attribute name="nazwa" type="własny:NazwaTyp" use="required"/>
+  <xs:attribute name="kraj" type="własny:KrajTyp" use="required"/>
+</xs:complexType>
 
 
   <xs:complexType name="KlubTyp">
@@ -50,7 +91,7 @@
     </xs:sequence>
   </xs:complexType>
 
-  <xs:complexType name="TrenerTyp">
+<!--   <xs:complexType name="TrenerTyp">
     <xs:sequence>
       <xs:element name="imię" type="xs:string" />
       <xs:element name="nazwisko" type="xs:string" />
@@ -58,7 +99,7 @@
       <xs:element name="narodowość" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-
+ -->
   <xs:simpleType name="TytułyTyp">
     <xs:restriction base="xs:string">
         <xs:enumeration value="mistrzostwo" />
