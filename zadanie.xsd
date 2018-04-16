@@ -1,7 +1,8 @@
 <xs:schema  elementFormDefault="qualified" 
-  targetNamespace="https://www.w3schools.com"
+  targetNamespace="http://www.example.org/typy"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:własny="http://www.example.com/typy">
+  xmlns:własny="http://www.example.org/typy"
+ >
 
   <!-- DEFINICJA CAŁEGO DOKUMENTU -->
 
@@ -15,7 +16,9 @@
 <!-- autorzy -->
 
 <xs:complexType name="InformacjeTyp">
-  <xs:element name="autorzy" type="własny:AutorzyTyp"/>
+  <xs:sequence>
+    <xs:element name="autorzy" type="własny:AutorzyTyp"/>
+  </xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="AutorzyTyp">
@@ -56,7 +59,7 @@
     <xs:element name="stadiony" type="własny:StadionyTyp" use="required"/>
     <xs:element name="mecze" type="własny:MeczeTyp" use="required"/>
   </xs:sequence>
-  <xs:attribute name="rok" type="xs:string" use="required" default="2017/2018"/>
+  <xs:attribute name="rok" type="xs:string" use="optional" default="2017/2018"/>
   <xs:attribute name="nazwa" type="własny:NazwaTyp" use="required"/>
   <xs:attribute name="kraj" type="własny:KrajTyp" use="required"/>
 </xs:complexType>
