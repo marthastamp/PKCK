@@ -3,25 +3,16 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:własny="http://www.example.com/typy">
 
-<!-- JAK COS TO PISZE OD ZERA BO POLAPANIE SIE W TYM GOTOWCU JEST TRAGICZNE PO PROSTU -->
+  <!-- DEFINICJA CAŁEGO DOKUMENTU -->
 
-<!-- ZEBY COS NIE WYBUCHLO TO NA RAZIE GO NIE KOMENTUJE -->
+  <xs:complexType name="zadanie">
+    <xs:all>
+      <xs:element name="informacje" type="własny:InformacjeTyp"/>
+      <xs:element name="liga_piłkarska" type="własny:LigaPiłkarskaTyp"/>
+    </xs:all>
+  </xs:complexType>
 
 <!-- autorzy -->
-
-
-<xs:simpleType name="DaneTyp">
-  <xs:restriction base="string">
-    <xs:maxLength value = "30"/>
-  </xs:restriction>
-</xs:simpleType>
-
-
-<xs:simpleType name="EmailTyp">
-  <xs:restriction base="string">
-    <xs:maxLength value= "20"/>
-   </xs:restriction> 
- </xs:simpleType> 
 
 <xs:complexType name="InformacjeTyp">
   <xs:element name="autorzy" type="własny:AutorzyTyp"/>
@@ -41,27 +32,85 @@
   </xs:sequence>
 </xs:complexType>
 
+<xs:simpleType name="DaneTyp">
+  <xs:restriction base="xs:string">
+    <xs:maxLength value = "30"/>
+  </xs:restriction>
+</xs:simpleType>
+
+
+<xs:simpleType name="EmailTyp">
+  <xs:restriction base="xs:string">
+    <xs:maxLength value= "20"/>
+   </xs:restriction> 
+ </xs:simpleType> 
+
 <!-- koniec autorow -->
 
 
 <!-- LIGA -->
 
+<xs:complexType name="LigaPiłkarskaTyp">
+  <xs:sequence>
+    <xs:element name="kluby" type="własny:KlubyTyp" use="required"/>
+    <xs:element name="stadiony" type="własny:StadionyTyp" use="required/">
+    <xs:element name="mecze" type="własny:MeczeTyp" use="required"/>
+  </xs:sequence>
+  <xs:attribute name="rok" type="xs:string" use="required" default="2017/2018"/>
+  <xs:attribute name="nazwa" type="własny:NazwaTyp" use="required"/>
+  <xs:attribute name="kraj" type="własny:KrajTyp" use="required"/>
+</xs:complexType>
+
+
+<xs:simpleType name="KlubyTyp">
+  <xs:element name="klub" type="własny:KlubTyp" use="required" minOccurs="0" maxOccurs="20"/>
+</xs:element>
 
 <xs:simpleType name="KrajTyp">
-  <xs:restriction base="string">
-    <xs:maxLength value= "6"/>
+  <xs:restriction base="xs:string">
+    <xs:maxLength value= "10"/>
    </xs:restriction> 
  </xs:simpleType> 
 
 <xs:simpleType name="NazwaTyp">
-  <xs:restriction base="string">
+  <xs:restriction base="xs:string">
     <xs:maxLength value ="60"/>
   </xs:restriction>
 </xs:simpleType>
 
+<xs:simpleType name="PojemnośćTyp">
+  <xs:restriction base="xs:positiveInteger">
+    <xs:minInclusive value="0"/>
+    <xs:maxInclusive value="1000000"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="BiletTyp">
+  <xs:element name="cena" type="własny:CenaTyp" use="required"/>
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="ulgowy" />
+    <xs:enumeration value="normalny" />
+  </xs:restriction>
+  <xs:attribute name="typb" type="xs:string" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="CenaTyp">
+  <xs:restriction base="xs:decimal">
+    <xs:minInclusive value="0"/>
+    <xs:maxInclusive value="100"/>
+    <xs:pattern value="\d{2}.\d\d"/>
+  </xs:restriction>
+  <xs:attribute name="waluta" type="własny:WalutaTyp" use="required"/>
+</xs:complexType>
+
+<xs:simpleType name="WalutaTyp">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[A-Z][A-Z][A-Z]"/>
+  </xs:restriction>
+</xs:simpleType>
 
 <xs:simpleType name="MiastoTyp">
-  <xs:restriction base="string">
+  <xs:restriction base="xs:string">
     <xs:pattern value="\p{Lu}\p{Ll}{1,}"/>
     <xs:maxLength value ="60"/>
   </xs:restriction>
@@ -69,24 +118,25 @@
 
 
 <xs:simpleType name="ImięTyp">
-   <xs:restriction base="string">
+   <xs:restriction base="xs:string">
     <xs:pattern value="\p{Lu}\p{Ll}{1,}"/>
     <xs:maxLength value ="60"/>
   </xs:restriction>
 </xs:simpleType>
 
 <xs:simpleType name="NazwiskoTyp">
-   <xs:restriction base="string">
+   <xs:restriction base="xs:string">
     <xs:pattern value="\p{Lu}\p{Ll}{1,}"/>
     <xs:maxLength value ="60"/>
   </xs:restriction>
 </xs:simpleType>
 
 <xs:simpleType name="Data_urodzeniaTyp">
+  <!-- tu nie wiem jak te date zdefiniowac bo musialybysmy zmienic wszystkie daty w xml, znaczy ich format wiec jak chcesz -->
 </xs:simpleType>
 
 <xs:simpleType name="NarodowośćTyp">
-   <xs:restriction base="string">
+   <xs:restriction base="xs:string">
     <xs:pattern value="\p{Lu}\p{Ll}{1,}"/>
     <xs:maxLength value ="30"/>
   </xs:restriction>
@@ -113,17 +163,6 @@
 </xs:complexType>  
 
 
-
-<xs:complexType name="LigaPiłkarskaTyp">
-  <xs:sequence>
-    <xs:element name="klub" type="własny:KlubTyp" minOccurs="0" maxOccurs="unbounded"/>
-  </xs:sequence>
-  <xs:attribute name="rok" type="xs:string" use="required" default="2017/2018"/>
-  <xs:attribute name="nazwa" type="własny:NazwaTyp" use="required"/>
-  <xs:attribute name="kraj" type="własny:KrajTyp" use="required"/>
-</xs:complexType>
-
-
   <xs:complexType name="KlubTyp">
     <xs:sequence>
       <xs:element name="nazwa" type="własny:NazwaTyp" />
@@ -133,13 +172,17 @@
     </xs:sequence>
   </xs:complexType>
 
-  <xs:simpleType name="TytułyTyp">
-    <xs:restriction base="xs:string">
-        <xs:enumeration value="mistrzostwo" />
-        <xs:enumeration value="puchar" />
+  <xs:complexType name="TytułyTyp">
+    <xs:element name="liczba" type="xs:integer" use="required"/>
+    <xs:attribute name="typ" type="własny:TypTyp" use="required"/>
+  </xs:complexType>
+
+  <xs:simpleType name="TypTyp">
+    <xs:restriction base="xs:NMTOKEN">
+        <xs:enumeration value="puchar"/>
+        <xs:enumeration value="mistrzostwo"/>
     </xs:restriction>
   </xs:simpleType>
-
 
   <xs:simpleType name="KlubIdTyp">
     <xs:restriction base="xs:string">
@@ -154,17 +197,10 @@
     </xs:choice>
   </xs:complexType> 
 
+<!-- stadiony -->
 
-  <!-- DEFINICJA CAŁEGO DOKUMENTU -->
-
-  <xs:complexType name="zadanie">
-    <xs:all>
-      <xs:element name="informacje" type="własny:InformacjeTyp"/>
-      <xs:element name="liga_piłkarska" type="własny:LigaPiłkarskaTyp"/>
-    </xs:all>
-  </xs:complexType>
-
-
-
+<xs:complexType name="StadionyTyp">
+  <xs:element name="stadion" type="własny:StadionTyp" use="required" minOccurs="0" maxOccurs="unbounded"/>
+</xs:complexType>
 
 </xs:schema>
