@@ -65,9 +65,11 @@
 </xs:complexType>
 
 
-<xs:simpleType name="KlubyTyp">
+<xs:complexType name="KlubyTyp">
+  <xs:sequence>
   <xs:element name="klub" type="własny:KlubTyp" use="required" minOccurs="0" maxOccurs="20"/>
-</xs:simpleType>
+</xs:sequence>
+</xs:complexType>
 
 <xs:simpleType name="KrajTyp">
   <xs:restriction base="xs:string">
@@ -83,13 +85,15 @@
 
 <xs:simpleType name="PojemnośćTyp">
   <xs:restriction base="xs:positiveInteger">
-    <xs:minInclusive value="0"/>
+    <xs:minInclusive value="1"/>
     <xs:maxInclusive value="1000000"/>
   </xs:restriction>
 </xs:simpleType>
 
 <xs:complexType name="BiletTyp">
-  <xs:element name="cena" type="własny:CenaTyp" use="required"/>
+  <xs:sequence>
+    <xs:element name="cena" type="własny:CenaTyp" use="required"/>
+  </xs:sequence>
   <xs:restriction base="xs:string">
     <xs:enumeration value="ulgowy" />
     <xs:enumeration value="normalny" />
@@ -134,10 +138,6 @@
   </xs:restriction>
 </xs:simpleType>
 
-<xs:simpleType name="Data_urodzeniaTyp">
-  <!-- tu nie wiem jak te date zdefiniowac bo musialybysmy zmienic wszystkie daty w xml, znaczy ich format wiec jak chcesz -->
-</xs:simpleType>
-
 <xs:simpleType name="NarodowośćTyp">
    <xs:restriction base="xs:string">
     <xs:pattern value="\p{Lu}\p{Ll}{1,}"/>
@@ -160,7 +160,7 @@
   <xs:sequence>
     <xs:element name="imię" type="własny:ImięTyp" use="required" maxOccurs="1"/>
     <xs:element name="nazwisko" type="własny:NazwiskoTyp" use="required" maxOccurs="1"/>
-    <xs:element name="data_urodzenia" type="własny:Data_urodzeniaTyp" use="optional"/>
+    <xs:element name="data_urodzenia" type="xs:dateTime" use="optional"/>
     <xs:element name="narodowość" type="własny:NarodowośćTyp" use="required"/>
   </xs:sequence>
 </xs:complexType>  
