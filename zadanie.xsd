@@ -4,8 +4,36 @@
   xmlns:własny="http://www.example.com/typy">
 
 
-  <!-- generalne -->
-  <!-- 
+<!-- autorzy -->
+
+
+<xs:simpleType name="DaneTyp">
+  <xs:restriction base="string">
+    <xs:maxLength value = "30"/>
+  </xs:restriction>
+</xs:simpleType>
+
+
+<xs:simpleType name="EmailTyp">
+  <xs:restriction base="string">
+    <xs:maxLength value= "20"/>
+   </xs:restriction> 
+ </xs:simpleType> 
+
+
+
+<xs:complexType name="autorTyp">
+  <xs:sequence>
+    <xs:element name="dane" type="własny:DaneTyp"/>
+    <xs:element name="email" type="własny:EmailTyp"/>
+  </xs:sequence>
+</xs:complexType>
+
+<!-- koniec autorow -->
+
+
+<!-- LIGA -->
+
   <xs:simpleType name="LigaPiłkarskaTyp">
     <xs:attribute name="rok" type="xs:string"  use="required"/>
     <xs:attribute name="nazwa" type="xs:string"  use="required"/>
@@ -50,7 +78,13 @@
       <xs:element name="klubId" minOccurs="2" maxOccurs="2"/>
       <xs:element name="stadionId"/>
     </xs:choice>
-  </xs:complexType> -->
+  </xs:complexType> 
+
+
+
+
+
+
 
 
   <xs:element name="zadanie">
