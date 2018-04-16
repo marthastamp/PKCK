@@ -58,7 +58,37 @@
   </xs:restriction>
 </xs:simpleType>
 
+
+<xs:simpleType name="ImięTyp">
+   <xs:restriction base="string">
+    <xs:pattern value="\p{Lu}\p{Ll}{1,}"/>
+    <xs:maxLength value ="60"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="NazwiskoTyp">
+   <xs:restriction base="string">
+    <xs:pattern value="\p{Lu}\p{Ll}{1,}"/>
+    <xs:maxLength value ="60"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="Data_urodzeniaTyp">
+</xs:simpleType>
+
+<xs:simpleType name="NarodowośćTyp">
+   <xs:restriction base="string">
+    <xs:pattern value="\p{Lu}\p{Ll}{1,}"/>
+    <xs:maxLength value ="30"/>
+  </xs:restriction>
+</xs:simpleType>
+
 <xs:simpleType name="StadionTyp">
+  <xs:sequence>
+    <xs:element name="nazwa" type="własny:NazwaTyp" use="required"/>
+    <xs:element name="pojemność" type="własny:PojemnośćTyp" use="required"/>
+    <xs:element name="bilet" type="własny:BiletTyp" use="required"/>
+  </xs:sequence>
   <xs:attribute name="stadionId" type="xs:string" use="required"/>
 </xs:simpleType>
 
@@ -66,10 +96,10 @@
 
 <xs:complexType name="TrenerTyp">
   <xs:sequence>
-    <xs:element name="imię" type="własny:imięTyp" use="required" maxOccurs="1"/>
-    <xs:element name="nazwisko" type="własny:nazwiskoTyp" use="required" maxOccurs="1"/>
-    <xs:element name="data_urodzenia" type="własny:data_urodzeniaTyp" use="optional"/>
-    <xs:element name="narodowość" type="własny:narodowośćTyp" use="required"/>
+    <xs:element name="imię" type="własny:ImięTyp" use="required" maxOccurs="1"/>
+    <xs:element name="nazwisko" type="własny:NazwiskoTyp" use="required" maxOccurs="1"/>
+    <xs:element name="data_urodzenia" type="własny:Data_urodzeniaTyp" use="optional"/>
+    <xs:element name="narodowość" type="własny:NarodowośćTyp" use="required"/>
   </xs:sequence>
 </xs:complexType>  
 
@@ -108,16 +138,16 @@
   </xs:simpleType>
 
 
-  <xs:simpleType name="klubIdTyp">
+  <xs:simpleType name="KlubIdTyp">
     <xs:restriction base="xs:string">
       <xs:pattern value="[k][0-20]"/>
     </xs:restriction> 
   </xs:simpleType>
 
-  <xs:complexType name="meczTyp">
+  <xs:complexType name="MeczTyp">
     <xs:choice>
-      <xs:element name="klubId" minOccurs="2" maxOccurs="2"/>
-      <xs:element name="stadionId"/>
+      <xs:element name="klubId" type="własny:KlubIdTyp" minOccurs="2" maxOccurs="2"/>
+      <xs:element name="stadionId" type="xs:string"/>
     </xs:choice>
   </xs:complexType> 
 
