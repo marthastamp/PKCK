@@ -6,9 +6,8 @@
 <zadanie xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://www.example.org/zadanie"
          xsd:schemalocation="http://www.example.org/typy zadanie.xsd">
+
   <informacje>
-    <tytuł>Zadanie pierwsze</tytuł>
-    <dataDokumentu>03-03-2018</dataDokumentu>
     <autorzy>
       <autor>
         <dane>Martyna Jasiak</dane>
@@ -647,6 +646,6 @@
         <data>10.03.2018 18:30</data>
       </mecz>
     </mecze>
-
   </liga_piłkarska>
+
 </zadanie>
