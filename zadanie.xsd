@@ -5,7 +5,7 @@
 
   <!-- DEFINICJA CAŁEGO DOKUMENTU -->
 
-  <xs:complexType name="zadanie">
+  <xs:complexType name="ZadanieTyp">
     <xs:all>
       <xs:element name="informacje" type="własny:InformacjeTyp"/>
       <xs:element name="liga_piłkarska" type="własny:LigaPiłkarskaTyp"/>
@@ -167,7 +167,7 @@
     <xs:sequence>
       <xs:element name="nazwa" type="własny:NazwaTyp" />
       <xs:element name="miasto" type="własny:MiastoTyp" />
-      <xs:element name="stadion" type="własny:StadionTyp" />
+      <xs:element name="stadion" type="xs:string" />
       <xs:element name="trener" type="własny:TrenerTyp" />
     </xs:sequence>
   </xs:complexType>
@@ -191,10 +191,9 @@
   </xs:simpleType>
 
   <xs:complexType name="MeczTyp">
-    <xs:choice>
-      <xs:element name="klubId" type="własny:KlubIdTyp" minOccurs="2" maxOccurs="2"/>
-      <xs:element name="stadionId" type="xs:string"/>
-    </xs:choice>
+   <xs:attribute name="klubId" type="własny:KlubIdTyp" use="required"/>
+   <xs:attribute name="stadionId" type="xs:string" use="required"/>
+   <xs:element name="data" type="własny:DataTyp" use="required"/>
   </xs:complexType> 
 
 <!-- stadiony -->
@@ -202,5 +201,33 @@
 <xs:complexType name="StadionyTyp">
   <xs:element name="stadion" type="własny:StadionTyp" use="required" minOccurs="0" maxOccurs="unbounded"/>
 </xs:complexType>
+
+
+<!-- mecze -->
+
+<xs:complexType name="MeczeTyp">
+  <xs:element name="mecz" type="własny:MeczTyp" use="required"/ minOccurs="0" maxOccurs="unbounded"/>
+</xs:complexType>
+
+<xs:element name="zadanie" type="własny:ZadanieTyp">
+      <xs:key name="klubIdKEY">
+          <xs:selector xpath="własny:liga_piłkarska/własny:kluby/własny:klub"/>
+          <xs:field xpath="@klubId"/>
+      </xs:key>
+      <xs:key name="stadionIdKEY">
+          <xs:selector xpath="własny:liga_piłkarska/własny:kluby/własny:klub/własny:stadion"/>
+          <xs:field xpath="@stadionId"/>
+      </xs:key>
+      
+      <xs:keyref name="klubIdKEYREF" refer="własny:klubIdKEY">
+          <xs:selector xpath="własny:liga_piłkarska/własny:mecze/własny:mecz"/>
+          <xs:field xpath="@klubId"/>
+      </xs:keyref>
+      <xs:keyref name="stadionIdKEYREF" refer="własny:stadionIdKEY">
+          <xs:selector xpath="własny:liga_piłkarska/własny:mecze/własny:mecz"/>
+          <xs:field xpath="@stadionId"/>
+      </xs:keyref>
+</xs:element>
+
 
 </xs:schema>
