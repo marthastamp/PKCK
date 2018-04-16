@@ -160,7 +160,7 @@
   <xs:sequence>
     <xs:element name="imię" type="własny:ImięTyp" use="required" maxOccurs="1"/>
     <xs:element name="nazwisko" type="własny:NazwiskoTyp" use="required" maxOccurs="1"/>
-    <xs:element name="data_urodzenia" type="xs:dateTime" use="optional"/>
+    <xs:element name="data_urodzenia" type="xs:date" use="optional"/>
     <xs:element name="narodowość" type="własny:NarodowośćTyp" use="required"/>
   </xs:sequence>
 </xs:complexType>  
@@ -181,7 +181,7 @@
   </xs:complexType>
 
   <xs:simpleType name="TypTyp">
-    <xs:restriction base="xs:NMTOKEN">
+    <xs:restriction base="xs:string">
         <xs:enumeration value="puchar"/>
         <xs:enumeration value="mistrzostwo"/>
     </xs:restriction>
