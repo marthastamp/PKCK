@@ -94,12 +94,15 @@
   <xs:sequence>
     <xs:element name="cena" type="własny:CenaTyp" use="required"/>
   </xs:sequence>
+  <xs:attribute name="typb" type="własny:TypbTyp" use="required"/>
+</xs:complexType>
+
+<xs:simpleType name="TypbTyp">
   <xs:restriction base="xs:string">
     <xs:enumeration value="ulgowy" />
     <xs:enumeration value="normalny" />
   </xs:restriction>
-  <xs:attribute name="typb" type="xs:string" use="required"/>
-</xs:complexType>
+</xs:simpleType>
 
 <xs:complexType name="CenaTyp">
   <xs:restriction base="xs:decimal">
