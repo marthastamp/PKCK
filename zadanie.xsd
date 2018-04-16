@@ -25,7 +25,7 @@
 
 <xs:complexType name="InformacjeTyp">
   <xs:element name="autorzy" type="własny:AutorzyTyp"/>
-</xs:complex>
+</xs:complexType>
 
 <xs:complexType name="AutorzyTyp">
   <xs:choice>
@@ -115,6 +115,9 @@
 
 
 <xs:complexType name="LigaPiłkarskaTyp">
+  <xs:sequence>
+    <xs:element name="klub" type="własny:KlubTyp" minOccurs="0" maxOccurs="unbounded"/>
+  </xs:sequence>
   <xs:attribute name="rok" type="xs:string" use="required" default="2017/2018"/>
   <xs:attribute name="nazwa" type="własny:NazwaTyp" use="required"/>
   <xs:attribute name="kraj" type="własny:KrajTyp" use="required"/>
