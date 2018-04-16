@@ -3,7 +3,9 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:własny="http://www.example.com/typy">
 
-  <!--- ------coscos------->
+
+  <!-- generalne -->
+  <!-- 
   <xs:simpleType name="LigaPiłkarskaTyp">
     <xs:attribute name="rok" type="xs:string"  use="required"/>
     <xs:attribute name="nazwa" type="xs:string"  use="required"/>
@@ -31,12 +33,25 @@
 
   <xs:simpleType name="TytułyTyp">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="mistrzostwo" />
-      <xs:enumeration value="puchar" />
+        <xs:enumeration value="mistrzostwo" />
+        <xs:enumeration value="puchar" />
     </xs:restriction>
   </xs:simpleType>
 
-  <!--- ------------->
+
+  <xs:simpleType name="klubIdTyp">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[k][0-20]"/>
+    </xs:restriction> 
+  </xs:simpleType>
+
+  <xs:complexType name="meczTyp">
+    <xs:choice>
+      <xs:element name="klubId" minOccurs="2" maxOccurs="2"/>
+      <xs:element name="stadionId"/>
+    </xs:choice>
+  </xs:complexType> -->
+
 
   <xs:element name="zadanie">
     <xs:complexType>
