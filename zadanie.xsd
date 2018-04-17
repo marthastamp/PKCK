@@ -1,25 +1,27 @@
-<xs:schema  elementFormDefault="qualified" 
+<xs:schema elementFormDefault="qualified" 
   targetNamespace="http://www.example.org/typy"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:własny="http://www.example.org/typy"
  >
 
   <!-- DEFINICJA CAŁEGO DOKUMENTU -->
-
-  <xs:complexType name="ZadanieTyp">
+<xs:element name="ZadanieTyp">
+  <xs:complexType>
     <xs:all>
-      <xs:element name="informacje" type="własny:InformacjeTyp"/>
-      <xs:element name="liga_piłkarska" type="własny:LigaPiłkarskaTyp"/>
+      <xs:element ref="własny:InformacjeTyp"/>
+      <xs:element ref="własny:LigaPiłkarskaTyp"/>
     </xs:all>
   </xs:complexType>
+</xs:element>
 
 <!-- autorzy -->
-
-<xs:complexType name="InformacjeTyp">
-  <xs:sequence>
+<xs:element name="InformacjeTyp">
+<xs:complexType>
+  <xs:all>
     <xs:element name="autorzy" type="własny:AutorzyTyp"/>
-  </xs:sequence>
+  </xs:all>
 </xs:complexType>
+</xs:element>
 
 <xs:complexType name="AutorzyTyp">
   <xs:choice>
@@ -53,21 +55,23 @@
 
 <!-- LIGA -->
 
-<xs:complexType name="LigaPiłkarskaTyp">
-  <xs:sequence>
-    <xs:element name="kluby" type="własny:KlubyTyp" use="required"/>
-    <xs:element name="stadiony" type="własny:StadionyTyp" use="required"/>
-    <xs:element name="mecze" type="własny:MeczeTyp" use="required"/>
-  </xs:sequence>
+<xs:element name="LigaPiłkarskaTyp">
+  <xs:complexType>
+  <xs:all>
+    <xs:element name="kluby" type="własny:KlubyTyp"/>
+    <xs:element ref="własny:StadionyTyp"/>
+    <xs:element ref="własny:MeczeTyp"/>
+  </xs:all>
   <xs:attribute name="rok" type="xs:string" use="optional" default="2017/2018"/>
   <xs:attribute name="nazwa" type="własny:NazwaTyp" use="required"/>
   <xs:attribute name="kraj" type="własny:KrajTyp" use="required"/>
 </xs:complexType>
+</xs:element>
 
 
 <xs:complexType name="KlubyTyp">
   <xs:sequence>
-  <xs:element name="klub" type="własny:KlubTyp" use="required" minOccurs="0" maxOccurs="20"/>
+  <xs:element name="klub" type="własny:KlubTyp" minOccurs="0" maxOccurs="20"/>
 </xs:sequence>
 </xs:complexType>
 
@@ -92,7 +96,7 @@
 
 <xs:complexType name="BiletTyp">
   <xs:sequence>
-    <xs:element name="cena" type="własny:CenaTyp" use="required"/>
+    <xs:element ref="własny:CenaTyp"/>
   </xs:sequence>
   <xs:attribute name="typb" type="własny:TypbTyp" use="required"/>
 </xs:complexType>
@@ -104,14 +108,15 @@
   </xs:restriction>
 </xs:simpleType>
 
-<xs:simpleType name="CenaTyp">
-  <xs:restriction base="xs:decimal">
-    <xs:minInclusive value="0"/>
-    <xs:maxInclusive value="99.99"/>
-    <xs:pattern value="\d{2}.\d\d"/>
-  </xs:restriction>
-  <xs:attribute name="waluta" type="własny:WalutaTyp" use="required"/>
-</xs:simpleType>
+<xs:element name="CenaTyp">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+         <xs:attribute name="waluta" type="własny:WalutaTyp" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:element>
 
 <xs:simpleType name="WalutaTyp">
   <xs:restriction base="xs:string">
@@ -150,9 +155,9 @@
 
 <xs:complexType name="StadionTyp">
   <xs:sequence>
-    <xs:element name="nazwa" type="własny:NazwaTyp" use="required"/>
-    <xs:element name="pojemność" type="własny:PojemnośćTyp" use="required"/>
-    <xs:element name="bilet" type="własny:BiletTyp" use="required"/>
+    <xs:element name="nazwa" type="własny:NazwaTyp"/>
+    <xs:element name="pojemność" type="własny:PojemnośćTyp"/>
+    <xs:element name="bilet" type="własny:BiletTyp"/>
   </xs:sequence>
   <xs:attribute name="stadionId" type="xs:string" use="required"/>
 </xs:complexType>
@@ -161,10 +166,10 @@
 
 <xs:complexType name="TrenerTyp">
   <xs:sequence>
-    <xs:element name="imię" type="własny:ImięTyp" use="required" maxOccurs="1"/>
-    <xs:element name="nazwisko" type="własny:NazwiskoTyp" use="required" maxOccurs="1"/>
-    <xs:element name="data_urodzenia" type="xs:date" use="optional"/>
-    <xs:element name="narodowość" type="własny:NarodowośćTyp" use="required"/>
+    <xs:element name="imię" type="własny:ImięTyp" maxOccurs="1"/>
+    <xs:element name="nazwisko" type="własny:NazwiskoTyp" maxOccurs="1"/>
+    <xs:element name="data_urodzenia" type="xs:date"/>
+    <xs:element name="narodowość" type="własny:NarodowośćTyp"/>
   </xs:sequence>
 </xs:complexType>  
 
@@ -180,9 +185,9 @@
 
   <xs:complexType name="TytułyTyp">
     <xs:sequence>
-      <xs:element name="liczba" type="xs:integer" use="required"/>
-      <xs:attribute name="typ" type="własny:TypTyp" use="required"/>
+      <xs:element name="liczba" type="xs:integer"/>
     </xs:sequence>
+    <xs:attribute name="typ" type="własny:TypTyp" use="required"/>
   </xs:complexType>
 
   <xs:simpleType name="TypTyp">
@@ -198,26 +203,41 @@
     </xs:restriction> 
   </xs:simpleType>
 
-  <xs:complexType name="MeczTyp">
-   <xs:attribute name="klubId" type="własny:KlubIdTyp" use="required"/>
-   <xs:attribute name="stadionId" type="xs:string" use="required"/>
-   <xs:element name="data" type="xs:dateTime" use="required"/>
+<xs:attributeGroup name="meczAtr">
+  <xs:attribute name="klubId" type="własny:KlubIdTyp" use="required"/>
+  <xs:attribute name="stadionId" type="xs:string" use="required"/>
+</xs:attributeGroup>
+
+<xs:element name="MeczTyp">
+  <xs:complexType>
+    <xs:sequence>
+       <xs:element name="data" type="xs:dateTime"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="własny:meczAtr"/>
   </xs:complexType> 
+</xs:element> 
 
 <!-- stadiony -->
 
-<xs:complexType name="StadionyTyp">
-  <xs:element name="stadion" type="własny:StadionTyp" use="required" minOccurs="0" maxOccurs="unbounded"/>
-</xs:complexType>
+<xs:element name="StadionyTyp">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="stadion" type="własny:StadionTyp" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
 
 
 <!-- mecze -->
+<xs:element name="MeczeTyp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="własny:MeczTyp" minOccurs="0" maxOccurs="unbounded"/> 
+      </xs:sequence>
+    </xs:complexType>
+</xs:element>
 
-<xs:complexType name="MeczeTyp">
-  <xs:element name="mecz" type="własny:MeczTyp" use="required" minOccurs="0" maxOccurs="unbounded"/>
-</xs:complexType>
-
-<xs:element name="zadanie" type="własny:ZadanieTyp">
+<xs:element name="zadanie">
       <xs:key name="klubIdKEY">
           <xs:selector xpath="własny:liga_piłkarska/własny:kluby/własny:klub"/>
           <xs:field xpath="@klubId"/>
@@ -236,6 +256,5 @@
           <xs:field xpath="@stadionId"/>
       </xs:keyref>
 </xs:element>
-
 
 </xs:schema>
