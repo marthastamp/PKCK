@@ -40,10 +40,13 @@
 			<xsl:element name="klub">
 				<xsl:value-of select="concat($klubVAR/nazwa, ' ', $klubVAR/miasto)"/>
 			</xsl:element>
-		<xsl:variable name="stadionVAR" select="key('stadionIdKEY', @stadionId)"/>
-		<xsl:element name="stadion">
-			<xsl:value-of select="concat($stadionVAR/nazwa, ' (', $stadionVAR/pojemność, ') ')"/>
-		</xsl:element>
+			<xsl:variable name="stadionVAR" select="key('stadionIdKEY', @stadionId)"/>
+			<xsl:element name="stadion">
+				<xsl:value-of select="concat($stadionVAR/nazwa, ' pojemność: ', $stadionVAR/pojemność)"/>
+			</xsl:element>
+			<xsl:element name="dataMeczu">
+				<xsl:value-of select="data"/>
+			</xsl:element>
 		</xsl:element>
 </xsl:template>			
 
