@@ -8,17 +8,45 @@
                 omit-xml-declaration="no"
                 indent="yes"/>
                 
+<xsl:key name="klubIdKEY" match="//liga_piłkarska/kluby/klub" use="@klubId"/>
+<xsl:key name="stadionIdKEY" match="//liga_piłkarska/stadiony/stadion" use="@stadionId"/>
+
 <xsl:template match="/">
 		<xsl:element name="zadanie">
 			<xsl:call-template name="informacje"/>
+			<xsl:apply-templates select="zadanie/liga_piłkarska/mecze"/>
 			<xsl:call-template name="Podsumowanie"/>
 		</xsl:element>
 	</xsl:template>    
     
+<xsl:template match="kluby"/>
+<xsl:template match="stadiony"/>   
+
+
 <xsl:template match="//informacje" name="informacje">
 		<xsl:copy-of select="//informacje"/>
 	</xsl:template>    
-					    
+			
+<xsl:template match="zadanie/liga_piłkarska/mecze">
+		<xsl:element name="mecze">
+			<xsl:apply-templates select="mecz"/>
+		</xsl:element>
+	</xsl:template>
+
+
+<xsl:template match="zadanie/liga_piłkarska/mecze/mecz">
+		<xsl:element name="mecz">
+			<xsl:variable name="klubVAR" select="key('klubIdKEY', @klubId)"/>
+			<xsl:element name="klub">
+				<xsl:value-of select="concat($klubVAR/nazwa, ' ', $klubVAR/miasto)"/>
+			</xsl:element>
+		<xsl:variable name="stadionVAR" select="key('stadionIdKEY', @stadionId)"/>
+		<xsl:element name="stadion">
+			<xsl:value-of select="concat($stadionVAR/nazwa, ' (', $stadionVAR/pojemność, ') ')"/>
+		</xsl:element>
+		</xsl:element>
+</xsl:template>			
+
 <xsl:template name="Podsumowanie">
 	<xsl:element name="Podsumowanie">
 		<xsl:element name="IlośćKlubów">
