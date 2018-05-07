@@ -47,6 +47,11 @@
 			<xsl:element name="dataMeczu">
 				<xsl:value-of select="data"/>
 			</xsl:element>
+			<xsl:element name="CenaZaBilet">
+					<xsl:for-each select="zadanie/liga_piłkarska/stadiony/stadion/bilet[@typb='ulgowy']">
+						<xsl:value-of select="cena"/>
+					</xsl:for-each>
+			</xsl:element>
 		</xsl:element>
 </xsl:template>			
 
