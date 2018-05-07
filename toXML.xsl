@@ -11,7 +11,7 @@
 <xsl:template match="/">
 		<xsl:element name="zadanie">
 			<xsl:call-template name="informacje"/>
-			<xsl:call-template name="proba"/>
+			<xsl:call-template name="Podsumowanie"/>
 		</xsl:element>
 	</xsl:template>    
     
@@ -19,12 +19,25 @@
 		<xsl:copy-of select="//informacje"/>
 	</xsl:template>    
 					    
-<xsl:template name="proba">
-	<xsl:element name="proba">
+<xsl:template name="Podsumowanie">
+	<xsl:element name="Podsumowanie">
 		<xsl:element name="IlośćKlubów">
 			<xsl:value-of select="count(//liga_piłkarska/kluby/klub)"/>
 		</xsl:element>
-	</xsl:element>
+		<xsl:element name="IlośćStadionów">
+			<xsl:value-of select="count(//liga_piłkarska/kluby/klub/stadion)"/>
+		</xsl:element>	
+		<Kluby_w_miastach>
+			<xsl:element name="Manchester">
+				<xsl:value-of select="count(//liga_piłkarska/kluby/klub[miasto='Manchester'])"/>
+			</xsl:element>
+		</Kluby_w_miastach>
+		<DataWygenerowania>
+			<xsl:element name="DataWygenerowania">
+				<xsl:value-of select="current-dateTime()"/>
+			</xsl:element>
+		</DataWygenerowania>
+	</xsl:element>	
 </xsl:template>   				    
 					    
 </xsl:stylesheet>
