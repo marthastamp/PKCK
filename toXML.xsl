@@ -11,11 +11,20 @@
 <xsl:template match="/">
 		<xsl:element name="zadanie">
 			<xsl:call-template name="informacje"/>
+			<xsl:call-template name="proba"/>
 		</xsl:element>
 	</xsl:template>    
     
 <xsl:template match="//informacje" name="informacje">
 		<xsl:copy-of select="//informacje"/>
 	</xsl:template>    
+					    
+<xsl:template name="proba">
+	<xsl:element name="proba">
+		<xsl:element name="IlośćKlubów">
+			<xsl:value-of select="count(//liga_piłkarska/kluby/klub)"/>
+		</xsl:element>
+	</xsl:element>
+</xsl:template>   				    
 					    
 </xsl:stylesheet>
