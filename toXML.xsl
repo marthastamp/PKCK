@@ -63,6 +63,12 @@
 		<xsl:element name="IlośćStadionów">
 			<xsl:value-of select="count(//liga_piłkarska/kluby/klub/stadion)"/>
 		</xsl:element>	
+		<xsl:element name="NajmniejszyStadion">
+			<xsl:value-of select="min(//liga_piłkarska/stadiony/stadion/pojemność)"/>
+		</xsl:element>
+		<xsl:element name="NajwiekszyStadion">
+			<xsl:value-of select="max(//liga_piłkarska/stadiony/stadion/pojemność)"/>
+		</xsl:element>
 		<Kluby_w_miastach>
 			<xsl:element name="Manchester">
 				<xsl:value-of select="count(//liga_piłkarska/kluby/klub[miasto='Manchester'])"/>
