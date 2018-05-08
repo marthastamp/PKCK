@@ -366,6 +366,10 @@
 				<bilet typb="normalny">
 					<cena waluta="GBP">21.99</cena>
 				</bilet>
+
+				<!-- pomysl na zmiane XML
+				<ulgowy waluta="GBP">20.00</ulgowy>
+				<normalny waluta="PLN">40.50</normalny> -->
 			</stadion>
 			<stadion stadionId="OldTrafford">
 				<nazwa>Old Trafford</nazwa>
