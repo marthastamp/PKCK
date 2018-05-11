@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zadanie>
+   <informacje>
+		    <autorzy>
+			      <autor>
+				        <dane>Martyna Jasiak</dane>
+				        <email>203892@edu.p.lodz.pl</email>
+			      </autor>
+			      <autor>
+				        <dane>Marta Stempel</dane>
+				        <email>204001@edu.p.lodz.pl</email>
+			      </autor>
+		    </autorzy>
+	  </informacje>
+   <mecze>
+      <mecz>
+         <stadion>John Smith’s Stadium pojemność: 24500</stadion>
+         <dataMeczu>2018-03-11T18:00:00</dataMeczu>
+         <CenaZaBiletUlgowy> 2.40 </CenaZaBiletUlgowy>
+         <CenaZaBiletNormalny> 8.50 </CenaZaBiletNormalny>
+      </mecz>
+      <mecz>
+         <stadion>Emirates Stadium pojemność: 60361</stadion>
+         <dataMeczu>2018-03-11T14:30:00</dataMeczu>
+         <CenaZaBiletUlgowy> 13.00 </CenaZaBiletUlgowy>
+         <CenaZaBiletNormalny> 18.50 </CenaZaBiletNormalny>
+      </mecz>
+      <mecz>
+         <stadion>Dean Court pojemność: 11700</stadion>
+         <dataMeczu>2018-03-11T17:00:00</dataMeczu>
+         <CenaZaBiletUlgowy> 14.40 </CenaZaBiletUlgowy>
+         <CenaZaBiletNormalny> 19.60 </CenaZaBiletNormalny>
+      </mecz>
+      <mecz>
+         <stadion>Old Trafford pojemność: 75957</stadion>
+         <dataMeczu>2018-03-10T13:30:00</dataMeczu>
+         <CenaZaBiletUlgowy> 16.50 </CenaZaBiletUlgowy>
+         <CenaZaBiletNormalny> 19.00 </CenaZaBiletNormalny>
+      </mecz>
+      <mecz>
+         <stadion>Goodison Park pojemność: 40569</stadion>
+         <dataMeczu>2018-03-10T16:00:00</dataMeczu>
+         <CenaZaBiletUlgowy> 5.00 </CenaZaBiletUlgowy>
+         <CenaZaBiletNormalny> 13.50 </CenaZaBiletNormalny>
+      </mecz>
+      <mecz>
+         <stadion>John Smith’s Stadium pojemność: 24500</stadion>
+         <dataMeczu>2018-03-10T16:00:00</dataMeczu>
+         <CenaZaBiletUlgowy> 2.40 </CenaZaBiletUlgowy>
+         <CenaZaBiletNormalny> 8.50 </CenaZaBiletNormalny>
+      </mecz>
+      <mecz>
+         <stadion>St James’ Park pojemność: 52354</stadion>
+         <dataMeczu>2018-03-10T16:00:00</dataMeczu>
+         <CenaZaBiletUlgowy> 13.00 </CenaZaBiletUlgowy>
+         <CenaZaBiletNormalny> 18.50 </CenaZaBiletNormalny>
+      </mecz>
+      <mecz>
+         <stadion>The Hawthorns pojemność: 26500</stadion>
+         <dataMeczu>2018-03-10T16:00:00</dataMeczu>
+         <CenaZaBiletUlgowy> 17.00 </CenaZaBiletUlgowy>
+         <CenaZaBiletNormalny> 23.00 </CenaZaBiletNormalny>
+      </mecz>
+      <mecz>
+         <stadion>Olympic Stadium pojemność: 26500</stadion>
+         <dataMeczu>2018-03-10T16:00:00</dataMeczu>
+         <CenaZaBiletUlgowy> 2.00 </CenaZaBiletUlgowy>
+         <CenaZaBiletNormalny> 6.50 </CenaZaBiletNormalny>
+      </mecz>
+      <mecz>
+         <stadion>Stamford Bridge pojemność: 41841</stadion>
+         <dataMeczu>2018-03-10T18:30:00</dataMeczu>
+         <CenaZaBiletUlgowy> 12.50 </CenaZaBiletUlgowy>
+         <CenaZaBiletNormalny> 18.50 </CenaZaBiletNormalny>
+      </mecz>
+   </mecze>
+   <Podsumowanie>
+      <IlośćKlubów>20</IlośćKlubów>
+      <IlośćStadionów>20</IlośćStadionów>
+      <NajmniejszyStadion>11700</NajmniejszyStadion>
+      <NajwiekszyStadion>75957</NajwiekszyStadion>
+      <NajtanszeBiletyUlgowe>2.0</NajtanszeBiletyUlgowe>
+      <NajtanszeBiletyNormalne>6.5</NajtanszeBiletyNormalne>
+      <Kluby_w_miastach>
+         <Manchester>2</Manchester>
+         <Londyn>5</Londyn>
+         <Liverpool>2</Liverpool>
+         <Southampton>1</Southampton>
+         <Bournemouth>1</Bournemouth>
+         <WestBromwich>1</WestBromwich>
+         <Leicester>1</Leicester>
+         <Stoke-on-Trent>1</Stoke-on-Trent>
+         <Swansea>1</Swansea>
+         <Burnley>1</Burnley>
+         <Watford>1</Watford>
+         <Newcastle>1</Newcastle>
+         <Brighton>1</Brighton>
+         <Huddersfield>1</Huddersfield>
+         <CałkowitaIlośćMiast>20</CałkowitaIlośćMiast>
+      </Kluby_w_miastach>
+      <DataWygenerowania>
+         <DataWygenerowania>2018-05-11T17:18:47.27+02:00</DataWygenerowania>
+      </DataWygenerowania>
+      <Przychod_z_biletów>
+         <PrzychódUlgowyPLN>115.6 zł</PrzychódUlgowyPLN>
+         <PrzychódNormalnyPLN>170.29 zł</PrzychódNormalnyPLN>
+         <PrzychódUlgowyGBP>108.9 £</PrzychódUlgowyGBP>
+         <PrzychódNormalnyGBP>159.9 £</PrzychódNormalnyGBP>
+         <PrzychódCalkowityWPLN>1334.21 zł</PrzychódCalkowityWPLN>
+         <PrzychódCalkowityWGBP>268.8 £</PrzychódCalkowityWGBP>
+         <Podatek>306.87 zł</Podatek>
+         <Dochód>1027.34 zł</Dochód>
+      </Przychod_z_biletów>
+   </Podsumowanie>
+</zadanie>
