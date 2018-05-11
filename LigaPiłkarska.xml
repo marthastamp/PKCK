@@ -360,36 +360,20 @@
 			<stadion stadionId="EtihadStadium">
 				<nazwa>Etihad Stadium</nazwa>
 				<pojemność>55017</pojemność>
-				<bilet typb="ulgowy">
-					<cena waluta="GBP">13.5</cena>
-				</bilet>
-				<bilet typb="normalny">
-					<cena waluta="GBP">21.99</cena>
-				</bilet>
-
-				<!-- pomysl na zmiane XML
-				<ulgowy waluta="GBP">20.00</ulgowy>
-				<normalny waluta="PLN">40.50</normalny> -->
+				<ulgowy waluta="GBP"> 10.00 </ulgowy>
+				<normalny waluta="GBP"> 15.00 </normalny>
 			</stadion>
 			<stadion stadionId="OldTrafford">
 				<nazwa>Old Trafford</nazwa>
 				<pojemność>75957</pojemność>
-				<bilet typb="ulgowy">
-					<cena waluta="GBP">13.9</cena>
-				</bilet>
-				<bilet typb="normalny">
-					<cena waluta="GBP">35.67</cena>
-				</bilet>
+				<ulgowy waluta="GBP"> 16.50 </ulgowy>
+				<normalny waluta="GBP"> 19.00 </normalny>
 			</stadion>
 			<stadion stadionId="EmiratesStadium">
 				<nazwa>Emirates Stadium</nazwa>
 				<pojemność>60361</pojemność>
-				<bilet typb="ulgowy">
-					<cena waluta="GBP">13.54</cena>
-				</bilet>
-				<bilet typb="normalny">
-					<cena waluta="GBP">24.66</cena>
-				</bilet>
+				<ulgowy waluta="PLN"> 13.00 </ulgowy>
+				<normalny waluta="PLN"> 18.50 </normalny>
 			</stadion>
 			<stadion stadionId="StamfordBridge">
 				<nazwa>Stamford Bridge</nazwa>
@@ -525,30 +509,30 @@
 				<nazwa>Vicarage Road</nazwa>
 				<pojemność>21977</pojemność>
 				<bilet typb="ulgowy">
-					<cena waluta="GBP">13.55</cena>
+					<cena waluta="PLN">13.55</cena>
 				</bilet>
 				<bilet typb="normalny">
-					<cena waluta="GBP">27.80</cena>
+					<cena waluta="PLN">27.80</cena>
 				</bilet>
 			</stadion>
 			<stadion stadionId="StJamesPark">
 				<nazwa>St James’ Park</nazwa>
 				<pojemność>52354</pojemność>
 				<bilet typb="ulgowy">
-					<cena waluta="GBP">12.20</cena>
+					<cena waluta="PLN">12.20</cena>
 				</bilet>
 				<bilet typb="normalny">
-					<cena waluta="GBP">28.00</cena>
+					<cena waluta="PLN">28.00</cena>
 				</bilet>
 			</stadion>
 			<stadion stadionId="FalmerStadium">
 				<nazwa>Falmer Stadium</nazwa>
 				<pojemność>30750</pojemność>
 				<bilet typb="ulgowy">
-					<cena waluta="GBP">13.59</cena>
+					<cena waluta="PLN">13.59</cena>
 				</bilet>
 				<bilet typb="normalny">
-					<cena waluta="GBP">29.50</cena>
+					<cena waluta="PLN">29.50</cena>
 				</bilet>
 			</stadion>
 			<stadion stadionId="JohnSmithsStadium">

@@ -47,11 +47,12 @@
 			<xsl:element name="dataMeczu">
 				<xsl:value-of select="data"/>
 			</xsl:element>
-			<xsl:element name="CenaZaBilet">
-					<xsl:for-each select="zadanie/liga_piłkarska/stadiony/stadion/bilet[@typb='ulgowy']">
-						<xsl:value-of select="cena"/>
-					</xsl:for-each>
-			</xsl:element>
+			<xsl:element name="CenaZaBiletUlgowy">
+						<xsl:value-of select="$stadionVAR/ulgowy"/>
+			</xsl:element> 
+			<xsl:element name="CenaZaBiletNormalny">
+						<xsl:value-of select="$stadionVAR/normalny"/>
+			</xsl:element> 
 		</xsl:element>
 </xsl:template>			
 
@@ -125,28 +126,46 @@
 		<xsl:variable name="PrzelicznikGBP" select="3.90"/>
 
 		<xsl:element name="Przychod_z_biletów">
-				<xsl:variable name="PrzychódPLN" select="sum(//cena[@waluta='PLN'])"/>
-				<xsl:variable name="PrzychódGBP" select="sum(//cena[@waluta='GBP'])"/>
-				<xsl:variable name="PrzychódGBP2" select="sum(//cena[@waluta='GBP']) * $PrzelicznikGBP"/>
-				<xsl:variable name="PrzychodCałkowity" select="$PrzychódPLN + $PrzychódGBP2"/>
-				<xsl:element name="PrzychódCalkowityPLN">
-					<xsl:value-of select="format-number($PrzychódPLN,'.##')"/>
+			
+				<xsl:variable name="PrzychódUlgowyGBP" select="sum(//ulgowy[@waluta='GBP'])"/>
+				<xsl:variable name="PrzychódNormalnyGBP" select="sum(//normalny[@waluta='GBP'])"/>
+				<xsl:variable name="PrzychódUlgowyPLN" select="sum(//ulgowy[@waluta='PLN'])"/>
+				<xsl:variable name="PrzychódNormalnyPLN" select="sum(//normalny[@waluta='PLN'])"/>
+				<xsl:variable name="PrzychódNormalnyGBPnaPLN" select="sum(//normalny[@waluta='GBP']) * $PrzelicznikGBP"/>
+				<xsl:variable name="PrzychódUlgowyGBPnaPLN" select="sum(//ulgowy[@waluta='GBP']) * $PrzelicznikGBP"/>
+				<xsl:variable name="PrzychodCałkowityPLN" select="$PrzychódUlgowyPLN + $PrzychódNormalnyPLN + $PrzychódUlgowyGBPnaPLN + $PrzychódNormalnyGBPnaPLN"/>
+				<xsl:variable name="PrzychodCałkowityGBP" select="$PrzychódUlgowyGBP + $PrzychódNormalnyGBP"/>
+
+				<xsl:element name="PrzychódUlgowyPLN">
+					<xsl:value-of select="format-number($PrzychódUlgowyPLN,'.##')"/>
 					<xsl:text> zł</xsl:text>
 				</xsl:element>
-				<xsl:element name="PrzychódCalkowityGBP">
-					<xsl:value-of select="format-number($PrzychódGBP,'.##')"/>
+				<xsl:element name="PrzychódNormalnyPLN">
+					<xsl:value-of select="format-number($PrzychódNormalnyPLN,'.##')"/>
+					<xsl:text> zł</xsl:text>
+				</xsl:element>
+				<xsl:element name="PrzychódUlgowyGBP">
+					<xsl:value-of select="format-number($PrzychódUlgowyGBP,'.##')"/>
 					<xsl:text> £</xsl:text>
 				</xsl:element>
-				<xsl:element name="Przychód">
-					<xsl:value-of select="format-number($PrzychodCałkowity,'.##')"/>
+					<xsl:element name="PrzychódNormalnyGBP">
+					<xsl:value-of select="format-number($PrzychódNormalnyGBP,'.##')"/>
+					<xsl:text> £</xsl:text>
+				</xsl:element>
+				<xsl:element name="PrzychódCalkowityWPLN">
+					<xsl:value-of select="format-number($PrzychodCałkowityPLN,'.##')"/>
 					<xsl:text> zł</xsl:text>
 				</xsl:element>
+				<xsl:element name="PrzychódCalkowityWGBP">
+					<xsl:value-of select="format-number($PrzychodCałkowityGBP,'.##')"/>
+					<xsl:text> £</xsl:text>
+				</xsl:element>
 				<xsl:element name="Podatek">
-					<xsl:value-of select="format-number($PrzychodCałkowity * 0.23,'.##')"/>
+					<xsl:value-of select="format-number($PrzychodCałkowityPLN * 0.23,'.##')"/>
 					<xsl:text> zł</xsl:text>
 				</xsl:element>
 				<xsl:element name="Dochód">
-					<xsl:value-of select="format-number($PrzychodCałkowity * 0.77,'.##')"/>
+					<xsl:value-of select="format-number($PrzychodCałkowityPLN * 0.77,'.##')"/>
 					<xsl:text> zł</xsl:text>
 				</xsl:element>
 		</xsl:element>
