@@ -8,6 +8,8 @@
                 omit-xml-declaration="no"
                 indent="yes"/>
                 
+
+              <!--   DEFINICJA KLUCZY -->
 <xsl:key name="klubIdKEY" match="//liga_piłkarska/kluby/klub" use="@klubId"/>
 <xsl:key name="stadionIdKEY" match="//liga_piłkarska/stadiony/stadion" use="@stadionId"/>
 
@@ -37,9 +39,9 @@
 <xsl:template match="zadanie/liga_piłkarska/mecze/mecz">
 		<xsl:element name="mecz">
 			<xsl:variable name="klubVAR" select="key('klubIdKEY', @klubId)"/>
-			<xsl:element name="klub">
+			<!-- <xsl:element name="klub">
 				<xsl:value-of select="concat($klubVAR/nazwa, ' ', $klubVAR/miasto)"/>
-			</xsl:element>
+			</xsl:element> -->
 			<xsl:variable name="stadionVAR" select="key('stadionIdKEY', @stadionId)"/>
 			<xsl:element name="stadion">
 				<xsl:value-of select="concat($stadionVAR/nazwa, ' pojemność: ', $stadionVAR/pojemność)"/>
@@ -70,6 +72,15 @@
 		<xsl:element name="NajwiekszyStadion">
 			<xsl:value-of select="max(//liga_piłkarska/stadiony/stadion/pojemność)"/>
 		</xsl:element>
+		<xsl:element name="NajtanszeBiletyUlgowe">
+			<xsl:value-of select="format-number(min(//liga_piłkarska/stadiony/stadion/ulgowy), '.##')"/>
+		</xsl:element>
+		<xsl:element name="NajtanszeBiletyNormalne">
+			<xsl:value-of select="format-number(min(//liga_piłkarska/stadiony/stadion/normalny), '.##')"/>
+		</xsl:element>
+
+
+
 		<Kluby_w_miastach>
 			<xsl:element name="Manchester">
 				<xsl:value-of select="count(//liga_piłkarska/kluby/klub[miasto='Manchester'])"/>
