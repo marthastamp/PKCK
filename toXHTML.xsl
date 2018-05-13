@@ -99,6 +99,17 @@
         </xsl:element>
     </xsl:template> 
 
+    <xsl:template match="autor">
+        <xsl:element name="div">
+            <xsl:attribute name="class">autor</xsl:attribute>
+            <xsl:text>Imię i nazwisko: </xsl:text>
+            <xsl:value-of select="./dane" />
+            <xsl:text> email: </xsl:text>
+            <xsl:value-of select="./email" />
+        </xsl:element>
+    </xsl:template>
+
+
        <xsl:template match="informacje">
         <xsl:element name="div">
             <xsl:attribute name="class">informacje</xsl:attribute>
@@ -124,48 +135,6 @@
     </xsl:template>
 
 
-      <xsl:template match="Przychod_z_biletów">
-        <xsl:element name="div">
-            <xsl:attribute name="class">Przychod_z_biletów</xsl:attribute>
-            
-            <xsl:element name="table">
-                <xsl:attribute name="width">50%</xsl:attribute>
-                
-                <xsl:element name="tr">
-                    <xsl:element name="th">
-                        <xsl:text>PrzychódCalkowityWPLN</xsl:text>
-                    </xsl:element>
-                    <xsl:element name="th">
-                        <xsl:text>PrzychódCalkowityWGBP</xsl:text>
-                    </xsl:element>
-                    <xsl:element name="th">
-                        <xsl:text>Podatek</xsl:text>
-                    </xsl:element>
-                    <xsl:element name="th">
-                        <xsl:text>Dochód</xsl:text>
-                    </xsl:element>
-                </xsl:element>
-                
-                <xsl:element name="tr">
-                    <xsl:element name="td">
-                        <xsl:value-of select="./PrzychódCalkowityWPLN"/>
-                    </xsl:element>
-                     <xsl:element name="td">
-                        <xsl:value-of select="./PrzychódCalkowityWGBP"/>
-                    </xsl:element>
-                    <xsl:element name="td">
-                        <xsl:value-of select="./Podatek"/>
-                    </xsl:element>
-                    <xsl:element name="td">
-                        <xsl:value-of select="./Dochód"/>
-                    </xsl:element>
-                </xsl:element>
-                
-            </xsl:element>
-            
-        </xsl:element>
-    </xsl:template>
-
 
  <xsl:template match="mecze">
         <xsl:element name="div">
@@ -175,6 +144,8 @@
                 <xsl:attribute name="name">Raport</xsl:attribute>
             </xsl:element>
             
+             <xsl:text>RAPORT:</xsl:text>
+
             <xsl:element name="table">
                 
                 <xsl:element name="tr">
@@ -245,7 +216,7 @@
             <xsl:attribute name="class">IlośćKlubów</xsl:attribute>
             
             <xsl:element name="table">
-                <xsl:attribute name="width">50%</xsl:attribute>
+                <xsl:attribute name="width">100%</xsl:attribute>
 
                 <xsl:element name="tr">
                     <xsl:element name="td">
@@ -266,7 +237,7 @@
             <xsl:attribute name="class">NajmniejszyStadion</xsl:attribute>
             
             <xsl:element name="table">
-                <xsl:attribute name="width">50%</xsl:attribute>
+                <xsl:attribute name="width">100%</xsl:attribute>
 
                 <xsl:element name="tr">
                     <xsl:element name="td">
@@ -287,7 +258,7 @@
             <xsl:attribute name="class">NajwiekszyStadion</xsl:attribute>
             
             <xsl:element name="table">
-                <xsl:attribute name="width">50%</xsl:attribute>
+                <xsl:attribute name="width">100%</xsl:attribute>
 
                 <xsl:element name="tr">
                     <xsl:element name="td">
@@ -308,7 +279,7 @@
             <xsl:attribute name="class">NajtanszeBiletyUlgowe</xsl:attribute>
             
             <xsl:element name="table">
-                <xsl:attribute name="width">50%</xsl:attribute>
+                <xsl:attribute name="width">100%</xsl:attribute>
 
                 <xsl:element name="tr">
                     <xsl:element name="td">
@@ -329,7 +300,7 @@
             <xsl:attribute name="class">NajtanszeBiletyNormalne</xsl:attribute>
             
             <xsl:element name="table">
-                <xsl:attribute name="width">50%</xsl:attribute>
+                <xsl:attribute name="width">100%</xsl:attribute>
 
                 <xsl:element name="tr">
                     <xsl:element name="td">
@@ -350,7 +321,7 @@
             <xsl:attribute name="class">IlośćStadionów</xsl:attribute>
             
             <xsl:element name="table">
-                <xsl:attribute name="width">50%</xsl:attribute>
+                <xsl:attribute name="width">100%</xsl:attribute>
 
                 <xsl:element name="tr">
                     <xsl:element name="td">
@@ -371,7 +342,7 @@
             <xsl:attribute name="class">Kluby_w_miastach</xsl:attribute>
             
             <xsl:element name="table">
-                <xsl:attribute name="width">50%</xsl:attribute>
+                <xsl:attribute name="width">100%</xsl:attribute>
                 
                 <xsl:element name="tr">
                     <xsl:element name="th">
@@ -399,6 +370,50 @@
         </xsl:element>
     </xsl:template>
 
+
+      <xsl:template match="Przychod_z_biletów">
+        <xsl:element name="div">
+            <xsl:attribute name="class">Przychod_z_biletów</xsl:attribute>
+            
+            <xsl:element name="table">
+                <xsl:attribute name="width">100%</xsl:attribute>
+                
+                <xsl:element name="tr">
+                    <xsl:element name="th">
+                        <xsl:text>Przychód całkowity w PLN</xsl:text>
+                    </xsl:element>
+                    <xsl:element name="th">
+                        <xsl:text>Przychód całkowity w GBP</xsl:text>
+                    </xsl:element>
+                    <xsl:element name="th">
+                        <xsl:text>Podatek</xsl:text>
+                    </xsl:element>
+                    <xsl:element name="th">
+                        <xsl:text>Dochód</xsl:text>
+                    </xsl:element>
+                </xsl:element>
+                
+                <xsl:element name="tr">
+                    <xsl:element name="td">
+                        <xsl:value-of select="./PrzychódCalkowityWPLN"/>
+                    </xsl:element>
+                     <xsl:element name="td">
+                        <xsl:value-of select="./PrzychódCalkowityWGBP"/>
+                    </xsl:element>
+                    <xsl:element name="td">
+                        <xsl:value-of select="./Podatek"/>
+                    </xsl:element>
+                    <xsl:element name="td">
+                        <xsl:value-of select="./Dochód"/>
+                    </xsl:element>
+                </xsl:element>
+                
+            </xsl:element>
+            
+        </xsl:element>
+    </xsl:template>
+
+
     <xsl:template match="DataWygenerowania">
         <xsl:element name="div">
             <xsl:attribute name="class">DataWygenerowania</xsl:attribute>
@@ -410,5 +425,7 @@
             <xsl:value-of select="$DataVAR"/>
         </xsl:element>
     </xsl:template>
+
+
 
  </xsl:stylesheet>   
