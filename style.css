@@ -16,15 +16,6 @@ body
     font-size: 16px;
 }
 
-table 
-{
-    border-collapse: collapse;
-}
-
-table, th, td 
-{
-    border: 1px solid black;
-}
 
 .Linki
 {
@@ -51,8 +42,16 @@ table, th, td
 	width: 75%;
     font-size: 16px;
     background: white;
-    padding: 5px;
     text-align: center;
+
+}
+
+.mecze table {
+	 border-collapse: collapse;
+}
+.mecze td, th {
+
+	border: 1px solid black;
 }
 
 .mecze th {
@@ -60,3 +59,99 @@ table, th, td
 	font-size: 18px;
 	padding: 8px;
 }
+
+.Podsumowanie
+{
+    margin: 25px;
+    font-size: 18px;
+}
+
+.IlośćKlubów, .IlośćStadionów, .NajmniejszyStadion , .NajwiekszyStadion,
+ .NajtanszeBiletyUlgowe, .NajtanszeBiletyNormalne
+{
+   
+    font-size: 16px;
+  	margin: 0 auto;
+  	float: center;
+  	width: 30%;
+  	text-align: center;
+  	margin-bottom: 10px;
+    margin-top: 10px;
+   
+}
+
+.IlośćKlubów td, .IlośćStadionów td, .NajmniejszyStadion td ,
+.NajwiekszyStadion td, .NajtanszeBiletyUlgowe td, .NajtanszeBiletyNormalne td{
+	border-bottom: 1px solid #ddd;
+}
+
+
+
+.Kluby_w_miastach
+{
+   	margin: 0 auto;
+   	width: 40%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.Kluby_w_miastach table {
+	 border-collapse: collapse;
+	 margin-top: 50px;
+	 margin-bottom: 50px;
+
+}
+.Kluby_w_miastach td, .Kluby_w_miastach th {
+
+	border: 2px solid white;
+	padding-top: 10px;
+	background-color: #57738a4a;
+}
+
+.Kluby_w_miastach th {
+	color: green;
+	font-size: 18px;
+}
+
+.Przychod_z_biletów
+{
+	margin: 0 auto;
+	width: 60%;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: 2px dotted green;
+}
+
+.Przychod_z_biletów th
+{
+    border: none;
+}
+
+.Przychod_z_biletów tr, .Przychod_z_biletów td {
+	text-align: center;
+}
+
+.Przychod_z_biletów td:first-child {
+	color: green;
+	text-decoration: underline;
+}
+
+.Przychod_z_biletów td:last-child {
+	color: red;
+	text-decoration: underline;
+}
+
+.DataWygenerowania
+{
+    text-align: center;
+    font-size: 14px;
+    text-decoration: underline;
+    color: black;
+}
+
+.DoGóry
+{
+    margin-left: 25px;
+    font-size: 10px;
+}
+
