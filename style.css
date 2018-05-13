@@ -1,5 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body
+{
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+    background-color: white;
+    color: #000980;
+    font-family: "Josefin Sans";
+}
+
 .DataWygenerowania
 {
     text-align: center;
     font-size: 16px;
+}
+
+table 
+{
+    border-collapse: collapse;
+}
+
+table, th, td 
+{
+    border: 1px solid black;
+}
+
+.Linki
+{
+    text-align: center;
+    font-size: 16px;
+    background-color: #0d561a47;
+    padding: 10px;
+    margin: 25px;
+}
+
+.informacje
+{
+    font-size: 18px;
+    text-align: center;
+    margin: 25px;
+    background: #DEDEDE;
+    padding: 10px;
+}
+
+.mecze
+{
+	margin: 0 auto;
+	float: center;
+	width: 75%;
+    font-size: 16px;
+    background: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.mecze th {
+	color: green;
+	font-size: 18px;
+	padding: 8px;
 }

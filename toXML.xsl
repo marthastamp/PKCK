@@ -50,10 +50,10 @@
 				<xsl:value-of select="data"/>
 			</xsl:element>
 			<xsl:element name="CenaZaBiletUlgowy">
-						<xsl:value-of select="$stadionVAR/ulgowy"/>
+						<xsl:value-of select="concat($stadionVAR/ulgowy, ' ',$stadionVAR/ulgowy/@waluta )"/>
 			</xsl:element> 
 			<xsl:element name="CenaZaBiletNormalny">
-						<xsl:value-of select="$stadionVAR/normalny"/>
+						<xsl:value-of select="concat($stadionVAR/ulgowy, ' ',$stadionVAR/normalny/@waluta )"/>
 			</xsl:element> 
 		</xsl:element>
 </xsl:template>			
@@ -128,11 +128,7 @@
 				<xsl:value-of select="count(//liga_piłkarska/kluby/klub/miasto)"/>
 			</xsl:element>
 		</Kluby_w_miastach>
-		<DataWygenerowania>
-			<xsl:element name="DataWygenerowania">
-				<xsl:value-of select="current-dateTime()"/>
-			</xsl:element>
-		</DataWygenerowania>
+		
 
 		<xsl:variable name="PrzelicznikGBP" select="3.90"/>
 
@@ -179,6 +175,11 @@
 					<xsl:value-of select="format-number($PrzychodCałkowityPLN * 0.77,'.##')"/>
 					<xsl:text> zł</xsl:text>
 				</xsl:element>
+
+		</xsl:element>
+
+		<xsl:element name="DataWygenerowania">
+			<xsl:value-of select="current-dateTime()"/>
 		</xsl:element>
 
 	</xsl:element>	
