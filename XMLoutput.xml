@@ -99,15 +99,15 @@
          <CałkowitaIlośćMiast>20</CałkowitaIlośćMiast>
       </Kluby_w_miastach>
       <Przychod_z_biletów>
-         <PrzychódUlgowyPLN>115.6 zł</PrzychódUlgowyPLN>
+         <PrzychódUlgowyPLN>115.60 zł</PrzychódUlgowyPLN>
          <PrzychódNormalnyPLN>170.29 zł</PrzychódNormalnyPLN>
-         <PrzychódUlgowyGBP>108.9 £</PrzychódUlgowyGBP>
-         <PrzychódNormalnyGBP>159.9 £</PrzychódNormalnyGBP>
+         <PrzychódUlgowyGBP>108.90 £</PrzychódUlgowyGBP>
+         <PrzychódNormalnyGBP>159.90 £</PrzychódNormalnyGBP>
          <PrzychódCalkowityWPLN>1334.21 zł</PrzychódCalkowityWPLN>
          <PrzychódCalkowityWGBP>268.8 £</PrzychódCalkowityWGBP>
          <Podatek>306.87 zł</Podatek>
          <Dochód>1027.34 zł</Dochód>
       </Przychod_z_biletów>
-      <DataWygenerowania>2018-05-13T19:37:42.356+02:00</DataWygenerowania>
+      <DataWygenerowania>2018-05-15T12:42:47.932+02:00</DataWygenerowania>
    </Podsumowanie>
 </zadanie>
