@@ -6,7 +6,7 @@
     <xsl:output method="xml"
                 version="1.0"
                 encoding="utf-8"
-                doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" 
+                doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" 
                 doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" 
                 indent="yes"/>
 
@@ -19,9 +19,9 @@
                <xsl:call-template name="Metadane"/>
             </head>          
             <body>
-            	<h1>Zadanie 3</h1>    
-            	<xsl:call-template name="Zadanie"/>
-               	<xsl:apply-templates />             
+                <h1>Zadanie 3</h1>    
+                <xsl:call-template name="Zadanie"/>
+                <xsl:apply-templates />             
             </body>
         </html>
     </xsl:template>
@@ -122,20 +122,21 @@
             <xsl:apply-templates />
         </xsl:element>
         
-        <xsl:call-template name="DoGóry"/>
+       <xsl:call-template name="DoGóry"/> 
         
     </xsl:template>
 
     <xsl:template name="DoGóry">
-        <xsl:element name="a">
-            <xsl:attribute name="class">DoGóry</xsl:attribute>
-            <xsl:attribute name="href">#Linki</xsl:attribute>
-            <xsl:text>Do góry</xsl:text>
-        </xsl:element>
+        <fieldset>
+            <xsl:element name="a">
+                <xsl:attribute name="class">DoGóry</xsl:attribute>
+                <xsl:attribute name="href">#Linki</xsl:attribute>
+                <xsl:text>Do góry</xsl:text>
+            </xsl:element>
+        </fieldset>
     </xsl:template>
 
-
-
+ 
  <xsl:template match="mecze">
         <xsl:element name="div">
             <xsl:attribute name="class">mecze</xsl:attribute>
@@ -190,7 +191,7 @@
             
         </xsl:element>
         
-        <xsl:call-template name="DoGóry"/>
+      <!--   <xsl:call-template name="DoGóry"/> -->
         
     </xsl:template>
 
@@ -206,7 +207,7 @@
             <xsl:apply-templates/>
         </xsl:element>
         
-        <xsl:call-template name="DoGóry"/>
+     <!--    <xsl:call-template name="DoGóry"/> -->
         
     </xsl:template>
 
