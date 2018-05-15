@@ -153,5 +153,9 @@ body
 {
     margin-left: 25px;
     font-size: 10px;
+    border: 2px solid white;
 }
 
+fieldset {
+    border: none;
+}
