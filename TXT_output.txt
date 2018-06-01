@@ -1,4 +1,4 @@
-AUTORZY DOKUMENTU:
+AUTORKI DOKUMENTU:
 	[203892@edu.p.lodz.pl] Martyna Jasiak
 	[204001@edu.p.lodz.pl] Marta Stempel
 
@@ -53,4 +53,46 @@ MECZE:
 	Cena za bilet ulgowy:		 12.50  PLN
 	Cena za bilet normalny:		 12.50  PLN
 	----------------------------------------------------------------------
-202011700759572.06.52521111111111120115.60 zł170.29 zł108.90 £159.90 £1334.21 zł268.8 £306.87 zł1027.34 zł2018-05-15T12:42:47.932+02:00
+
+PODSUMOWANIE:
+	LICZBA KLUBÓW:	20
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	LICZBA STADIONÓW:	20
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	Najmniejszy stadion:	11700
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	Najwiekszy stadion:	75957
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	Najtańsze bilety ulgowe	2.0 zł
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	Najtańsze bilety normalne:	6.5 zł
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	Liczba klubów w miastach:
+		Manchester:	2
+		Londyn:	5
+		Liverpool:	2
+		Southampton:	1
+		Bournemouth:	1
+		WestBromwich:	1
+		Leicester:	1
+		Stoke-on-Trent:	1
+		Swansea:	1
+		Burnley:	1
+		Watford:	1
+		Brighton:	1
+		Huddersfield:	1
+		Newcastle:	1
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+		Liczba miast:	20
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	PRZYCHÓD Z BILETÓW:
+		Przychód z ulgowych (PLN):	115.60 zł
+		Przychód z normalnych (PLN):	170.29 zł
+		Przychód z ulgowych (GBP):		108.90 £
+		Przychód z normalnych (GBP) :		159.90 £
+		Przychód całkowity (PLN):		1334.21 zł
+		Przychód całkowity (GBP):		268.8 £
+		Podatek:		306.87 zł
+		Dochód:		1027.34 zł
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	DATA WYGENEROWANIA RAPORTU:	2018-05-15  godz. 12:42:47
