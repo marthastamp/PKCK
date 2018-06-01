@@ -1,4 +1,56 @@
 AUTORZY DOKUMENTU:
 	[203892@edu.p.lodz.pl] Martyna Jasiak
 	[204001@edu.p.lodz.pl] Marta Stempel
-John Smith’s Stadium pojemność: 245002018-03-11T18:00:002.40 GBP2.40 GBPEmirates Stadium pojemność: 603612018-03-11T14:30:0013.00 PLN13.00 PLNDean Court pojemność: 117002018-03-11T17:00:0014.40 PLN14.40 PLNOld Trafford pojemność: 759572018-03-10T13:30:0016.50 GBP16.50 GBPGoodison Park pojemność: 405692018-03-10T16:00:005.00 GBP5.00 GBPJohn Smith’s Stadium pojemność: 245002018-03-10T16:00:002.40 GBP2.40 GBPSt James’ Park pojemność: 523542018-03-10T16:00:0013.00 PLN13.00 PLNThe Hawthorns pojemność: 265002018-03-10T16:00:0017.00 GBP17.00 GBPOlympic Stadium pojemność: 265002018-03-10T16:00:002.00 GBP2.00 GBPStamford Bridge pojemność: 418412018-03-10T18:30:0012.50 PLN12.50 PLN202011700759572.06.52521111111111120115.60 zł170.29 zł108.90 £159.90 £1334.21 zł268.8 £306.87 zł1027.34 zł2018-05-15T12:42:47.932+02:00
+
+MECZE:
+	Stadion:	John Smith’s Stadium pojemność: 24500
+	Data meczu.:	2018-03-11 godz. 18:00:00
+	Cena za bilet ulgowy:		 2.40  GBP
+	Cena za bilet normalny:		 2.40  GBP
+	----------------------------------------------------------------------
+	Stadion:	Emirates Stadium pojemność: 60361
+	Data meczu.:	2018-03-11 godz. 14:30:00
+	Cena za bilet ulgowy:		 13.00  PLN
+	Cena za bilet normalny:		 13.00  PLN
+	----------------------------------------------------------------------
+	Stadion:	Dean Court pojemność: 11700
+	Data meczu.:	2018-03-11 godz. 17:00:00
+	Cena za bilet ulgowy:		 14.40  PLN
+	Cena za bilet normalny:		 14.40  PLN
+	----------------------------------------------------------------------
+	Stadion:	Old Trafford pojemność: 75957
+	Data meczu.:	2018-03-10 godz. 13:30:00
+	Cena za bilet ulgowy:		 16.50  GBP
+	Cena za bilet normalny:		 16.50  GBP
+	----------------------------------------------------------------------
+	Stadion:	Goodison Park pojemność: 40569
+	Data meczu.:	2018-03-10 godz. 16:00:00
+	Cena za bilet ulgowy:		 5.00  GBP
+	Cena za bilet normalny:		 5.00  GBP
+	----------------------------------------------------------------------
+	Stadion:	John Smith’s Stadium pojemność: 24500
+	Data meczu.:	2018-03-10 godz. 16:00:00
+	Cena za bilet ulgowy:		 2.40  GBP
+	Cena za bilet normalny:		 2.40  GBP
+	----------------------------------------------------------------------
+	Stadion:	St James’ Park pojemność: 52354
+	Data meczu.:	2018-03-10 godz. 16:00:00
+	Cena za bilet ulgowy:		 13.00  PLN
+	Cena za bilet normalny:		 13.00  PLN
+	----------------------------------------------------------------------
+	Stadion:	The Hawthorns pojemność: 26500
+	Data meczu.:	2018-03-10 godz. 16:00:00
+	Cena za bilet ulgowy:		 17.00  GBP
+	Cena za bilet normalny:		 17.00  GBP
+	----------------------------------------------------------------------
+	Stadion:	Olympic Stadium pojemność: 26500
+	Data meczu.:	2018-03-10 godz. 16:00:00
+	Cena za bilet ulgowy:		 2.00  GBP
+	Cena za bilet normalny:		 2.00  GBP
+	----------------------------------------------------------------------
+	Stadion:	Stamford Bridge pojemność: 41841
+	Data meczu.:	2018-03-10 godz. 18:30:00
+	Cena za bilet ulgowy:		 12.50  PLN
+	Cena za bilet normalny:		 12.50  PLN
+	----------------------------------------------------------------------
+202011700759572.06.52521111111111120115.60 zł170.29 zł108.90 £159.90 £1334.21 zł268.8 £306.87 zł1027.34 zł2018-05-15T12:42:47.932+02:00
