@@ -35,12 +35,12 @@
     </xsl:template>
 
         <xsl:template match="mecz">
-        <xsl:variable name="DataVAR" select="concat(substring(./dataMeczu,0,11), ' godz. ', substring(./dataMeczu,12,8))" />
-        
-        <xsl:value-of select="concat('&#x9;', 'Stadion:', '&#x9;', ./stadion, '&#xA;') " />
-        <xsl:value-of select="concat('&#x9;', 'Data meczu.:', '&#x9;', $DataVAR, '&#xA;') " />
-        <xsl:value-of select="concat('&#x9;', 'Cena za bilet ulgowy:', '&#x9;&#x9;', ./CenaZaBiletUlgowy, '&#xA;') " />
-        <xsl:value-of select="concat('&#x9;', 'Cena za bilet normalny:', '&#x9;&#x9;', ./CenaZaBiletNormalny, '&#xA;') " />
+	        <xsl:variable name="DataVAR" select="concat(substring(./dataMeczu,0,11), ' godz. ', substring(./dataMeczu,12,8))" />
+	        
+	        <xsl:value-of select="concat('&#x9;', 'Stadion:', '&#x9;', ./stadion, '&#xA;') " />
+	        <xsl:value-of select="concat('&#x9;', 'Data meczu.:', '&#x9;', $DataVAR, '&#xA;') " />
+	        <xsl:value-of select="concat('&#x9;', 'Cena za bilet ulgowy:', '&#x9;&#x9;', ./CenaZaBiletUlgowy, '&#xA;') " />
+	        <xsl:value-of select="concat('&#x9;', 'Cena za bilet normalny:', '&#x9;&#x9;', ./CenaZaBiletNormalny, '&#xA;') " />
         <xsl:text>&#x9;----------------------------------------------------------------------&#xA;</xsl:text>
     </xsl:template>
 
