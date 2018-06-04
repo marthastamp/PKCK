@@ -15,7 +15,7 @@
 
 <xsl:template match="/">
         
-    <svg:svg width="1350" height="450" font-family="Verdana">
+    <svg:svg width="850" height="450" font-family="Verdana">
         <svg:desc>Informacje dotyczące Ligii Piłkarskiej</svg:desc>
         <svg:title>Liga piłkarska - raport </svg:title>
     
@@ -28,21 +28,21 @@
 
         <svg:rect x="0" y="0" width="1350" height="450" fill="url(#gradient)" stroke="white" stroke-width="8"/> 
 
-        <svg:text x="580" y="55" font-size="28" fill="black" font-weight="bold" text-anchor="middle">
+        <svg:text x="425" y="55" font-size="28" fill="black" font-weight="bold" text-anchor="middle">
                 Liga Piłkarska - raport
         </svg:text>
 
-  <!--       <xsl:call-template name="Przyciski" /> -->
+        <xsl:call-template name="Przyciski" /> 
 
         <style>
             g.button:hover
             {
-                opacity: 0.5;
+                opacity: 0.7;
             }
 
             rect.wykres_tlo:hover
             {
-                fill: #575757;
+                fill: #f2f2f2;
             }
         </style>
 
@@ -82,13 +82,13 @@
 
 <xsl:template match="informacje">
     <svg:g id="autorzy_pliku" class="button" width="90" height="45" onclick="onClickAutorzyPliku(evt)" cursor="pointer">
-        <svg:rect x="15" y="165" width="90" height="45" fill="#184f0b" stroke="white"/>
-        <svg:text x="30" y="195" fill="white" font-size="16" >Autorzy</svg:text>
+        <svg:rect rx="20" ry="20" x="15" y="190" width="90" height="45" fill="#184f0b" stroke="white"/>
+        <svg:text x="30" y="215" fill="white" font-size="16" >Autorzy</svg:text>
     </svg:g>
     
     <svg:g id="podpis" visibility="hidden">
-        <svg:rect x="350" y="380" width="690" height="30" fill="#184f0b" stroke="black"/>
-        <svg:text x="690" y="400" font-size="16" fill="white" text-anchor="middle" >
+        <svg:rect rx="20" ry="20" x="125" y="400" width="690" height="30" fill="#184f0b" stroke="white"/>
+        <svg:text x="470" y="420" font-size="16" fill="white" text-anchor="middle" >
             <xsl:apply-templates/>
         </svg:text>
     </svg:g>
@@ -102,17 +102,26 @@
 
 <xsl:template match="Kluby_w_miastach">
     <svg:g id="rect"  onmouseover="onMouseOverWykres(evt)" onmouseout="onMouseOutWykres(evt)">
-        <svg:rect class="wykres_tlo" x="130" y="90" height="220" width="1200" fill="#FFFFFF" stroke="black"/>
-        <svg:text x="660" y="130" font-size="16" fill="green" font-weight="bold" text-anchor="middle">
+        <svg:rect class="wykres_tlo" x="130" y="90" height="250" width="600" fill="#FFFFFF" stroke="black"/>
+        <svg:text x="425" y="130" font-size="16" fill="green" font-weight="bold" text-anchor="middle">
             Liczba klubów w danym mieście
         </svg:text>
     </svg:g>
-    
+
+    <svg:text x="140" y="320" font-size="11" fill="#003366" font-weight="bold">Manchester</svg:text>
+    <svg:text x="230" y="320" font-size="11" fill="#003366" font-weight="bold">Londyn</svg:text>
+    <svg:text x="305" y="320" font-size="11" fill="#003366" font-weight="bold">Liverpool</svg:text>
+    <svg:text x="385" y="320" font-size="11" fill="#003366" font-weight="bold">Leicester</svg:text>
+    <svg:text x="465" y="320" font-size="11" fill="#003366" font-weight="bold">Swansea</svg:text>
+    <svg:text x="550" y="320" font-size="11" fill="#003366" font-weight="bold">Burnley</svg:text>
+    <svg:text x="613" y="320" font-size="11" fill="#003366" font-weight="bold">Liczba miast</svg:text>
+
+
     <svg:g id="figure" visibility="hidden">
         
         <xsl:for-each select="*">
             <xsl:variable name="x_pozycja" select="170 + (79 * (position() - 1))"/>
-            <xsl:variable name="y_pozycja" select="250 - (. * 7.5)"/>
+            <xsl:variable name="y_pozycja" select="290 - (. * 7.5)"/>
             
             <xsl:element name="svg:text">
                 <xsl:attribute name="x">
@@ -121,33 +130,21 @@
                 <xsl:attribute name="y">
                     <xsl:value-of select="$y_pozycja"/>
                 </xsl:attribute>
-                <xsl:attribute name="fill">black</xsl:attribute>
-                <xsl:attribute name="font-size">10</xsl:attribute>
+                <xsl:attribute name="fill">#003366</xsl:attribute>
+                <xsl:attribute name="font-size">11</xsl:attribute>
+                <xsl:attribute name="font-weight">bold</xsl:attribute>
                 <xsl:value-of select="."/>
-            </xsl:element>
-            
-            <xsl:element name="svg:text">
-                <xsl:attribute name="x">
-                    <xsl:value-of select="$x_pozycja + 3"/>
-                </xsl:attribute>
-                <xsl:attribute name="y">
-                    <xsl:value-of select="280"/>
-                </xsl:attribute>
-                <xsl:attribute name="fill">black</xsl:attribute>
-                <xsl:attribute name="font-size">9</xsl:attribute>
-                <xsl:attribute name="text-anchor">middle</xsl:attribute>
-                <xsl:value-of select="name(.)"/>
             </xsl:element>
             
             <svg:g visibility="visible">
                 <xsl:element name="svg:rect">
-                    <xsl:attribute name="fill">#435BA3</xsl:attribute>
+                    <xsl:attribute name="fill">#4d004d</xsl:attribute>
                     <xsl:attribute name="x">
                         <xsl:value-of select="$x_pozycja - 5"/>
                     </xsl:attribute>
                     <xsl:attribute name="width">25</xsl:attribute>
 
-                    <svg:animate attributeName="y" from="260" to="{260 - . * 7.5}" dur="3s" fill="freeze"/>
+                    <svg:animate attributeName="y" from="300" to="{300 - . * 7.5}" dur="3s" fill="freeze"/>
                     <svg:animate attributeName="height" from="1" to="{. * 7.5}" dur="3s" fill="freeze"/>
                 </xsl:element>
             </svg:g>
@@ -158,38 +155,34 @@
 </xsl:template>
 
 
-<!--  <xsl:template name="Przyciski">
-    <a xlink:href="biblioteka_output.xhtml" target="_blank"> 
+<xsl:template name="Przyciski">
+    <a xlink:href="C:/Users/Martyna/Desktop/Studia/SEMVI/PKCK/zad1/PKCK/XHTML_output.xhtml" target="_blank"> 
         <svg:g class="button" cursor="pointer">
-            <svg:rect x="15" y="15" width="100" height="60" fill="#C4C4C4" stroke="black"/>
-            <svg:text x="38" y="40" fill="white" font-size="16">Raport</svg:text>
-            <svg:text x="38" y="60" fill="white" font-size="16">XHTML</svg:text>
+            <svg:rect rx="20" ry="20" x="15" y="15" width="100" height="45" fill="#184f0b" stroke="white"/>
+            <svg:text x="38" y="40" fill="white" font-size="16">XHTML</svg:text>
         </svg:g>
     </a>
 
-    <a xlink:href="biblioteka_output.pdf" target="_blank"> 
+    <a xlink:href="PDF_output.pdf" target="_blank"> 
         <svg:g class="button" cursor="pointer">
-            <svg:rect x="15" y="90" width="100" height="60" fill="#C4C4C4" stroke="black"/>
-            <svg:text x="38" y="115" fill="white" font-size="16">Raport</svg:text>
-            <svg:text x="38" y="135" fill="white" font-size="16">PDF</svg:text>
+            <svg:rect rx="20" ry="20" x="15" y="90" width="100" height="45" fill="#184f0b" stroke="white"/>
+            <svg:text x="45" y="115" fill="white" font-size="16">PDF</svg:text>
         </svg:g>
     </a>
 
-    <a xlink:href="biblioteka_output.xml" target="_blank"> 
+    <a xlink:href="XMLoutput.xml" target="_blank"> 
         <svg:g class="button" cursor="pointer">
-            <svg:rect x="15" y="240" width="100" height="60" fill="#C4C4C4" stroke="black"/>
-            <svg:text x="38" y="265" fill="white" font-size="16">Raport</svg:text>
-            <svg:text x="38" y="285" fill="white" font-size="16">XML</svg:text>
+            <svg:rect rx="20" ry="20" x="15" y="315" width="100" height="45" fill="#184f0b" stroke="white"/>
+            <svg:text x="45" y="340" fill="white" font-size="16">XML</svg:text>
         </svg:g>
     </a>
 
-    <a xlink:href="biblioteka_output.txt" target="_blank"> 
+    <a xlink:href="TXT_output.txt" target="_blank"> 
         <svg:g class="button" cursor="pointer">
-            <svg:rect x="15" y="315" width="100" height="60" fill="#C4C4C4" stroke="black"/>
-            <svg:text x="38" y="335" fill="white" font-size="16">Raport</svg:text>
-            <svg:text x="38" y="355" fill="white" font-size="16">TXT</svg:text>
+            <svg:rect rx="20" ry="20" x="15" y="390" width="100" height="45" fill="#184f0b" stroke="white"/>
+            <svg:text x="45" y="420" fill="white" font-size="16">TXT</svg:text>
         </svg:g>
     </a>
-</xsl:template> -->
+</xsl:template> 
 
 </xsl:stylesheet>

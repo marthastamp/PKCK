@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg:svg
+  PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg:svg xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         width="850"
+         height="450"
+         font-family="Verdana">
+   <svg:desc>Informacje dotyczące Ligii Piłkarskiej</svg:desc>
+   <svg:title>Liga piłkarska - raport </svg:title>
+   <svg:defs>
+      <svg:linearGradient id="gradient">
+         <svg:stop offset="0%" style="stop-color: #c4e1b5;"/>
+      </svg:linearGradient>
+   </svg:defs>
+   <svg:rect x="0"
+             y="0"
+             width="1350"
+             height="450"
+             fill="url(#gradient)"
+             stroke="white"
+             stroke-width="8"/>
+   <svg:text x="425"
+             y="55"
+             font-size="28"
+             fill="black"
+             font-weight="bold"
+             text-anchor="middle">
+                Liga Piłkarska - raport
+        </svg:text>
+   <a xlink:href="C:/Users/Martyna/Desktop/Studia/SEMVI/PKCK/zad1/PKCK/XHTML_output.xhtml"
+      target="_blank">
+      <svg:g class="button" cursor="pointer">
+         <svg:rect rx="20"
+                   ry="20"
+                   x="15"
+                   y="15"
+                   width="100"
+                   height="45"
+                   fill="#184f0b"
+                   stroke="white"/>
+         <svg:text x="38" y="40" fill="white" font-size="16">XHTML</svg:text>
+      </svg:g>
+   </a>
+   <a xlink:href="PDF_output.pdf" target="_blank">
+      <svg:g class="button" cursor="pointer">
+         <svg:rect rx="20"
+                   ry="20"
+                   x="15"
+                   y="90"
+                   width="100"
+                   height="45"
+                   fill="#184f0b"
+                   stroke="white"/>
+         <svg:text x="45" y="115" fill="white" font-size="16">PDF</svg:text>
+      </svg:g>
+   </a>
+   <a xlink:href="XMLoutput.xml" target="_blank">
+      <svg:g class="button" cursor="pointer">
+         <svg:rect rx="20"
+                   ry="20"
+                   x="15"
+                   y="315"
+                   width="100"
+                   height="45"
+                   fill="#184f0b"
+                   stroke="white"/>
+         <svg:text x="45" y="340" fill="white" font-size="16">XML</svg:text>
+      </svg:g>
+   </a>
+   <a xlink:href="TXT_output.txt" target="_blank">
+      <svg:g class="button" cursor="pointer">
+         <svg:rect rx="20"
+                   ry="20"
+                   x="15"
+                   y="390"
+                   width="100"
+                   height="45"
+                   fill="#184f0b"
+                   stroke="white"/>
+         <svg:text x="45" y="420" fill="white" font-size="16">TXT</svg:text>
+      </svg:g>
+   </a>
+   <style>
+            g.button:hover
+            {
+                opacity: 0.7;
+            }
+
+            rect.wykres_tlo:hover
+            {
+                fill: #f2f2f2;
+            }
+        </style>
+   <script type="text/javascript"> 
+            
+            function onClickAutorzyPliku(evt) {
+                var element = document.getElementById("podpis");
+                var atrybut = element.getAttribute("visibility");
+
+                if(atrybut === "visible"){
+                    element.setAttribute("visibility", "hidden");
+                }else{
+                    element.setAttribute("visibility", "visible");
+                }
+
+            }
+        </script>
+   <script type="text/javascript"> 
+            
+            function onMouseOverWykres(evt) {
+                document.getElementById("figure").setAttribute("visibility", "visible");
+            }
+        </script>
+   <script type="text/javascript">
+            
+            function onMouseOutWykres(evt) {
+                document.getElementById("figure").setAttribute("visibility", "hidden");
+            }
+        </script>
+   <svg:g id="autorzy_pliku"
+          class="button"
+          width="90"
+          height="45"
+          onclick="onClickAutorzyPliku(evt)"
+          cursor="pointer">
+      <svg:rect rx="20"
+                ry="20"
+                x="15"
+                y="190"
+                width="90"
+                height="45"
+                fill="#184f0b"
+                stroke="white"/>
+      <svg:text x="30" y="215" fill="white" font-size="16">Autorzy</svg:text>
+   </svg:g>
+   <svg:g id="podpis" visibility="hidden">
+      <svg:rect rx="20"
+                ry="20"
+                x="125"
+                y="400"
+                width="690"
+                height="30"
+                fill="#184f0b"
+                stroke="white"/>
+      <svg:text x="470"
+                y="420"
+                font-size="16"
+                fill="white"
+                text-anchor="middle">
+		    
+			      (203892@edu.p.lodz.pl) Martyna Jasiak
+			      (204001@edu.p.lodz.pl) Marta Stempel
+		    
+	  </svg:text>
+   </svg:g>
+   
+      
+         John Smith’s Stadium pojemność: 24500
+         2018-03-11T18:00:00
+          2.40  GBP
+          2.40  GBP
+      
+      
+         Emirates Stadium pojemność: 60361
+         2018-03-11T14:30:00
+          13.00  PLN
+          13.00  PLN
+      
+      
+         Dean Court pojemność: 11700
+         2018-03-11T17:00:00
+          14.40  PLN
+          14.40  PLN
+      
+      
+         Old Trafford pojemność: 75957
+         2018-03-10T13:30:00
+          16.50  GBP
+          16.50  GBP
+      
+      
+         Goodison Park pojemność: 40569
+         2018-03-10T16:00:00
+          5.00  GBP
+          5.00  GBP
+      
+      
+         John Smith’s Stadium pojemność: 24500
+         2018-03-10T16:00:00
+          2.40  GBP
+          2.40  GBP
+      
+      
+         St James’ Park pojemność: 52354
+         2018-03-10T16:00:00
+          13.00  PLN
+          13.00  PLN
+      
+      
+         The Hawthorns pojemność: 26500
+         2018-03-10T16:00:00
+          17.00  GBP
+          17.00  GBP
+      
+      
+         Olympic Stadium pojemność: 26500
+         2018-03-10T16:00:00
+          2.00  GBP
+          2.00  GBP
+      
+      
+         Stamford Bridge pojemność: 41841
+         2018-03-10T18:30:00
+          12.50  PLN
+          12.50  PLN
+      
+   
+   
+      20
+      20
+      11700
+      75957
+      2.0
+      6.5
+      <svg:g id="rect"
+          onmouseover="onMouseOverWykres(evt)"
+          onmouseout="onMouseOutWykres(evt)">
+      <svg:rect class="wykres_tlo"
+                x="130"
+                y="90"
+                height="250"
+                width="600"
+                fill="#FFFFFF"
+                stroke="black"/>
+      <svg:text x="425"
+                y="130"
+                font-size="16"
+                fill="green"
+                font-weight="bold"
+                text-anchor="middle">
+            Liczba klubów w danym mieście
+        </svg:text>
+   </svg:g>
+   <svg:text x="140"
+             y="320"
+             font-size="11"
+             fill="#003366"
+             font-weight="bold">Manchester</svg:text>
+   <svg:text x="230"
+             y="320"
+             font-size="11"
+             fill="#003366"
+             font-weight="bold">Londyn</svg:text>
+   <svg:text x="305"
+             y="320"
+             font-size="11"
+             fill="#003366"
+             font-weight="bold">Liverpool</svg:text>
+   <svg:text x="385"
+             y="320"
+             font-size="11"
+             fill="#003366"
+             font-weight="bold">Leicester</svg:text>
+   <svg:text x="465"
+             y="320"
+             font-size="11"
+             fill="#003366"
+             font-weight="bold">Swansea</svg:text>
+   <svg:text x="550"
+             y="320"
+             font-size="11"
+             fill="#003366"
+             font-weight="bold">Burnley</svg:text>
+   <svg:text x="613"
+             y="320"
+             font-size="11"
+             fill="#003366"
+             font-weight="bold">Liczba miast</svg:text>
+   <svg:g id="figure" visibility="hidden">
+      <svg:text x="170"
+                y="275"
+                fill="#003366"
+                font-size="11"
+                font-weight="bold">2</svg:text>
+      <svg:g visibility="visible">
+         <svg:rect fill="#4d004d" x="165" width="25">
+            <svg:animate attributeName="y"
+                         from="300"
+                         to="285"
+                         dur="3s"
+                         fill="freeze"/>
+            <svg:animate attributeName="height"
+                         from="1"
+                         to="15"
+                         dur="3s"
+                         fill="freeze"/>
+         </svg:rect>
+      </svg:g>
+      <svg:text x="249"
+                y="252.5"
+                fill="#003366"
+                font-size="11"
+                font-weight="bold">5</svg:text>
+      <svg:g visibility="visible">
+         <svg:rect fill="#4d004d" x="244" width="25">
+            <svg:animate attributeName="y"
+                         from="300"
+                         to="262.5"
+                         dur="3s"
+                         fill="freeze"/>
+            <svg:animate attributeName="height"
+                         from="1"
+                         to="37.5"
+                         dur="3s"
+                         fill="freeze"/>
+         </svg:rect>
+      </svg:g>
+      <svg:text x="328"
+                y="275"
+                fill="#003366"
+                font-size="11"
+                font-weight="bold">2</svg:text>
+      <svg:g visibility="visible">
+         <svg:rect fill="#4d004d" x="323" width="25">
+            <svg:animate attributeName="y"
+                         from="300"
+                         to="285"
+                         dur="3s"
+                         fill="freeze"/>
+            <svg:animate attributeName="height"
+                         from="1"
+                         to="15"
+                         dur="3s"
+                         fill="freeze"/>
+         </svg:rect>
+      </svg:g>
+      <svg:text x="407"
+                y="282.5"
+                fill="#003366"
+                font-size="11"
+                font-weight="bold">1</svg:text>
+      <svg:g visibility="visible">
+         <svg:rect fill="#4d004d" x="402" width="25">
+            <svg:animate attributeName="y"
+                         from="300"
+                         to="292.5"
+                         dur="3s"
+                         fill="freeze"/>
+            <svg:animate attributeName="height"
+                         from="1"
+                         to="7.5"
+                         dur="3s"
+                         fill="freeze"/>
+         </svg:rect>
+      </svg:g>
+      <svg:text x="486"
+                y="282.5"
+                fill="#003366"
+                font-size="11"
+                font-weight="bold">1</svg:text>
+      <svg:g visibility="visible">
+         <svg:rect fill="#4d004d" x="481" width="25">
+            <svg:animate attributeName="y"
+                         from="300"
+                         to="292.5"
+                         dur="3s"
+                         fill="freeze"/>
+            <svg:animate attributeName="height"
+                         from="1"
+                         to="7.5"
+                         dur="3s"
+                         fill="freeze"/>
+         </svg:rect>
+      </svg:g>
+      <svg:text x="565"
+                y="282.5"
+                fill="#003366"
+                font-size="11"
+                font-weight="bold">1</svg:text>
+      <svg:g visibility="visible">
+         <svg:rect fill="#4d004d" x="560" width="25">
+            <svg:animate attributeName="y"
+                         from="300"
+                         to="292.5"
+                         dur="3s"
+                         fill="freeze"/>
+            <svg:animate attributeName="height"
+                         from="1"
+                         to="7.5"
+                         dur="3s"
+                         fill="freeze"/>
+         </svg:rect>
+      </svg:g>
+      <svg:text x="644"
+                y="140"
+                fill="#003366"
+                font-size="11"
+                font-weight="bold">20</svg:text>
+      <svg:g visibility="visible">
+         <svg:rect fill="#4d004d" x="639" width="25">
+            <svg:animate attributeName="y"
+                         from="300"
+                         to="150"
+                         dur="3s"
+                         fill="freeze"/>
+            <svg:animate attributeName="height"
+                         from="1"
+                         to="150"
+                         dur="3s"
+                         fill="freeze"/>
+         </svg:rect>
+      </svg:g>
+   </svg:g>
+      
+         115.60 zł
+         170.29 zł
+         108.90 £
+         159.90 £
+         1334.21 zł
+         268.8 £
+         306.87 zł
+         1027.34 zł
+      
+      2018-06-04T16:21:50.453+02:00
+   
+</svg:svg>
